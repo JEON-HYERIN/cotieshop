@@ -26,3 +26,27 @@ video {
   margin: 0 auto;
   position: relative;
 }
+
+/* HEADER */
+#header {}
+
+#header .inner {}
+
+#header h1 {}
+
+#header h1 a {}
+
+#header h1 a img {}
+
+#gnb {}
+
+#gnb ul {}
+#gnb ul li {}
+#gnb ul li a {}
+
+#header .top-menu {}
+#header .top-menu li {}
+#header .top-menu li a {}
+#header .top-menu li a i.fas {}
+#header .top-menu li:last-child a span {}
+
