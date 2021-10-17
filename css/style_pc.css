@@ -15,6 +15,50 @@ video {
   width: 100%;
 }
 
+.btn {
+  position: relative;
+  width: 210px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #000;
+  cursor: url("../img/cursor-hand.png"), auto;
+}
+
+.btn span {
+  position: relative;
+  z-index: 3;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/button_stroke.svg") no-repeat center;
+  z-index: 2;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/button_fill.svg") no-repeat center/cover;
+  opacity: 0;
+  z-index: 1;
+  transition: .3s;
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
 #wrapper {
   min-width: 1024px;
   overflow: hidden;
@@ -46,6 +90,7 @@ video {
 #header.active {
   height: 90px;
   border-bottom-color: #000;
+  background-color: #F0EDE6;
 }
 
 #header .inner {
@@ -68,18 +113,12 @@ video {
   width: 112px;
 }
 
-#header h1 a img {
-  
-}
-
 #gnb {
   position: absolute;
   right: 220px;
   top: 50%;
   transform: translateY(-50%);
 }
-
-#gnb > ul {}
 
 #gnb > ul > li {
   position: relative;
@@ -126,10 +165,6 @@ video {
   display: none;
 }
 
-#gnb > ul > li .sub-menu li {
-  
-}
-
 #gnb > ul > li .sub-menu li a {
   padding: 10px;
   font-size: 15px;
@@ -168,11 +203,6 @@ video {
   display: inline-block;
 }
 
-#header .top-menu li a {
- 
-}
-#header .top-menu li a i.fas {}
-
 #header .top-menu li:last-child:hover::before {
   width: 100%;
   opacity: 1;
@@ -199,3 +229,57 @@ video {
     padding-right: 5px;
 }
 
+/* MAIN */
+#main {
+  margin-top: 100px;
+}
+
+/* VISUAL */
+.main-visual {
+  text-align: center;
+}
+
+.main-visual .inner {
+  padding-top: 80px;
+}
+
+.main-visual .title {
+  font-size: 85px;
+  position: relative;
+  bottom: -40px;
+}
+
+.main-visual .image {
+  width: 730px;
+  margin: 0 auto;
+}
+.main-visual .image img {}
+.main-visual .description {
+  margin: 40px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-visual .btn {}
+
+.main-visual .floating {
+  position: absolute;
+}
+
+.main-visual .floating.floating1 {
+  width: 120px;
+  left: 20%;
+  top: 0;
+}
+.main-visual .floating.floating2 {
+  width: 106px;
+  right: 40px;
+  top: 25%;
+}
+
+.main-visual .floating.floating3 {
+  width: 103px;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
