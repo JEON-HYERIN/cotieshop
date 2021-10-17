@@ -1,0 +1,29 @@
+/* COMMON */
+.pc {
+  display: none !important;
+}
+
+.mobile {
+  display: block !important;
+}
+
+br.only-pc {
+  content: '';
+}
+
+video {
+  width: 100%;
+}
+
+#wrapper {
+  min-width: 320px;
+  max-width: 1023.9px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* INNER */
+.inner {
+  margin: 0 auto;
+  position: relative;
+}
