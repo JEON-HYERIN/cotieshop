@@ -31,6 +31,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+<!-- Google Fonts - Libre Baskerville -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
   <!-- Google Material Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <!-- Font Awesome -->
@@ -58,34 +62,57 @@
     <!-- HEADER -->
     <header id="header">
       <div class="inner">
-        <h1><a href="./index.html"><img src="./img/header_logo.jpg" alt="cotie SHOP" /></a></h1>
+        <h1><a href="./index.html"><img src="./img/header_logo.svg" alt="cotie SHOP" /></a></h1>
         <!-- NAV -->
         <nav id="gnb">
-          <h2 class="hide">메인 메뉴</h2>
+          <h2 class="hide">메인 네비게이션</h2>
           <ul>
-            <li><a href="#">Brands</a></li>
-            <li><a href="#">Outdoor</a></li>
-            <li><a href="#">Indoor</a></li>
+            <li>
+              <a href="#">Brands</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#"><span>펫 소 시크</span></a>
+                </li>
+                <li><a href="#"><span>맥스본</span></a></li>
+                <li><a href="#"><span>밀크 앤 페퍼</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Outdoor</a>
+              <ul class="sub-menu">
+                <li><a href="#"><span>목줄</span></a></li>
+                <li><a href="#"><span>리드줄</span></a></li>
+                <li><a href="#"><span>하네스</span></a></li>
+                <li><a href="#"><span>패션</span></a></li>
+                <li><a href="#"><span>이동가방</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Indoor</a>
+              <ul class="sub-menu">
+                <li><a href="#"><span>리빙</span></a></li>
+                <li><a href="#"><span>장난감</span></a></li>
+                <li><a href="#"><span>고양이</span></a></li>
+              </ul>
+            </li>
             <li><a href="#">Cotielog</a></li>
             <li><a href="#">Store</a></li>
           </ul>
-
-          <ul class="top-menu">
-            <li>
-              <a href="#">
-                <i class="fas fa-search"></i>
-                <span class="hide">검색창 열기</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span>Buy Shop</span>
-                <i class="fas fa-shopping-bag"></i>
-              </a>
-            </li>
-
-          </ul>
         </nav>
+        <ul class="top-menu">
+          <li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+              <span class="hide">검색창 열기</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Buy Shop</span>
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+          </li>
+        </ul>
 
       </div>
     </header>

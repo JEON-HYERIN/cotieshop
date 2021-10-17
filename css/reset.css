@@ -4,12 +4,14 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Libre Baskerville', 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: 500;
+  color: #000;
   margin: 0;
   word-break: keep-all;
   background-color: #F0EDE6;
+  height: 3000px;
 }
 
 a {
