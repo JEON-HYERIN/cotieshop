@@ -15,6 +15,13 @@ video {
   width: 100%;
 }
 
+h3 {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
 .btn {
   position: relative;
   width: 210px;
@@ -298,47 +305,112 @@ video {
 }
 
 /* BRAND */
-.main-brand {}
+.main-brand {
+  text-align: center;
+  cursor: url("../img/cursor-pointer.png"), auto;
+}
 
-.main-brand .inner {}
+.main-brand .inner {
+  padding: 170px 0 100px;
+}
 
-.main-brand h3 {}
+.main-brand h3 {
+  margin-bottom: 85px;
+}
+
+.main-brand .image,
+.main-brand .content-group {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .main-brand .image {}
-.main-brand .image img {}
+.main-brand img {
+  
+}
 .main-brand .content-group {}
-.main-brand .content-group .title {}
-.main-brand .content-group .description {}
+
+.main-brand .content-group .title {
+  margin: 0 auto;
+}
+
+.main-brand .content-group .title img {
+  
+}
+.main-brand .content-group .description {
+  margin: 30px 0 53px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8em;
+  color: #000;
+}
+
 .main-brand .content-group .btn {}
-.main-brand .video__area {}
-.main-brand .video__area video {}
+
+.main-brand .video__area {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  cursor: url("../img/cursor-see.png"), auto;
+}
+.main-brand .video__area video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .main-brand .pet-so-chic {}
-.main-brand .pet-so-chic .image {}
+.main-brand .pet-so-chic .image {
+  width: 48%;
+}
 .main-brand .pet-so-chic .image img {}
-.main-brand .pet-so-chic .content-group {}
-.main-brand .pet-so-chic .content-group .title {}
-.main-brand .pet-so-chic .content-group .description {}
+.main-brand .pet-so-chic .content-group {
+  width: 50%;
+}
+.main-brand .pet-so-chic .content-group .title {
+  width: 210px;
+}
+
+.main-brand .pet-so-chic .content-group .description {
+  margin: 30px 0 36px;
+}
 .main-brand .pet-so-chic .content-group .btn {}
-.main-brand .pet-so-chic .video__area {}
+.main-brand .pet-so-chic .video__area {
+  margin: 65px auto 155px;
+}
 .main-brand .pet-so-chic .video__area video {}
 
 .main-brand .maxbone {}
-.main-brand .maxbone .content-group {}
-.main-brand .maxbone .content-group .title {}
+.main-brand .maxbone .content-group {
+  width: 48%;
+}
+.main-brand .maxbone .content-group .title {
+  width: 360px;
+}
 .main-brand .maxbone .content-group .description {}
 .main-brand .maxbone .content-group .btn {}
-.main-brand .maxbone .image {}
+.main-brand .maxbone .image {
+  width: 50%;
+}
 .main-brand .maxbone .image img {}
-.main-brand .maxbone .video__area {}
+.main-brand .maxbone .video__area {
+  margin: 120px auto 207px;
+}
 .main-brand .maxbone .video__area video {}
 
 .main-brand .milk-and-pepper {}
-.main-brand .milk-and-pepper .image {}
+.main-brand .milk-and-pepper .image {
+  width: 48%;
+}
 .main-brand .milk-and-pepper .image img {}
-.main-brand .milk-and-pepper .content-group {}
-.main-brand .milk-and-pepper .content-group .title {}
+.main-brand .milk-and-pepper .content-group {
+  width: 50%;
+}
+.main-brand .milk-and-pepper .content-group .title {
+  width: 320px;
+}
 .main-brand .milk-and-pepper .content-group .description {}
 .main-brand .milk-and-pepper .content-group .btn {}
-.main-brand .milk-and-pepper .video__area {}
-.main-brand .milk-and-pepper .video__area video {}
