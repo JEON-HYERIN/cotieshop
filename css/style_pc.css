@@ -253,17 +253,17 @@ video {
   width: 730px;
   margin: 0 auto;
 }
-.main-visual .image img {}
+
 .main-visual .description {
   margin: 40px 0;
   font-size: 16px;
   font-weight: 500;
+  line-height: 1.8em;
 }
-
-.main-visual .btn {}
 
 .main-visual .floating {
   position: absolute;
+  cursor: url("../img/cursor-pointer.png"), auto;
 }
 
 .main-visual .floating.floating1 {
@@ -271,15 +271,28 @@ video {
   left: 20%;
   top: 0;
 }
+
+.main-visual .floating.floating1:hover {
+  transform: rotate(45deg);
+}
+
 .main-visual .floating.floating2 {
   width: 106px;
-  right: 40px;
+  right: 3%;
   top: 25%;
+}
+
+.main-visual .floating.floating2:hover {
+  transform: rotate(20deg);
 }
 
 .main-visual .floating.floating3 {
   width: 103px;
-  left: 40px;
+  left: 3%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.main-visual .floating.floating3:hover {
+  transform: translateY(-50%) rotate(90deg);
 }
