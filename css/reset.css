@@ -12,6 +12,7 @@ body {
   word-break: keep-all;
   background-color: #F0EDE6;
   height: 10000px;
+  cursor: url("../img/cursor_pointer.png"), auto;
 }
 
 a {
