@@ -47,7 +47,8 @@ toTopBtn.addEventListener('click', function () {
 });
 
 var imgEl = toTopBtn.querySelector('img.punch');
-var imgUrl = ['to_top_punch.svg', 'to_top_punch_b.svg'];
+var imgUrl = ['punch1.svg', 'punch2.svg', 'punch3.svg', 'punch4.svg'];
 var chosenImgUrl = imgUrl[Math.floor(Math.random() * imgUrl.length)];
 
 imgEl.setAttribute('src', `../img/${chosenImgUrl}`);
+

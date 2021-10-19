@@ -482,6 +482,7 @@ h3 {
 }
 
 .main-brand .maxbone .video__area {
+  width: 570px;
   margin: 120px auto 207px;
 }
 
@@ -861,6 +862,7 @@ h3 {
   font-size: 22px;
   font-weight: 700;
   text-align: center;
+  color: #707070;
   cursor: url("../img/cursor_pointer.png"), auto;
 }
 
@@ -880,15 +882,13 @@ h3 {
 #to-top:hover .to-top-punch {
   display: block;
 }
-#to-top .to-top-punch img {}
 
 #to-top .to-top-punch .scratch1, 
 #to-top .to-top-punch .scratch2 {
   display: inline-block;
   width: 5px;
 }
-#to-top .to-top-punch .scratch1 {}
-#to-top .to-top-punch .scratch2 {}
+
 #to-top .to-top-punch .punch {
   width: 25px;
   margin: 0 auto;
