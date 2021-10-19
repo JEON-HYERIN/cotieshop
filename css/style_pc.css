@@ -646,41 +646,37 @@ h3 {
 }
 
 /* COTIELOG */
-.main-cotielog {}
 .main-cotielog .inner {
   padding: 100px 0;
 }
-.main-cotielog h3 {}
-.main-cotielog .content-group {
+
+.main-cotielog__menu {
   text-align: center;
 }
 
-.main-cotielog .content {
+.main-cotielog__menu li {
   display: inline-block;
   width: 420px;
   vertical-align: top;
   margin-bottom: 100px;
 }
 
-.main-cotielog .content:nth-child(2n) {
+.main-cotielog__menu li:nth-child(2) {
+  margin-top: 105px;
+}
+
+.main-cotielog__menu li:nth-child(2n) {
   margin-left: 100px;
 }
 
-.main-cotielog .content:nth-child(2) {
-  margin-top: 105px;
-}
-.main-cotielog .content .poster {
-  
-}
-.main-cotielog .content .poster img {}
-.main-cotielog .content .title {
+.main-cotielog__menu li .title {
   display: block;
   padding-top: 18px;
   font-size: 18px;
   text-align: left;
 }
 
-.main-cotielog .content:nth-child(2) .title::after {
+.main-cotielog__menu li:nth-child(2) .title::after {
   content: '🎉';
 }
 
