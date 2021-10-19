@@ -16,6 +16,7 @@ video {
 }
 
 h3 {
+  margin-bottom: 85px;
   font-size: 64px;
   font-weight: 700;
   text-align: center;
@@ -357,19 +358,10 @@ h3 {
   vertical-align: middle;
 }
 
-.main-brand .image {}
-.main-brand img {
-  
-}
-.main-brand .content-group {}
-
 .main-brand .content-group .title {
   margin: 0 auto;
 }
 
-.main-brand .content-group .title img {
-  
-}
 .main-brand .content-group .description {
   margin: 30px 0 53px;
   font-size: 16px;
@@ -377,8 +369,6 @@ h3 {
   line-height: 1.8em;
   color: #000;
 }
-
-.main-brand .content-group .btn {}
 
 .main-brand .video__area {
   position: relative;
@@ -420,17 +410,10 @@ h3 {
   top: 48%;
 }
 
-.main-brand .pattern.pattern5 {
-
-}
-
-.main-brand .pet-so-chic {
-  
-}
 .main-brand .pet-so-chic .image {
   width: 48%;
 }
-.main-brand .pet-so-chic .image img {}
+
 .main-brand .pet-so-chic .content-group {
   width: 50%;
 }
@@ -472,12 +455,6 @@ h3 {
   background-image: url("../img/pattern-grass-04.jpg");
 }
 
-.main-brand .pet-so-chic .video__area video {}
-
-.main-brand .maxbone {
-  
-}
-
 .main-brand .maxbone::before {
   content: '';
   position: absolute;
@@ -494,12 +471,11 @@ h3 {
 .main-brand .maxbone .content-group .title {
   width: 360px;
 }
-.main-brand .maxbone .content-group .description {}
-.main-brand .maxbone .content-group .btn {}
+
 .main-brand .maxbone .image {
   width: 50%;
 }
-.main-brand .maxbone .image img {}
+
 .main-brand .maxbone .video__area {
   margin: 120px auto 207px;
 }
@@ -507,40 +483,18 @@ h3 {
 .main-brand .maxbone .pattern {
   width: 48px;
   top: 73%;
-  animation-name: fade-in;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: .5s;
 }
 
 .main-brand .maxbone .pattern.pattern1 {
   left: 20%;
-  animation-delay: 0s;
 }
 
 .main-brand .maxbone .pattern.pattern2 {
   left: 15%;
-  animation-delay: 1s;
 }
 
 .main-brand .maxbone .pattern.pattern3 {
   left: 10%;
-  animation-delay: 2s;
-}
-
-@keyframes fade-in {
-  0% {
-    display: none;
-  }
-  100% {
- display: block;
-  }
-}
-
-.main-brand .maxbone .video__area video {}
-
-.main-brand .milk-and-pepper {
-  
 }
 
 .main-brand .milk-and-pepper::before,
@@ -571,12 +525,88 @@ h3 {
 .main-brand .milk-and-pepper .image {
   width: 48%;
 }
-.main-brand .milk-and-pepper .image img {}
+
 .main-brand .milk-and-pepper .content-group {
   width: 50%;
 }
 .main-brand .milk-and-pepper .content-group .title {
   width: 320px;
 }
-.main-brand .milk-and-pepper .content-group .description {}
-.main-brand .milk-and-pepper .content-group .btn {}
+
+/* NEW */
+.main-new {}
+
+.main-new .inner {}
+
+.main-new h3 {}
+
+.main-new .swiper {}
+
+.main-new .swiper .swiper-slide {
+  margin-bottom: 90px;
+  cursor: url("../img/cursor-hand.png"), auto;
+}
+
+.main-new .swiper-slide .image {
+  position: relative;
+}
+.main-new .swiper-slide .image img {
+  transition: opacity .5s;
+}
+
+.main-new .swiper-slide .image:hover img.front {
+  opacity: 0;
+}
+
+.main-new .swiper-slide .image:hover img.back {
+  opacity: 1;
+}
+.main-new .swiper-slide .image img.front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+.main-new .swiper-slide .image img.back {
+  opacity: 0;
+}
+.main-new .swiper-slide .text-group {
+  margin-top: 25px;
+  color: #000;
+}
+.main-new .swiper-slide .text-group .title {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+.main-new .swiper-slide .text-group .description {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-new .swiper .swiper-pagination {
+  left: 15px;
+  padding-top: 30px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.main-new .swiper .swiper-prev,
+.main-new .swiper .swiper-next {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.main-new .swiper .swiper-prev span,
+.main-new .swiper .swiper-next span {
+  font-size: 40px;
+}
+
+.main-new .swiper .swiper-prev {
+  left: 45%;
+}
+
+.main-new .swiper .swiper-next {
+  right: 45%;
+}
