@@ -300,7 +300,7 @@ h3 {
 
 .main-visual .floating.floating1 {
   width: 120px;
-  left: 20%;
+  left: 240px;
   top: 0;
 }
 
@@ -310,7 +310,7 @@ h3 {
 
 .main-visual .floating.floating2 {
   width: 106px;
-  right: 3%;
+  right: 35px;
   top: 25%;
 }
 
@@ -320,7 +320,7 @@ h3 {
 
 .main-visual .floating.floating3 {
   width: 103px;
-  left: 3%;
+  left: 35px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -344,8 +344,8 @@ h3 {
 
 .main-brand .floating.floating4 {
   width: 138px;
-  right: 7%;
-  top: 2%;
+  right: 85px;
+  top: 90px;
 }
 
 .main-brand h3 {
@@ -388,27 +388,6 @@ h3 {
 .main-brand .pattern {
   position: absolute;
 }
-.main-brand .pattern.pattern1 {
-  width: 45px;
-  left: 15%;
-  top: 50%;
-}
-.main-brand .pattern.pattern2 {
-  width: 65px;
-  right: 30%;
-  top: 45%;
-}
-.main-brand .pattern.pattern3 {
-  width: 80px;
-  right: 15%;
-  top: 50%;
-}
-
-.main-brand .pattern.pattern4 {
-  width: 210px;
-  right: 27%;
-  top: 48%;
-}
 
 .main-brand .pet-so-chic .image {
   width: 48%;
@@ -424,7 +403,29 @@ h3 {
 .main-brand .pet-so-chic .content-group .description {
   margin: 30px 0 36px;
 }
-.main-brand .pet-so-chic .content-group .btn {}
+
+.main-brand .pet-so-chic .pattern.pattern1 {
+  width: 45px;
+  left: 15%;
+  top: 50%;
+}
+.main-brand .pet-so-chic .pattern.pattern2 {
+  width: 65px;
+  right: 30%;
+  top: 45%;
+}
+.main-brand .pet-so-chic .pattern.pattern3 {
+  width: 80px;
+  right: 180px;
+  top: 50%;
+}
+
+.main-brand .pet-so-chic .pattern.pattern4 {
+  width: 210px;
+  right: 27%;
+  top: 48%;
+}
+
 .main-brand .pet-so-chic .video__area {
   margin: 65px auto 155px;
 }
@@ -510,14 +511,14 @@ h3 {
   background-image: url("../img/layer-hand.png");
   width: 347px;
   height: 297px;
-  right: -12%;
-  top: -35%;
+  right: -145px;
+  top: -256px;
 }
 
 .main-brand .milk-and-pepper::after {
   width: 117px;
   height: 132px;
-  right: 13%;
+  right: 156px;
   top: 0;
   background-image: url("../img/layer-heart.png");
 }
@@ -690,6 +691,10 @@ h3 {
   font-size: 45px;
 }
 
+.main-instagram__menu {
+  text-align: center;
+}
+
 .main-instagram__menu li {
   display: inline-block;
   width: calc(25% - 20px);
@@ -714,7 +719,7 @@ h3 {
 .footer__layer {
   position: absolute;
   left: 0;
-  top: -20%;
+  top: -88px;
   width: 100%;
   height: 132px;
   background: url("../img/footer_layer.svg") no-repeat center/cover;
@@ -747,7 +752,6 @@ h3 {
   float: left;
 }
 
-.footer__menu li {}
 .footer__menu li a {
   padding: 14px 0;
   font-size: 45px;
@@ -786,10 +790,6 @@ h3 {
   padding-right: 5px;
 }
 
-#footer .info a i.fas {
-
-}
-
 #footer .info.open a i.fas {
   transform: rotate(-180deg);
 }
@@ -805,12 +805,52 @@ h3 {
   color: #666;
   display: none;
 }
-#footer .info > div span {}
+
 #footer .info > div address {
   margin-top: 7px;
 }
 
 #footer .copyright {
-  color: rgba(240,237,230,.5);
   font-size: 17px;
+  color: rgba(240,237,230,.5);
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width: 1200px) {
+  
+  /* index.html */
+  /* HEADER */
+  #header h1 {
+    left: 15px;
+  }
+
+  #header .top-menu {
+    right: 15px;
+  }
+
+  /* VISUAL */
+  .main-visual .floating.floating2 {
+    right: 25px;
+  }
+
+  .main-visual .floating.floating3 {
+    left: 25px;
+  }
+
+  /* BRAND */
+  .main-brand .milk-and-pepper::after {
+    right: 15%;
+    top: -10px;
+  }
+
+  /* NEW */
+  .main-new .swiper {
+    padding: 0 15px;
+  }
+
+  /* FOOTER */
+  #footer .inner {
+    padding: 70px 15px;
+  }
 }
