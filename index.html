@@ -178,7 +178,7 @@
               <video src="./video/pet-so-chic.mp4" autoplay muted loop preload="metadata" playsinline></video>
             </div>
           </div>
-          <div class="maxbone">
+          <div class="maxbone scroll-spy">
             <div class="content-group">
               <div class="title">
                 <img src="./img/logo_maxbone.svg" alt="maxbone" />
@@ -505,7 +505,7 @@
             <li><a href="#">About Us</a></li>
             <li><a href="#">Buy Shop</a></li>
           </ul>
-          <ul class="foonter__links">
+          <ul class="footer__links">
             <li><a href="#">facebook</a></li>
             <li><a href="#">instagram</a></li>
             <li><a href="#"><i class="fas fa-comment"></i></a></li>
@@ -534,6 +534,40 @@
         </div>
       </div>
     </footer>
+
+    <!-- TO TOP BUTTON -->
+    <a href="#" id="to-top">
+      <i class="fas fa-chevron-up"></i>
+      <span>top</span>
+      <div class="to-top-punch">
+        <img src="./img/to_top_scratch1.svg" alt="" class="scratch1" />
+        <img src="./img/to_top_scratch2.svg" alt="" class="scratch2" />
+        <img src="" alt="" class="punch" />
+      </div>
+    </a>
+    
   </div>
+
+  <script>
+    'use strict';
+    const spyEls = document.querySelectorAll('.scroll-spy');
+    spyEls.forEach(function (spyEl) {
+      new ScrollMagic
+      .Scene({
+        triggerElement: spyEl,
+        triggerHook: 0.8
+      })
+      .setClassToggle(spyEl, 'show')
+      .addTo(new ScrollMagic.Controller());
+    });
+
+    const patterns = document.querySelectorAll('.main-brand .maxbone .pattern');
+    patterns.forEach(function (pattern) {
+      gsap.to(pattern, 1, {
+        delay: (pattern + 1) * .7,
+        opacity: 1
+      })
+    });
+  </script>
 </body>
 </html>
