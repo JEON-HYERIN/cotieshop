@@ -688,5 +688,24 @@ h3 {
   padding-left: 10px;
 }
 
+/* INSTAGRAM */
+.main-instagram {}
+.main-instagram .inner {}
+.main-instagram h3 {
+  font-size: 45px;
+}
 
+.main-instagram__menu {}
+.main-instagram__menu li {
+  display: inline-block;
+  width: calc(25% - 20px);
+}
 
+.main-instagram__menu li + li {
+  margin-left: 20px;
+}
+.main-instagram__menu li a {
+  cursor: url("../img/cursor_heart.png"), auto;
+}
+
+.main-instagram__menu li a img {}
