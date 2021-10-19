@@ -534,7 +534,9 @@ h3 {
 }
 
 /* NEW */
-.main-new {}
+.main-new {
+  padding: 100px 0;
+}
 
 .main-new .inner {}
 
@@ -585,6 +587,7 @@ h3 {
 }
 
 .main-new .swiper .swiper-pagination {
+  width: auto;
   left: 15px;
   padding-top: 30px;
   font-size: 14px;
@@ -609,4 +612,32 @@ h3 {
 
 .main-new .swiper .swiper-next {
   right: 45%;
+}
+
+/* SLOGAN */
+.main-slogan {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.main-slogan .text-group {
+  display: inline-block;
+  padding: 50px 0;
+  white-space: nowrap;
+  animation: move_text 30s linear infinite;
+}
+.main-slogan .text-group span {
+  display: inline-block;
+  margin-right: 95px;
+  font-size: 95px;
+  font-weight: 700;
+}
+
+@keyframes move_text {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
