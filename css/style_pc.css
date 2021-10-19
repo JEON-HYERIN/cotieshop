@@ -35,7 +35,7 @@ h3 {
 }
 
 .btn span,
-.btn i {
+.btn i.fas {
   position: relative;
   z-index: 3;
 }
@@ -268,6 +268,7 @@ h3 {
 /* MAIN */
 #main {
   margin-top: 100px;
+  padding-bottom: 240px;
 }
 
 /* VISUAL */
@@ -685,13 +686,10 @@ h3 {
 }
 
 /* INSTAGRAM */
-.main-instagram {}
-.main-instagram .inner {}
 .main-instagram h3 {
   font-size: 45px;
 }
 
-.main-instagram__menu {}
 .main-instagram__menu li {
   display: inline-block;
   width: calc(25% - 20px);
@@ -700,8 +698,119 @@ h3 {
 .main-instagram__menu li + li {
   margin-left: 20px;
 }
+
 .main-instagram__menu li a {
   cursor: url("../img/cursor_heart.png"), auto;
 }
 
-.main-instagram__menu li a img {}
+/* FOOTER */
+#footer {
+  position: relative;
+  font-weight: 700;
+  color: #F0EDE6;
+  background-color: #000;
+}
+
+.footer__layer {
+  position: absolute;
+  left: 0;
+  top: -20%;
+  width: 100%;
+  height: 132px;
+  background: url("../img/footer_layer.svg") no-repeat center/cover;
+  animation: move_layer .5s ease-in-out infinite;
+}
+
+@keyframes move_layer {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-16px);
+  }
+}
+
+#footer .inner {
+  padding: 70px 0;
+}
+
+#footer .row {
+  overflow: hidden;
+}
+
+#footer a {
+  display: block;
+  cursor: url("../img/cursor_pointer.png"), auto;
+}
+
+.footer__menu {
+  float: left;
+}
+
+.footer__menu li {}
+.footer__menu li a {
+  padding: 14px 0;
+  font-size: 45px;
+  font-weight: 700;
+}
+.foonter__links {
+  float: right;
+}
+.foonter__links li {
+  display: inline-block;
+}
+
+.foonter__links li + li {
+  margin-left: 18px;
+}
+
+.foonter__links li:last-child i.fas {
+  font-size: 50px;
+  color: 	#FEE500;
+}
+
+.foonter__links li a {
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+#footer .info {
+  margin: 30px 0 55px;
+}
+
+#footer .info a {
+  padding: 5px 0;
+}
+
+#footer .info a span {
+  padding-right: 5px;
+}
+
+#footer .info a i.fas {
+
+}
+
+#footer .info.open a i.fas {
+  transform: rotate(-180deg);
+}
+
+#footer .info.open > div {
+  display: block;
+}
+
+#footer .info > div {
+  padding-top: 13px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  display: none;
+}
+#footer .info > div span {}
+#footer .info > div address {
+  margin-top: 7px;
+}
+
+#footer .copyright {
+  color: rgba(240,237,230,.5);
+  font-size: 17px;
+}

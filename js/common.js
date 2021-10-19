@@ -17,5 +17,10 @@ window.addEventListener('scroll', function () {
 // 올해년도 구하기
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
-console.log(new Date().getFullYear());
-thisYear.textContent
+
+// footer info toggle
+const footerInfo = document.querySelector('#footer .info');
+const footerToggleBtn = footerInfo.querySelector('a');
+footerToggleBtn.addEventListener('click', function () {
+  footerInfo.classList.toggle('open');
+});
