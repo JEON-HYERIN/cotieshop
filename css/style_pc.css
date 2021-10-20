@@ -212,7 +212,7 @@ h3 {
 
 #header .top-menu li {
   position: relative;
-  display: inline-block;
+  display: inline-block !important;
 }
 
 #header .top-menu li:first-child::before,
@@ -553,8 +553,12 @@ h3 {
   transition-delay: .3s;
 }
 
-.main-brand .milk-and-pepper.scroll-spy .floating {
+.main-brand .milk-and-pepper.scroll-spy .floating.floating1 {
   transform: translateX(100%);
+}
+
+.main-brand .milk-and-pepper.scroll-spy .floating.floating2 {
+  transform: translateX(-100%);
 }
 
 .main-brand .milk-and-pepper.scroll-spy.show .floating {
@@ -769,7 +773,7 @@ h3 {
   top: -88px;
   width: 100%;
   height: 132px;
-  background: url("../img/footer_layer.svg") no-repeat center/cover;
+  background: url("../img/footer_layer.svg") no-repeat center top/cover;
   animation: move_layer .5s ease-in-out infinite;
 }
 

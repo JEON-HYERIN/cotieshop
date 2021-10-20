@@ -710,7 +710,7 @@ p.description {
   top: -40px;
   width: 100%;
   height: 60px;
-  background: url("../img/footer_layer.svg") no-repeat center/cover;
+  background: url("../img/footer_layer.svg") no-repeat center top/cover;
   animation: move_layer .5s ease-in-out infinite;
 }
 
