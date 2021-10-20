@@ -66,6 +66,13 @@
     <header id="header">
       <div class="inner">
         <h1><a href="./index.html"><img src="./img/header_logo.svg" alt="cotie SHOP" /></a></h1>
+        <a href="#" class="menu-btn mobile">
+          <span></span>
+          <span></span>
+        </a>
+        <a href="#" class="close-btn mobile">
+          <i class="fas fa-times"><span >닫기</span></i>
+        </a>
         <!-- NAV -->
         <nav id="gnb">
           <h2 class="hide">메인 네비게이션</h2>
@@ -179,6 +186,7 @@
             </div>
           </div>
           <div class="maxbone scroll-spy">
+            <img src="./img/layer_toy.png" alt="" class="floating" />
             <div class="content-group">
               <div class="title">
                 <img src="./img/logo_maxbone.svg" alt="maxbone" />
@@ -564,14 +572,12 @@
     });
 
     const patterns = document.querySelectorAll('.main-brand .maxbone .pattern');
-    const test = document.querySelector('.main-brand .milk-and-pepper .floating');
-    console.log(test);
-    // patterns.forEach(function (pattern) {
-    //   gsap.to(pattern, 1, {
-    //     delay: (pattern + 1) * .7,
-    //     opacity: 1
-    //   })
-    // });
+    patterns.forEach(function (pattern) {
+      gsap.to(pattern, 1, {
+        delay: (pattern + 1) * .7,
+        display: 'block'
+      })
+    });
   </script>
 </body>
 </html>

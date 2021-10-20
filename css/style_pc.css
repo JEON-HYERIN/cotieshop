@@ -11,6 +11,17 @@ br.only-m {
   content: '';
 }
 
+#wrapper {
+  min-width: 1024px;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
 video {
   width: 100%;
 }
@@ -70,18 +81,6 @@ h3 {
 
 .floating {
   position: absolute;
-}
-
-#wrapper {
-  min-width: 1024px;
-  overflow: hidden;
-}
-
-/* INNER */
-.inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
 }
 
 /* HEADER */
@@ -281,9 +280,10 @@ h3 {
 }
 
 .main-visual .title {
-  font-size: 85px;
   position: relative;
   bottom: -40px;
+  margin-bottom: 0;
+  font-size: 85px;
 }
 
 .main-visual .image {
@@ -460,14 +460,21 @@ h3 {
   background-image: url("../img/pattern-grass-04.jpg");
 }
 
-.main-brand .maxbone::before {
+.main-brand .maxbone .floating {
   content: '';
   position: absolute;
   left: -150px;
   top: 45%;
   width: 330px;
-  height: 370px;
-  background: url("../img/layer_toy.png") no-repeat center/cover;
+  transition: 1s;
+}
+
+.main-brand .maxbone.scroll-spy .floating {
+  transform: translateX(-100%);
+}
+
+.main-brand .maxbone.scroll-spy.show .floating {
+  transform: translateX(0);
 }
 
 .main-brand .maxbone .content-group {
@@ -486,49 +493,43 @@ h3 {
   margin: 120px auto 207px;
 }
 
-.main-brand .scroll-spy .pattern {
-  opacity: 0;
-}
-
-.main-brand .scroll-spy.show .pattern {
-  opacity: 1;
-}
-
 .main-brand .maxbone .pattern {
   width: 48px;
   top: 73%;
   transition: .5s;
+  /* animation: fade-in 1s ease-in-out infinite alternate; */
+  display: none;
 }
 
 .main-brand .maxbone .pattern.pattern1 {
   left: 20%;
-  transition-delay: 0s;
 }
 
 .main-brand .maxbone .pattern.pattern2 {
   left: 15%;
-  transition-delay: .1s;
 }
 
 .main-brand .maxbone .pattern.pattern3 {
   left: 10%;
+}
 
-  transition-delay: .2s;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main-brand .milk-and-pepper .floating {
   content: '';
   position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   transition: .5s;
 }
 
 .main-brand .milk-and-pepper .floating.floating1 {
-  background-image: url("../img/layer_hand.png");
   width: 347px;
-  height: 297px;
   right: -145px;
   top: -256px;
   transition-delay: 0s;
@@ -536,22 +537,17 @@ h3 {
 
 .main-brand .milk-and-pepper .floating.floating2 {
   width: 117px;
-  height: 132px;
   right: 156px;
   top: 0;
-  background-image: url("../img/layer_heart.png");
   transition-delay: .3s;
 }
 
 .main-brand .milk-and-pepper.scroll-spy .floating {
-  transform: translateX(50px);
-  opacity: 0;
-  
+  transform: translateX(100%);
 }
 
 .main-brand .milk-and-pepper.scroll-spy.show .floating {
   transform: translateX(0);
-  opacity: 1;
 }
 
 .main-brand .milk-and-pepper .image {
