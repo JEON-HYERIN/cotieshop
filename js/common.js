@@ -14,6 +14,23 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// 모바일메뉴
+const menuBtn = header.querySelector('.menu-btn');
+const closeBtn = header.querySelector('.close-btn');
+const gnb = header.querySelector('#gnb');
+menuBtn.addEventListener('click', function () {
+  menuBtn.classList.add('invisible');
+  closeBtn.classList.remove('invisible');
+  gnb.classList.add('open');
+});
+
+closeBtn.addEventListener('click', function () {
+  menuBtn.classList.remove('invisible');
+  closeBtn.classList.add('invisible');
+  gnb.classList.remove('open');
+});
+
+
 // 올해년도 구하기
 var thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear();
