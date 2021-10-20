@@ -477,14 +477,25 @@ h3 {
   transform: translateX(0);
 }
 
+.main-brand .maxbone > .wrap {
+  overflow: hidden;
+  position: relative;
+}
+
 .main-brand .maxbone .content-group {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 48%;
 }
+
 .main-brand .maxbone .content-group .title {
   width: 360px;
 }
 
 .main-brand .maxbone .image {
+  float: right;
   width: 50%;
 }
 

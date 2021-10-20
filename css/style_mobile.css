@@ -35,8 +35,14 @@ h3 {
   color: #000;
 }
 
-p {
+p.description {
+  padding: 0 24px;
   font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8em;
+  letter-spacing: -0.3px;
+  color: #000;
 }
 
 .btn {
@@ -338,9 +344,6 @@ p {
 .main-visual .description {
   margin: 20px 0;
   padding: 0 24px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.8em;
 }
 
 .main-visual .floating {
@@ -360,10 +363,11 @@ p {
   position: relative;
 }
 
-.main-brand .floating.floating4 {
+.main-brand .inner > .floating.floating4 {
   width: 138px;
   right: 85px;
   top: 90px;
+  display: none;
 }
 
 .main-brand .floating.floating4:hover {
@@ -371,7 +375,7 @@ p {
 }
 
 .main-brand h3 {
-  margin-bottom: 85px;
+  margin-bottom: 30px;
 }
 
 .main-brand .image,
@@ -380,21 +384,21 @@ p {
   vertical-align: middle;
 }
 
+.main-brand .content-group {
+  padding-top: 40px;
+}
+
 .main-brand .content-group .title {
   margin: 0 auto;
 }
 
 .main-brand .content-group .description {
-  margin: 30px 0 53px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.8em;
-  color: #000;
+  margin: 20px 0 30px;
 }
 
 .main-brand .video__area {
   position: relative;
-  width: 95%;
+  width: 100%;
   height: 0;
   padding-bottom: 56.25%;
 }
@@ -409,21 +413,22 @@ p {
 
 .main-brand .pattern {
   position: absolute;
+  display: none;
 }
 
 .main-brand .pet-so-chic .image {
-  width: 48%;
+  width: 90%;
 }
 
 .main-brand .pet-so-chic .content-group {
-  width: 50%;
+  padding-top: 22px;
 }
 .main-brand .pet-so-chic .content-group .title {
-  width: 210px;
+  width: 110px;
 }
 
 .main-brand .pet-so-chic .content-group .description {
-  margin: 30px 0 36px;
+ 
 }
 
 .main-brand .pet-so-chic .pattern.pattern1 {
@@ -449,33 +454,7 @@ p {
 }
 
 .main-brand .pet-so-chic .video__area {
-  margin: 65px auto 155px;
-}
-
-.main-brand .pet-so-chic .video__area::before,
-.main-brand .pet-so-chic .video__area::after {
-  content: '';
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.main-brand .pet-so-chic .video__area::before {
-  right: -3%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 70px;
-  height: 50px;
-  background-image: url("../img/pattern-grass-03.jpg");
-}
-
-.main-brand .pet-so-chic .video__area::after {
-  right: 35%;
-  bottom: -15%;
-  width: 83px;
-  height: 40px;
-  background-image: url("../img/pattern-grass-04.jpg");
+  margin: 60px 0 100px;
 }
 
 .main-brand .maxbone .floating {
@@ -496,18 +475,18 @@ p {
 }
 
 .main-brand .maxbone .content-group {
-  width: 48%;
+  
 }
 .main-brand .maxbone .content-group .title {
-  width: 360px;
+  width: 160px;
 }
 
 .main-brand .maxbone .image {
-  width: 50%;
+  
 }
 
 .main-brand .maxbone .video__area {
-  width: 50%;
+  
   margin: 120px auto 207px;
 }
 
@@ -569,11 +548,11 @@ p {
 }
 
 .main-brand .milk-and-pepper .image {
-  width: 48%;
+  
 }
 
 .main-brand .milk-and-pepper .content-group {
-  width: 50%;
+  
 }
 .main-brand .milk-and-pepper .content-group .title {
   width: 320px;
