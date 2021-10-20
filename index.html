@@ -199,11 +199,11 @@
             <div class="video__area">
               <video src="./video/maxbone.mp4" autoplay muted loop preload="metadata" playsinline></video>
             </div>
-            <img src="./img/layer-maxbone.jpg" alt="" class="pattern pattern1" />
-            <img src="./img/layer-maxbone.jpg" alt="" class="pattern pattern2" />
-            <img src="./img/layer-maxbone.jpg" alt="" class="pattern pattern3" />
+            <img src="./img/layer_maxbone.jpg" alt="" class="pattern pattern1" />
+            <img src="./img/layer_maxbone.jpg" alt="" class="pattern pattern2" />
+            <img src="./img/layer_maxbone.jpg" alt="" class="pattern pattern3" />
           </div>
-          <div class="milk-and-pepper">
+          <div class="milk-and-pepper scroll-spy">
             <div class="image">
               <img src="./img/brand_milkpepper.jpg" alt="MILK & PEPPER" />
             </div>
@@ -221,6 +221,8 @@
                 <span>Discover more</span>
               </a>
             </div>
+            <img src="./img/layer_hand.png" alt="" class="floating floating1" />
+            <img src="./img/layer_heart.png" alt="" class="floating floating2" />
           </div>
         </div>
       </section>
@@ -562,12 +564,14 @@
     });
 
     const patterns = document.querySelectorAll('.main-brand .maxbone .pattern');
-    patterns.forEach(function (pattern) {
-      gsap.to(pattern, 1, {
-        delay: (pattern + 1) * .7,
-        opacity: 1
-      })
-    });
+    const test = document.querySelector('.main-brand .milk-and-pepper .floating');
+    console.log(test);
+    // patterns.forEach(function (pattern) {
+    //   gsap.to(pattern, 1, {
+    //     delay: (pattern + 1) * .7,
+    //     opacity: 1
+    //   })
+    // });
   </script>
 </body>
 </html>

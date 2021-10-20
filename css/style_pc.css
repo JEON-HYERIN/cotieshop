@@ -467,7 +467,7 @@ h3 {
   top: 45%;
   width: 330px;
   height: 370px;
-  background: url("../img/layer-toy.png") no-repeat center/cover;
+  background: url("../img/layer_toy.png") no-repeat center/cover;
 }
 
 .main-brand .maxbone .content-group {
@@ -486,46 +486,72 @@ h3 {
   margin: 120px auto 207px;
 }
 
+.main-brand .scroll-spy .pattern {
+  opacity: 0;
+}
+
+.main-brand .scroll-spy.show .pattern {
+  opacity: 1;
+}
+
 .main-brand .maxbone .pattern {
   width: 48px;
   top: 73%;
+  transition: .5s;
 }
 
 .main-brand .maxbone .pattern.pattern1 {
   left: 20%;
+  transition-delay: 0s;
 }
 
 .main-brand .maxbone .pattern.pattern2 {
   left: 15%;
+  transition-delay: .1s;
 }
 
 .main-brand .maxbone .pattern.pattern3 {
   left: 10%;
+
+  transition-delay: .2s;
 }
 
-.main-brand .milk-and-pepper::before,
-.main-brand .milk-and-pepper::after {
+.main-brand .milk-and-pepper .floating {
   content: '';
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: .5s;
 }
 
-.main-brand .milk-and-pepper::before {
-  background-image: url("../img/layer-hand.png");
+.main-brand .milk-and-pepper .floating.floating1 {
+  background-image: url("../img/layer_hand.png");
   width: 347px;
   height: 297px;
   right: -145px;
   top: -256px;
+  transition-delay: 0s;
 }
 
-.main-brand .milk-and-pepper::after {
+.main-brand .milk-and-pepper .floating.floating2 {
   width: 117px;
   height: 132px;
   right: 156px;
   top: 0;
-  background-image: url("../img/layer-heart.png");
+  background-image: url("../img/layer_heart.png");
+  transition-delay: .3s;
+}
+
+.main-brand .milk-and-pepper.scroll-spy .floating {
+  transform: translateX(50px);
+  opacity: 0;
+  
+}
+
+.main-brand .milk-and-pepper.scroll-spy.show .floating {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .main-brand .milk-and-pepper .image {
@@ -540,17 +566,9 @@ h3 {
 }
 
 /* NEW */
-.main-new {
-  
-}
-
 .main-new .inner {
   padding: 100px 0;
 }
-
-.main-new h3 {}
-
-.main-new .swiper {}
 
 .main-new .swiper .swiper-slide {
   margin-bottom: 90px;
