@@ -674,8 +674,8 @@ p.description {
 }
 
 /* INSTAGRAM */
-.main-instagram h3 {
-  font-size: 45px;
+.main-instagram .inner {
+  padding-top: 50px;
 }
 
 .main-instagram__menu {
@@ -684,11 +684,10 @@ p.description {
 
 .main-instagram__menu li {
   display: inline-block;
-  width: calc(25% - 20px);
-}
-
-.main-instagram__menu li + li {
-  margin-left: 20px;
+  width: 45%;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 4px 2px;
 }
 
 .main-instagram__menu li a {
