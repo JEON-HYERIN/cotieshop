@@ -535,6 +535,11 @@ p.description {
   cursor: url("../img/cursor_hand.png"), auto;
 }
 
+.main-new__menu li:nth-child(5),
+.main-new__menu li:nth-child(6) {
+  margin-bottom: 0;
+}
+
 .main-new__menu li .image {
   position: relative;
 }
@@ -580,19 +585,20 @@ p.description {
 
 /* SLOGAN */
 .main-slogan {
+  margin: 20px 0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 .main-slogan .text-group {
   display: inline-block;
-  padding: 50px 0;
+  padding: 30px 0;
   white-space: nowrap;
   animation: move_text 30s linear infinite;
 }
 .main-slogan .text-group span {
   display: inline-block;
-  margin-right: 95px;
-  font-size: 95px;
+  margin-right: 32px;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -608,37 +614,59 @@ p.description {
 
 /* COTIELOG */
 .main-cotielog .inner {
-  padding: 100px 0;
+  padding: 50px 24px;
+}
+
+.main-cotielog h3 {
+  text-align: left;
 }
 
 .main-cotielog__menu {
-  text-align: center;
+  overflow: hidden;
 }
 
 .main-cotielog__menu li {
   display: inline-block;
-  width: 420px;
+  width: 216px;
   vertical-align: top;
-  margin-bottom: 100px;
+
+}
+
+.main-cotielog__menu li + li {
+  margin-top: 58px;
+}
+
+.main-cotielog__menu li:nth-child(1),
+.main-cotielog__menu li:nth-child(3) {
+  float: left;
 }
 
 .main-cotielog__menu li:nth-child(2) {
-  margin-top: 105px;
-}
-
-.main-cotielog__menu li:nth-child(2n) {
-  margin-left: 100px;
+  float: right;
 }
 
 .main-cotielog__menu li .title {
   display: block;
-  padding-top: 18px;
-  font-size: 18px;
-  text-align: left;
+  padding-top: 13px;
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 .main-cotielog__menu li:nth-child(2) .title::after {
   content: '🎉';
+}
+
+.main-cotielog .btn {
+  position: absolute;
+  right: 24px;
+  top: 37px;
+  font-size: 14px;
+  width: auto;
+}
+
+.main-cotielog .btn::before,
+.main-cotielog .btn::after {
+  display: none;
 }
 
 .main-cotielog .btn span {
