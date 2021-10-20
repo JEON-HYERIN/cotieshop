@@ -18,6 +18,8 @@ window.addEventListener('scroll', function () {
 const menuBtn = header.querySelector('.menu-btn');
 const closeBtn = header.querySelector('.close-btn');
 const gnb = header.querySelector('#gnb');
+const gnbLists = header.querySelectorAll('#gnb > ul > li');
+const gnbAnchers = header.querySelectorAll('#gnb > ul > li > a');
 menuBtn.addEventListener('click', function () {
   menuBtn.classList.add('invisible');
   closeBtn.classList.remove('invisible');
@@ -28,8 +30,19 @@ closeBtn.addEventListener('click', function () {
   menuBtn.classList.remove('invisible');
   closeBtn.classList.add('invisible');
   gnb.classList.remove('open');
+  gnbLists.forEach(function (gnbList) {
+    gnbList.classList.remove('active');
+  });
 });
 
+gnbAnchers.forEach(function (gnbAncher) {
+  gnbAncher.addEventListener('click', function (event) {
+    gnbLists.forEach(function (gnbList) {
+      gnbList.classList.remove('active');
+    });
+    event.target.parentElement.classList.toggle('active');
+  });
+});
 
 // 올해년도 구하기
 var thisYear = document.querySelector('.this-year');
