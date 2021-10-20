@@ -318,7 +318,7 @@ p.description {
 /* MAIN */
 #main {
   margin-top: 75px;
-  padding-bottom: 240px;
+  padding-bottom: 150px;
 }
 
 /* VISUAL */
@@ -722,9 +722,9 @@ p.description {
 .footer__layer {
   position: absolute;
   left: 0;
-  top: -88px;
+  top: -40px;
   width: 100%;
-  height: 132px;
+  height: 60px;
   background: url("../img/footer_layer.svg") no-repeat center/cover;
   animation: move_layer .5s ease-in-out infinite;
 }
@@ -739,7 +739,7 @@ p.description {
 }
 
 #footer .inner {
-  padding: 70px 0;
+  padding: 50px 24px 60px;
 }
 
 #footer .row {
@@ -756,8 +756,8 @@ p.description {
 }
 
 .footer__menu li a {
-  padding: 14px 0;
-  font-size: 45px;
+  padding: 12px 0;
+  font-size: 26px;
   font-weight: 700;
 }
 
@@ -775,39 +775,30 @@ p.description {
 }
 
 .footer__links li + li {
-  margin-left: 18px;
+  margin-left: 5px;
 }
 
 .footer__links li:last-child i.fas {
-  font-size: 50px;
+  font-size: 30px;
   color: 	#FEE500;
 }
 
-.footer__links li::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 5px;
-  left: 0;
-  bottom: 0;
-  border-radius: 3px;
-  background-color: #fff;
-  transition: .3s;
-}
-
-.footer__links li:last-child::before {
-  display: none;
-}
-
-.footer__links li:hover::before {
-  width: 100%;
-  opacity: 1;
-}
-
 .footer__links li a {
-  padding: 10px 0;
-  font-size: 22px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
   font-weight: 700;
+}
+
+.footer__links li:last-child a {
+  border: none;
+}
+
+.footer__links li a i.fab {
+  line-height: 38px;
 }
 
 #footer .info {
@@ -816,6 +807,7 @@ p.description {
 
 #footer .info a {
   padding: 5px 0;
+  font-size: 15px;
 }
 
 #footer .info a:hover {
@@ -836,18 +828,20 @@ p.description {
 
 #footer .info > div {
   padding-top: 13px;
-  font-size: 14px;
+  font-family: sans-serif;
+  font-size: 13px;
   font-weight: 500;
+  line-height: 1.7em;
   color: #666;
   display: none;
 }
 
 #footer .info > div address {
-  margin-top: 7px;
+  margin-top: 5px;
 }
 
 #footer .copyright {
-  font-size: 17px;
+  font-size: 12px;
   color: rgba(240,237,230,.5);
 }
 
@@ -903,27 +897,16 @@ p.description {
 
 
   /* VISUAL */
-  .main-visual .floating.floating2 {
-    right: 25px;
-  }
 
-  .main-visual .floating.floating3 {
-    left: 25px;
-  }
 
   /* BRAND */
-  .main-brand .milk-and-pepper::after {
-    right: 15%;
-    top: -10px;
-  }
+
 
   /* NEW */
-  .main-new .swiper {
-    padding: 0 15px;
-  }
+ 
 
   /* FOOTER */
   #footer .inner {
-    padding: 70px 15px;
+    
   }
 }
