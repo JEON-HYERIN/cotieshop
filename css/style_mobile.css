@@ -1045,6 +1045,21 @@ p.description {
   #to-top {
     font-size: 18px;
   }
+
+  #to-top:hover .to-top-punch {
+    display: block;
+  }
+  
+  #to-top .to-top-punch .scratch1, 
+  #to-top .to-top-punch .scratch2 {
+    display: inline-block;
+    width: 5px;
+  }
+  
+  #to-top .to-top-punch .punch {
+    width: 25px;
+    margin: 0 auto;
+  }
 }
 
 
