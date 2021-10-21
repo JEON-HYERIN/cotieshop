@@ -37,7 +37,6 @@ h3 {
 }
 
 p.description {
-  max-width: 80%;
   padding: 0 24px;
   font-family: sans-serif;
   font-size: 15px;
@@ -333,7 +332,8 @@ p.description {
 }
 
 .main-visual .image {
-  margin: 0 24px;
+  width: 87%;
+  margin: 0 auto;
   animation: rotate_image .5s;
 }
 
@@ -380,7 +380,8 @@ p.description {
 }
 
 .main-brand .image {
-  margin: 0 24px;
+  width: 87%;
+  margin: 0 auto;
 }
 
 .main-brand .content-group {
@@ -557,6 +558,11 @@ p.description {
   margin-bottom: 0;
 }
 
+.main-new__menu li a {
+  display: block;
+  cursor: url("../img/cursor_hand.png"), auto;
+}
+
 .main-new__menu li .image {
   position: relative;
 }
@@ -593,6 +599,7 @@ p.description {
   text-align: left;
 }
 .main-new__menu li .text-group .description {
+  max-width: 90%;
   padding: 0;
   font-size: 14px;
   font-weight: 500;
@@ -662,6 +669,7 @@ p.description {
 .main-cotielog__menu li a {
   width: 70%;
   vertical-align: top;
+  cursor: url("../img/cursor_hand.png"), auto;
 }
 
 .main-cotielog__menu li .title {
@@ -892,6 +900,17 @@ p.description {
 }
 
 
+/* 미디어쿼리 */
+@media screen and (min-width: 600px) {
 
+  /* COMMON */
+  .main-brand .description br.only-pc {
+    content: normal;
+  }
+
+  .main-brand .description br.only-m {
+    content: '';
+  }
+}
 
 

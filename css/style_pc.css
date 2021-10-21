@@ -586,6 +586,10 @@ h3 {
 
 .main-new .swiper .swiper-slide {
   margin-bottom: 90px;
+}
+
+.main-new .swiper .swiper-slide a {
+  display: block;
   cursor: url("../img/cursor_hand.png"), auto;
 }
 
@@ -710,6 +714,7 @@ h3 {
 
 .main-cotielog__menu li a {
   display: block;
+  cursor: url("../img/cursor_hand.png"), auto;
 }
 
 .main-cotielog__menu li .title {
