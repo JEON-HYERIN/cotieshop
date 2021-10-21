@@ -415,11 +415,11 @@ p.description {
 }
 
 .main-brand .maxbone.scroll-spy .floating {
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
 }
 
 .main-brand .maxbone.scroll-spy.show .floating {
-  transform: translateX(0);
+  /* transform: translateX(0); */
 }
 
 .main-brand .maxbone .content-group {
@@ -485,15 +485,15 @@ p.description {
 }
 
 .main-brand .milk-and-pepper.scroll-spy .floating.floating1 {
-  transform: translateX(100%);
+  /* transform: translateX(100%); */
 }
 
 .main-brand .milk-and-pepper.scroll-spy .floating.floating2 {
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
 }
 
 .main-brand .milk-and-pepper.scroll-spy.show .floating {
-  transform: translateX(0);
+  /* transform: translateX(0); */
 }
 
 

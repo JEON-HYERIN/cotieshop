@@ -289,6 +289,16 @@ h3 {
 .main-visual .image {
   width: 730px;
   margin: 0 auto;
+  animation: rotate .5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .main-visual .description {
