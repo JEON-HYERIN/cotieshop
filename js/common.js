@@ -15,11 +15,11 @@ window.addEventListener('scroll', function () {
 });
 
 // 모바일메뉴
-const menuBtn = header.querySelector('.menu-btn');
-const closeBtn = header.querySelector('.close-btn');
-const gnb = header.querySelector('#gnb');
-const gnbLists = header.querySelectorAll('#gnb > ul > li');
-const gnbAnchers = header.querySelectorAll('#gnb > ul > li > a');
+var menuBtn = header.querySelector('.menu-btn');
+var closeBtn = header.querySelector('.close-btn');
+var gnb = header.querySelector('#gnb');
+var gnbLists = header.querySelectorAll('#gnb > ul > li');
+var gnbAnchers = header.querySelectorAll('#gnb > ul > li > a');
 menuBtn.addEventListener('click', function () {
   menuBtn.classList.add('invisible');
   closeBtn.classList.remove('invisible');
@@ -43,6 +43,16 @@ gnbAnchers.forEach(function (gnbAncher) {
     event.target.parentElement.classList.toggle('active');
   });
 });
+
+// 검색창 toggle
+$('#header .top-menu li:eq(0) a').on('click', function () {
+  $('.search-modal__wrap').removeClass('invisible');
+});
+
+$('.search-modal__header .close-btn').on('click', function () {
+  $('.search-modal__wrap').addClass('invisible');
+});
+
 
 // 올해년도 구하기
 var thisYear = document.querySelector('.this-year');
