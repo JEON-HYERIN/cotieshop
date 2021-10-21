@@ -1012,13 +1012,17 @@ h3 {
     height: 75px;
   }
 
+  #header h1 {
+    left: 20px;
+  }
+
   #header h1 a {
-    width: 90px;
+    width: 95px;
   }
 
   #header .menu-btn {
     position: absolute;
-    right: 25px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     width: 30px;
@@ -1166,7 +1170,7 @@ h3 {
   }
 
   #header .top-menu li:first-child a i.fas {
-    font-size: 23px;
+    font-size: 27px;
   }
 
   #header .top-menu li:first-child::before {

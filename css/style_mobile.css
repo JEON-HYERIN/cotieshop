@@ -127,7 +127,7 @@ p.description {
 
 #header h1 {
   position: absolute;
-  left: 15px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -138,7 +138,7 @@ p.description {
 
 #header .menu-btn {
   position: absolute;
-  right: 25px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   width: 30px;
@@ -271,7 +271,7 @@ p.description {
 
 #header .top-menu {
   position: absolute;
-  right: 75px;
+  right: 70px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -902,9 +902,144 @@ p.description {
 
 
 /* 미디어쿼리 */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 
+  /* COMMON */
+  h3 {
+    font-size: 56px;
+  }
 
+  p.description {
+    font-size: 17px;
+  }
+
+  .btn {
+    width: 210px;
+    font-size: 16px;
+  }
+
+  /* HEADER */
+  #header h1 a {
+    width: 95px;
+  }
+
+  #header .top-menu {
+    right: 75px;
+  }
+
+  #header .top-menu li:first-child a i.fas {
+    font-size: 27px;
+  }
+
+  /* VISUAL */
+  .main-visual .inner {
+    padding-top: 30px;
+  }
+
+  .main-visual .title {
+    bottom: -30px;
+  }
+
+  .main-visual .description {
+    margin: 40px 0;
+  }
+
+  /* BRAND */
+  .main-brand .pet-so-chic .content-group .title {
+    width: 170px;
+  }
+
+  .main-brand .content-group .description {
+    margin: 30px auto 53px;
+  }
+
+  .main-brand .maxbone .content-group .title {
+    width: 260px;
+  }
+
+  .main-brand .maxbone .content-group::before {
+    width: 200px;
+    height: 228px;
+    bottom: -130px;
+  }
+
+  .main-brand .milk-and-pepper .content-group .title {
+    width: 250px;
+  }
+
+  .main-brand .milk-and-pepper .content-group::before {
+    width: 250px;
+    height: 214px;
+    right: -95px;
+    bottom: -70px;
+  }
+
+  .main-brand .milk-and-pepper .content-group::after {
+    width: 85px;
+    height: 95px;
+    right: 140px;
+    bottom: -110px;
+  }
+
+  /* NEW */
+  .main-new__menu li .text-group .title {
+    font-size: 18px;
+  }
+
+  .main-new__menu li .text-group .description {
+    font-size: 16px;
+  }
+
+  /* SLOGAN */
+  .main-slogan {
+    margin: 40px 0;
+  }
+
+  .main-slogan .text-group {
+    padding: 40px 0;
+  }
+  
+  .main-slogan .text-group span {
+    font-size: 60px;
+  }
+
+  /* COTIELOG */
+  .main-cotielog__menu li .title {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+
+  /* FOOTER */
+  .footer__menu li a {
+    font-size: 38px;
+  }
+
+  .footer__links li a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer__links li a i.fab {
+    line-height: 48px;
+    font-size: 20px;
+  }
+
+  #footer .info a {
+    font-size: 17px;
+  }
+
+  #footer .info > div {
+    font-size: 15px;
+  }
+
+  #footer .copyright {
+    font-size: 16px;
+  }
+
+  /* TO TOP */
+  #to-top {
+    font-size: 18px;
+  }
 }
 
 
