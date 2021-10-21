@@ -227,7 +227,7 @@ h3 {
 #header .top-menu li:first-child::before {
   width: 10px;
   height: 6px;
-  left: 17%;
+  left: 20%;
   top: 30%;
   background-image: url("../img/search_eye.svg");
   transition: opacity .5s;
@@ -253,6 +253,7 @@ h3 {
 
 #header .top-menu li:first-child a {
   position: relative;
+  font-size: 23px;
 }
 
 #header .top-menu li:last-child a {
@@ -969,18 +970,18 @@ h3 {
 }
 
 #search-modal {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 70vh;
+  height: 70%;
   background-color: #F0EDE6;
 }
 
 #search-modal .inner {
   width: 100%;
   height: 100%;
-  padding: 20px 15px 0;
+  padding: 20px 15px;
   box-sizing: border-box;
 }
 
@@ -1039,20 +1040,21 @@ h3 {
   transform: translateY(-50%);
   font-size: 25px;
 }
-.search-modal__field a i.fas {}
-
-.search-modal__keyword {}
-.search-modal__keyword ul {}
 
 .search-modal__keyword ul li + li {
   margin-top: 5px;
 }
 
-
 .search-modal__keyword ul li a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.6em;
+}
+
+#search-modal .floating {
+  width: 300px;
+  left: -155px;
+  bottom: 20px;
 }
 
 /* 미디어쿼리 */
@@ -1271,7 +1273,7 @@ h3 {
     transform: translateY(-50%);
   }
 
-  #header .top-menu li:first-child a i.fas {
+  #header .top-menu li:first-child a {
     font-size: 27px;
   }
 
@@ -1298,6 +1300,11 @@ h3 {
   
   #header .top-menu li:last-child {
     display: none;
+  }
+
+  /* SEARCH MODAL */
+  #search-modal .inner {
+    padding: 30px;
   }
 
   /* MAIN */
