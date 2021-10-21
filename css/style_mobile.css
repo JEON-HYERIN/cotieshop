@@ -13,7 +13,7 @@ br.only-pc {
 
 #wrapper {
   min-width: 320px;
-  max-width: 1023.9px;
+  max-width: 850px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -37,6 +37,7 @@ h3 {
 }
 
 p.description {
+  max-width: 80%;
   padding: 0 24px;
   font-family: sans-serif;
   font-size: 15px;
@@ -160,6 +161,7 @@ p.description {
 #header .menu-btn span:first-child {
   top: 8px;
 }
+
 #header .menu-btn span:last-child {
   bottom: 8px;
 }
@@ -181,8 +183,7 @@ p.description {
   left: -100%;
   top: 0;
   width: 100%;
-  height: 100vh;
-  padding: 50px 34px;
+  height: 100%;
   box-sizing: border-box;
   background-color: #F0EDE6;
   transition: left .5s;
@@ -191,6 +192,7 @@ p.description {
 
 #gnb.open {
   left: 0;
+  padding: 50px 34px;
   pointer-events: auto;
 }
 
@@ -226,10 +228,12 @@ p.description {
 }
 
 #gnb > ul > li:last-child a {
+  width: 100%;
   font-size: 32px;
 }
 
 #gnb > ul > li > a {
+  width: 40%;
   padding: 15px 0;
   font-size: 25px;
 }
@@ -307,6 +311,10 @@ p.description {
   position: relative;
 }
 
+#header .top-menu li:last-child {
+  display: none;
+}
+
 /* MAIN */
 #main {
   margin-top: 75px;
@@ -325,8 +333,7 @@ p.description {
 }
 
 .main-visual .image {
-  padding: 0 24px;
-  margin: 0 auto;
+  margin: 0 24px;
   animation: rotate_image .5s;
 }
 
@@ -340,7 +347,7 @@ p.description {
 }
 
 .main-visual .description {
-  margin: 20px 0;
+  margin: 20px auto;
   padding: 0 24px;
 }
 
@@ -354,7 +361,6 @@ p.description {
 }
 
 .main-brand .inner {
-  /* padding: 100px 0 130px; */
   padding: 100px 0;
 }
 
@@ -374,7 +380,7 @@ p.description {
 }
 
 .main-brand .image {
-  padding: 0 24px;
+  margin: 0 24px;
 }
 
 .main-brand .content-group {
@@ -386,7 +392,7 @@ p.description {
 }
 
 .main-brand .content-group .description {
-  margin: 20px 0 30px;
+  margin: 20px auto 30px;
 }
 
 .main-brand .pattern {
@@ -888,26 +894,4 @@ p.description {
 
 
 
-/* 미디어쿼리 */
-@media screen and (max-width: 1200px) {
-  
-  /* index.html */
-  /* HEADER */
- 
 
-
-
-  /* VISUAL */
-
-
-  /* BRAND */
-
-
-  /* NEW */
- 
-
-  /* FOOTER */
-  #footer .inner {
-    
-  }
-}
