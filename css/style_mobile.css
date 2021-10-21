@@ -393,6 +393,7 @@ p.description {
 }
 
 .main-brand .content-group .description {
+  max-width: 75%;
   margin: 20px auto 30px;
 }
 
@@ -903,14 +904,7 @@ p.description {
 /* 미디어쿼리 */
 @media screen and (min-width: 600px) {
 
-  /* COMMON */
-  .main-brand .description br.only-pc {
-    content: normal;
-  }
 
-  .main-brand .description br.only-m {
-    content: '';
-  }
 }
 
 
