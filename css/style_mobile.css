@@ -632,28 +632,30 @@ p.description {
   text-align: left;
 }
 
-.main-cotielog__menu {
+.main-cotielog__menu li {
   overflow: hidden;
 }
 
-.main-cotielog__menu li {
-  display: inline-block;
-  width: 216px;
-  vertical-align: top;
-
+.main-cotielog__menu li:last-child {
+  display: none;
 }
 
 .main-cotielog__menu li + li {
   margin-top: 58px;
 }
 
-.main-cotielog__menu li:nth-child(1),
-.main-cotielog__menu li:nth-child(3) {
+.main-cotielog__menu li:nth-child(1) a,
+.main-cotielog__menu li:nth-child(3) a {
   float: left;
 }
 
-.main-cotielog__menu li:nth-child(2) {
+.main-cotielog__menu li:nth-child(2) a {
   float: right;
+}
+
+.main-cotielog__menu li a {
+  width: 70%;
+  vertical-align: top;
 }
 
 .main-cotielog__menu li .title {

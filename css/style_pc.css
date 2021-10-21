@@ -708,6 +708,10 @@ h3 {
   margin-left: 100px;
 }
 
+.main-cotielog__menu li a {
+  display: block;
+}
+
 .main-cotielog__menu li .title {
   display: block;
   padding-top: 18px;
