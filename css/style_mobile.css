@@ -407,7 +407,8 @@ p.description {
 
 .main-brand .maxbone .floating {
   content: '';
-  position: absolute;
+  /* position: absolute; */
+  position: static;
   left: -30px;
   bottom: 267px;
   width: 153px;
@@ -465,22 +466,22 @@ p.description {
 
 .main-brand .milk-and-pepper .floating {
   content: '';
-  position: absolute;
   transition: .5s;
+  position: static;
 }
 
 .main-brand .milk-and-pepper .floating.floating1 {
   width: 160px;
-  right: -1px;
-  bottom: -92px;
+  /* right: -1px; */
+  /* bottom: -92px; */
   z-index: 1;
   transition-delay: 0s;
 }
 
 .main-brand .milk-and-pepper .floating.floating2 {
   width: 55px;
-  right: 96px;
-  bottom: -115px;
+  /* right: 96px; */
+  /* bottom: -115px; */
   transition-delay: .3s;
 }
 
