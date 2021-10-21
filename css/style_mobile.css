@@ -407,26 +407,45 @@ p.description {
 }
 
 .main-brand .maxbone .floating {
-  content: '';
-  /* position: absolute; */
-  position: static;
+  position: absolute;
   left: -30px;
   bottom: 267px;
   width: 153px;
   transition: 1s;
+  display: none;
 }
 
 .main-brand .maxbone.scroll-spy .floating {
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
 }
 
 .main-brand .maxbone.scroll-spy.show .floating {
-  /* transform: translateX(0); */
+  transform: translateX(0);
+}
+
+.main-brand .maxbone.scroll-spy .content-group::before {
+  transform: translateX(-100%);
+}
+
+.main-brand .maxbone.scroll-spy.show .content-group::before {
+  transform: translateX(0);
+}
+
+.main-brand .maxbone .content-group::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  bottom: -117px;
+  width: 153px;
+  height: 170px;
+  background: url("../img/layer_toy.png") no-repeat center/cover;
+  transition: .5s;
 }
 
 .main-brand .maxbone .content-group {
-  
+  position: relative;
 }
+
 .main-brand .maxbone .content-group .title {
   width: 160px;
 }
@@ -487,15 +506,30 @@ p.description {
 }
 
 .main-brand .milk-and-pepper.scroll-spy .floating.floating1 {
-  /* transform: translateX(100%); */
+  transform: translateX(100%);
 }
 
 .main-brand .milk-and-pepper.scroll-spy .floating.floating2 {
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
 }
 
 .main-brand .milk-and-pepper.scroll-spy.show .floating {
-  /* transform: translateX(0); */
+  transform: translateX(0);
+}
+
+.main-brand .milk-and-pepper.scroll-spy .content-group::before {
+  /* transform: translateX(100%); */
+  transform: translateX(150px);
+}
+
+.main-brand .milk-and-pepper.scroll-spy .content-group::after {
+  /* transform: translateX(-100%); */
+  transform: translateX(-150px);
+}
+
+.main-brand .milk-and-pepper.scroll-spy.show .content-group::before,
+.main-brand .milk-and-pepper.scroll-spy.show .content-group::after {
+  transform: translateX(0);
 }
 
 .main-brand .milk-and-pepper .content-group::before,
@@ -505,6 +539,7 @@ p.description {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: 1s;
 }
 
 .main-brand .milk-and-pepper .content-group::before {
@@ -514,6 +549,7 @@ p.description {
   bottom: -104px;
   z-index: 1;
   background-image: url("../img/layer_hand.png");
+  transition-delay: 0s;
 }
 
 .main-brand .milk-and-pepper .content-group::after {
@@ -522,6 +558,7 @@ p.description {
   right: 71px;
   bottom: -122px;
   background-image: url("../img/layer_heart.png");
+  transition-delay: .3s;
 }
 
 .main-brand .milk-and-pepper .content-group {
