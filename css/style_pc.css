@@ -914,8 +914,8 @@ h3 {
 /* TO TOP */
 #to-top {
   position: fixed;
-  bottom: 30px;
   right: 30px;
+  bottom: 30px;
   z-index: 9;
   font-size: 22px;
   font-weight: 700;
