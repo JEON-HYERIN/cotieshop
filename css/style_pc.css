@@ -289,10 +289,10 @@ h3 {
 .main-visual .image {
   width: 730px;
   margin: 0 auto;
-  animation: rotate .5s;
+  animation: rotate_image .5s;
 }
 
-@keyframes rotate {
+@keyframes rotate_image {
   0% {
     transform: rotate(-45deg);
   }
@@ -471,8 +471,6 @@ h3 {
 }
 
 .main-brand .maxbone .floating {
-  content: '';
-  position: absolute;
   left: -150px;
   top: 45%;
   width: 330px;
@@ -480,7 +478,7 @@ h3 {
 }
 
 .main-brand .maxbone.scroll-spy .floating {
-  transform: translateX(-100%);
+  transform: translateX(-150px);
 }
 
 .main-brand .maxbone.scroll-spy.show .floating {
@@ -518,7 +516,6 @@ h3 {
   width: 48px;
   top: 73%;
   transition: .5s;
-  /* animation: fade-in 1s ease-in-out infinite alternate; */
   display: none;
 }
 
@@ -544,8 +541,6 @@ h3 {
 }
 
 .main-brand .milk-and-pepper .floating {
-  content: '';
-  position: absolute;
   transition: .5s;
 }
 
@@ -553,22 +548,20 @@ h3 {
   width: 347px;
   right: -145px;
   top: -256px;
-  transition-delay: 0s;
 }
 
 .main-brand .milk-and-pepper .floating.floating2 {
   width: 117px;
   right: 156px;
   top: 0;
-  transition-delay: .3s;
 }
 
 .main-brand .milk-and-pepper.scroll-spy .floating.floating1 {
-  transform: translateX(100%);
+  transform: translateX(150px);
 }
 
 .main-brand .milk-and-pepper.scroll-spy .floating.floating2 {
-  transform: translateX(-100%);
+  transform: translateX(-150px);
 }
 
 .main-brand .milk-and-pepper.scroll-spy.show .floating {

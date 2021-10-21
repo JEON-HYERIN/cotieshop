@@ -186,10 +186,12 @@ p.description {
   box-sizing: border-box;
   background-color: #F0EDE6;
   transition: left .5s;
+  pointer-events: none;
 }
 
 #gnb.open {
   left: 0;
+  pointer-events: auto;
 }
 
 #gnb > ul {
@@ -325,6 +327,16 @@ p.description {
 .main-visual .image {
   padding: 0 24px;
   margin: 0 auto;
+  animation: rotate_image .5s;
+}
+
+@keyframes rotate_image {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .main-visual .description {
@@ -406,25 +418,8 @@ p.description {
   margin: 60px 0 100px;
 }
 
-.main-brand .maxbone .floating {
-  position: absolute;
-  left: -30px;
-  bottom: 267px;
-  width: 153px;
-  transition: 1s;
-  display: none;
-}
-
-.main-brand .maxbone.scroll-spy .floating {
-  transform: translateX(-100%);
-}
-
-.main-brand .maxbone.scroll-spy.show .floating {
-  transform: translateX(0);
-}
-
 .main-brand .maxbone.scroll-spy .content-group::before {
-  transform: translateX(-100%);
+  transform: translateX(-150px);
 }
 
 .main-brand .maxbone.scroll-spy.show .content-group::before {
@@ -439,7 +434,7 @@ p.description {
   width: 153px;
   height: 170px;
   background: url("../img/layer_toy.png") no-repeat center/cover;
-  transition: .5s;
+  transition: 1s;
 }
 
 .main-brand .maxbone .content-group {
@@ -484,46 +479,11 @@ p.description {
   }
 }
 
-.main-brand .milk-and-pepper .floating {
-  content: '';
-  transition: .5s;
-  display: none;
-}
-
-.main-brand .milk-and-pepper .floating.floating1 {
-  width: 160px;
-  right: -1px;
-  bottom: -92px;
-  z-index: 1;
-  transition-delay: 0s;
-}
-
-.main-brand .milk-and-pepper .floating.floating2 {
-  width: 55px;
-  right: 96px;
-  bottom: -115px;
-  transition-delay: .3s;
-}
-
-.main-brand .milk-and-pepper.scroll-spy .floating.floating1 {
-  transform: translateX(100%);
-}
-
-.main-brand .milk-and-pepper.scroll-spy .floating.floating2 {
-  transform: translateX(-100%);
-}
-
-.main-brand .milk-and-pepper.scroll-spy.show .floating {
-  transform: translateX(0);
-}
-
 .main-brand .milk-and-pepper.scroll-spy .content-group::before {
-  /* transform: translateX(100%); */
   transform: translateX(150px);
 }
 
 .main-brand .milk-and-pepper.scroll-spy .content-group::after {
-  /* transform: translateX(-100%); */
   transform: translateX(-150px);
 }
 
@@ -545,20 +505,18 @@ p.description {
 .main-brand .milk-and-pepper .content-group::before {
   width: 160px;
   height: 135px;
-  right: -40px;
-  bottom: -104px;
+  right: -58px;
+  bottom: -70px;
   z-index: 1;
   background-image: url("../img/layer_hand.png");
-  transition-delay: 0s;
 }
 
 .main-brand .milk-and-pepper .content-group::after {
   width: 55px;
   height: 60px;
-  right: 71px;
-  bottom: -122px;
+  right: 90px;
+  bottom: -110px;
   background-image: url("../img/layer_heart.png");
-  transition-delay: .3s;
 }
 
 .main-brand .milk-and-pepper .content-group {
