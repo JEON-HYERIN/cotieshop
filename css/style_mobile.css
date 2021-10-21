@@ -906,6 +906,7 @@ p.description {
 
   /* COMMON */
   h3 {
+    margin-bottom: 45px;
     font-size: 56px;
   }
 
@@ -1010,6 +1011,10 @@ p.description {
   }
 
   /* FOOTER */
+  #footer .inner {
+    padding: 60px 24px 70px;
+  }
+
   .footer__menu li a {
     font-size: 38px;
   }
