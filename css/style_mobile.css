@@ -403,7 +403,7 @@ p.description {
 
 .search-modal__keyword ul li a {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6em;
 }
 
@@ -1029,6 +1029,27 @@ p.description {
 
   #header .top-menu li:first-child a i.fas {
     font-size: 27px;
+  }
+
+  /* SEARCH MODAL */
+  #search-modal .inner {
+    padding: 30px;
+  }
+
+  .search-modal__header .close-btn {
+    font-size: 50px;
+  }
+
+  .search-modal__field input {
+    font-size: 26px;
+  }
+
+  .search-modal__field a {
+    font-size: 25px;
+  }
+
+  .search-modal__keyword ul li a {
+    font-size: 16px;
   }
 
   /* VISUAL */
