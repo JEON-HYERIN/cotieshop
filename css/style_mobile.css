@@ -382,6 +382,7 @@ p.description {
   letter-spacing: -1px;
   background-color: transparent;
   border-bottom: 2px solid #000;
+  border-radius: 0;
 }
 
 .search-modal__field input::placeholder {
@@ -433,7 +434,7 @@ p.description {
 .main-visual .image {
   width: 87%;
   margin: 0 auto;
-  animation: rotate_image .5s;
+  animation: rotate_image 1s;
 }
 
 @keyframes rotate_image {
