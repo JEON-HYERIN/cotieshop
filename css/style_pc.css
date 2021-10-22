@@ -326,7 +326,6 @@ h3 {
 }
 
 .search-modal__field input {
-  display: block;
   width: 100%;
   height: 64px;
   padding: 0;
@@ -335,9 +334,10 @@ h3 {
   font-family: sans-serif;
   font-size: 26px;
   font-weight: 700;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   background-color: transparent;
   border-bottom: 5px solid #000;
+  border-radius: 0;
 }
 
 .search-modal__field input::placeholder {
