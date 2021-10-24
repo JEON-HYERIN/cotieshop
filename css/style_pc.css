@@ -1102,6 +1102,48 @@ h3 {
   width: 117px;
 }
 
+/* ABOUT */
+.brand-about {
+  text-align: center;
+}
+
+.brand-about .inner {
+  padding-top: 73px;
+}
+
+.brand-about .inner > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.brand-about .image {
+  width: 48%;
+}
+
+.brand-about .content-group {
+  width: 50%;
+  color: #000;
+}
+
+.brand-about .content-group .title {
+  width: 322px;
+  margin: 0 auto;
+}
+
+.brand-about .content-group em {
+  display: block;
+  margin: 26px 0 17px;
+  font-size: 19px;
+}
+
+.brand-about .content-group .description {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8em;
+  letter-spacing: -0.4px;
+}
+
+
 
 
 /* 미디어쿼리 */
