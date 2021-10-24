@@ -92,7 +92,8 @@ p.description {
   opacity: 1;
 }
 
-.floating {
+.floating,
+.pattern {
   position: absolute;
 }
 
@@ -661,7 +662,6 @@ p.description {
 }
 
 .main-brand .pattern {
-  position: absolute;
   display: none;
 }
 
@@ -720,25 +720,6 @@ p.description {
   position: relative;
   width: 60%;
   margin: 60px auto 100px;
-}
-
-.main-brand .maxbone .pattern {
-  width: 48px;
-  top: 73%;
-  transition: .5s;
-  display: none;
-}
-
-.main-brand .maxbone .pattern.pattern1 {
-  left: 20%;
-}
-
-.main-brand .maxbone .pattern.pattern2 {
-  left: 15%;
-}
-
-.main-brand .maxbone .pattern.pattern3 {
-  left: 10%;
 }
 
 @keyframes fade-in {

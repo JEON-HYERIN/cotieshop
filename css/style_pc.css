@@ -81,7 +81,8 @@ h3 {
   opacity: 1;
 }
 
-.floating {
+.floating,
+.pattern {
   position: absolute;
 }
 
@@ -681,10 +682,6 @@ h3 {
   position: relative;
 }
 
-.main-brand .pattern {
-  position: absolute;
-}
-
 .main-brand .pet-so-chic .image {
   width: 48%;
 }
@@ -1188,6 +1185,12 @@ body.brands .content-group .description {
 }
 
 /* VIDEO */
+.brand-video .pattern {
+  
+}
+.brand-video .pattern.pattern1 {}
+.brand-video .pattern.pattern2 {}
+.brand-video .pattern.pattern3 {}
 .brand-video .video__area {
   width: 95%;
   margin: 207px auto 0;
