@@ -1188,10 +1188,21 @@ body.brands .content-group .description {
 .brand-video .pattern {
   
 }
-.brand-video .pattern.pattern1 {}
-.brand-video .pattern.pattern2 {}
-.brand-video .pattern.pattern3 {}
+
+.brand-video .pattern.pattern1 {
+  width: 45px;
+}
+
+.brand-video .pattern.pattern2 {
+  width: 65px;
+}
+
+.brand-video .pattern.pattern3 {
+  width: 80px;
+}
+
 .brand-video .video__area {
+  position: relative;
   width: 95%;
   margin: 207px auto 0;
 }
