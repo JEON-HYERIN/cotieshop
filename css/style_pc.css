@@ -1187,6 +1187,12 @@ body.brands .content-group .description {
   left: -25px;
 }
 
+/* VIDEO */
+.brand-video .video__area {
+  width: 95%;
+  margin: 207px auto 0;
+}
+
 
 
 
