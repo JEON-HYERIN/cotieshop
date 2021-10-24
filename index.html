@@ -78,13 +78,13 @@
           <h2 class="hide">메인 네비게이션</h2>
           <ul>
             <li>
-              <a href="#">Brands</a>
+              <a href="./brands.html">Brands</a>
               <ul class="sub-menu">
                 <li>
                   <a href="#"><span>펫 소 시크</span></a>
                 </li>
                 <li><a href="#"><span>맥스본</span></a></li>
-                <li><a href="#"><span>밀크 앤 페퍼</span></a></li>
+                <li><a href="./brands.html"><span>밀크 앤 페퍼</span></a></li>
               </ul>
             </li>
             <li>
@@ -168,7 +168,8 @@
 
     <!-- MAIN -->
     <main id="main">
-      <section class="main-visual">
+      <!-- VISUAL -->
+      <section class="main-visual visual">
         <h2 class="hide">비주얼 영역</h2>
         <div class="inner">
 
@@ -667,24 +668,7 @@
 
   <script>
     'use strict';
-    const spyEls = document.querySelectorAll('.scroll-spy');
-    spyEls.forEach(function (spyEl) {
-      new ScrollMagic
-      .Scene({
-        triggerElement: spyEl,
-        triggerHook: 0.8
-      })
-      .setClassToggle(spyEl, 'show')
-      .addTo(new ScrollMagic.Controller());
-    });
 
-    const patterns = document.querySelectorAll('.main-brand .maxbone .pattern');
-    // patterns.forEach(function (pattern) {
-    //   gsap.to(pattern, 1, {
-    //     delay: (pattern + 1) * .7,
-    //     display: 'block'
-    //   })
-    // });
   </script>
 </body>
 </html>

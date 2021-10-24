@@ -92,3 +92,14 @@ var chosenImgUrl = imgUrl[Math.floor(Math.random() * imgUrl.length)];
 
 imgEl.setAttribute('src', `./img/${chosenImgUrl}`);
 
+// SCROLL MAGIC
+const spyEls = document.querySelectorAll('.scroll-spy');
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic
+  .Scene({
+    triggerElement: spyEl,
+    triggerHook: 0.8
+  })
+  .setClassToggle(spyEl, 'show')
+  .addTo(new ScrollMagic.Controller());
+});
