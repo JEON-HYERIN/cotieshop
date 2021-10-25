@@ -4,6 +4,10 @@ $(document).on('click', 'a[href="#"]', function (e) {
   e.preventDefault();
 });
 
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
 var header = document.querySelector('#header');
 
 window.addEventListener('scroll', function () {
