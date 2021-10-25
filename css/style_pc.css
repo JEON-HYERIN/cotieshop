@@ -23,6 +23,7 @@ br.only-m {
 }
 
 video {
+  position: relative;
   display: block;
   width: 100%;
   cursor: url("../img/cursor_see.png"), auto;
@@ -678,10 +679,6 @@ h3 {
   color: #000;
 }
 
-.main-brand .video__area video {
-  position: relative;
-}
-
 .main-brand .pet-so-chic .image {
   width: 48%;
 }
@@ -1185,20 +1182,22 @@ body.brands .content-group .description {
 }
 
 /* VIDEO */
-.brand-video .pattern {
-  
-}
-
 .brand-video .pattern.pattern1 {
   width: 45px;
+  left: 180px;
+  top: -45px;
 }
 
 .brand-video .pattern.pattern2 {
   width: 65px;
+  right: 415px;
+  top: -110px;
 }
 
 .brand-video .pattern.pattern3 {
   width: 80px;
+  right: 190px;
+  top: -60px;
 }
 
 .brand-video .video__area {
@@ -1207,7 +1206,31 @@ body.brands .content-group .description {
   margin: 207px auto 0;
 }
 
+.brand-video .video__area::before,
+.brand-video .video__area::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+.brand-video .video__area::before {
+  right: -3%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 50px;
+  background-image: url("../img/pattern-grass-03.jpg");
+}
+
+.brand-video .video__area::after {
+  right: 370px;
+  bottom: -85px;
+  width: 83px;
+  height: 43px;
+  background-image: url("../img/pattern-grass-04.jpg");
+}
 
 
 

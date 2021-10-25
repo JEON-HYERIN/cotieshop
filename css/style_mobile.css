@@ -24,6 +24,7 @@ br.only-pc {
 }
 
 video {
+  position: relative;
   display: block;
   width: 100%;
   cursor: url("../img/cursor_see.png"), auto;
