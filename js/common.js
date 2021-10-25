@@ -18,6 +18,17 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// gnb영역
+$('#gnb > ul > li > a').on('mouseenter focusin', function () {
+  var index = $('#gnb > ul > li').index($(this).parent());
+  $('#gnb > ul > li').removeClass('active');
+  $('#gnb > ul > li:eq(' + index + ')').addClass('active');
+});
+
+$('#header').on('mouseleave', function () {
+  $('#gnb > ul > li').removeClass('active');
+});
+
 // 모바일메뉴
 var menuBtn = header.querySelector('.menu-btn');
 var closeBtn = header.querySelector('.close-btn');

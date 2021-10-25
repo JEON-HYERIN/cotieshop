@@ -193,7 +193,11 @@ h3 {
   padding: 10px 20px;
 }
 
-#gnb > ul > li:hover .sub-menu {
+/* #gnb > ul > li:hover .sub-menu {
+  display: block;
+} */
+
+#gnb > ul > li.active .sub-menu {
   display: block;
 }
 
@@ -227,10 +231,11 @@ h3 {
   height: 3px;
   background-color: #fff;
   opacity: 0;
-  transition: .3s;
+  transition: .1s;
 }
 
-#gnb > ul > li .sub-menu li a span:hover::after {
+#gnb > ul > li .sub-menu li a:hover span::after,
+#gnb > ul > li .sub-menu li a:focus span::after {
   opacity: 1;
 }
 
