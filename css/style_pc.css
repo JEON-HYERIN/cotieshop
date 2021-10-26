@@ -1180,7 +1180,8 @@ body.brands .content-group .description {
   margin-bottom: 17px;
 }
 
-.brand-story .image {
+.brand-story .image.pc {
+  display: inline-block !important;
   width: 48%;
 }
 
