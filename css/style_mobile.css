@@ -728,15 +728,6 @@ p.description {
   margin: 60px auto 100px;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .main-brand .milk-and-pepper.scroll-spy .content-group::before {
   transform: translateX(150px);
 }
