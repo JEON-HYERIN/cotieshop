@@ -836,19 +836,23 @@ p.description {
   top: 0;
   opacity: 1;
 }
+
 .main-new__menu li .image img.back {
   opacity: 0;
 }
+
 .main-new__menu li .text-group {
   margin-top: 25px;
   color: #000;
 }
+
 .main-new__menu li .text-group .title {
   display: block;
   margin-bottom: 5px;
   font-size: 15px;
   text-align: left;
 }
+
 .main-new__menu li .text-group .description {
   max-width: 90%;
   padding: 0;

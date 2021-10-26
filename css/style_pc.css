@@ -137,6 +137,89 @@ h3 {
   }
 }
 
+.product .swiper .swiper-slide {
+  margin-bottom: 90px;
+}
+
+.product .swiper .swiper-slide a {
+  display: block;
+  cursor: url("../img/cursor_hand.png"), auto;
+}
+
+.product .swiper-slide .image {
+  position: relative;
+}
+
+.product .swiper-slide .image img {
+  transition: opacity .5s;
+}
+
+.product .swiper-slide .image:hover img.front {
+  opacity: 0;
+}
+
+.product .swiper-slide .image:hover img.back {
+  opacity: 1;
+}
+
+.product .swiper-slide .image img.front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.product .swiper-slide .image img.back {
+  opacity: 0;
+}
+
+.product .swiper-slide .text-group {
+  margin-top: 25px;
+  color: #000;
+}
+
+.product .swiper-slide .text-group .title {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+.product .swiper-slide .text-group .description {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product .swiper .swiper-pagination {
+  width: auto;
+  left: 15px;
+  padding-top: 30px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.product .swiper .swiper-prev,
+.product .swiper .swiper-next {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.product .swiper .swiper-prev span,
+.product .swiper .swiper-next span {
+  font-size: 40px;
+}
+
+.product .swiper .swiper-prev {
+  left: 45%;
+  cursor: url("../img/cursor_hand_tiny.png"), auto;
+}
+
+.product .swiper .swiper-next {
+  right: 45%;
+  cursor: url("../img/cursor_pointer.png"), auto;
+}
+
 /* HEADER */
 #header {
   position: fixed;
@@ -894,78 +977,6 @@ h3 {
   margin-bottom: 90px;
 }
 
-.main-new .swiper .swiper-slide a {
-  display: block;
-  cursor: url("../img/cursor_hand.png"), auto;
-}
-
-.main-new .swiper-slide .image {
-  position: relative;
-}
-.main-new .swiper-slide .image img {
-  transition: opacity .5s;
-}
-
-.main-new .swiper-slide .image:hover img.front {
-  opacity: 0;
-}
-
-.main-new .swiper-slide .image:hover img.back {
-  opacity: 1;
-}
-.main-new .swiper-slide .image img.front {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 1;
-}
-.main-new .swiper-slide .image img.back {
-  opacity: 0;
-}
-.main-new .swiper-slide .text-group {
-  margin-top: 25px;
-  color: #000;
-}
-.main-new .swiper-slide .text-group .title {
-  display: block;
-  margin-bottom: 7px;
-  font-size: 16px;
-}
-.main-new .swiper-slide .text-group .description {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.main-new .swiper .swiper-pagination {
-  width: auto;
-  left: 15px;
-  padding-top: 30px;
-  font-size: 14px;
-  text-align: left;
-}
-
-.main-new .swiper .swiper-prev,
-.main-new .swiper .swiper-next {
-  position: absolute;
-  bottom: 0;
-  cursor: pointer;
-}
-
-.main-new .swiper .swiper-prev span,
-.main-new .swiper .swiper-next span {
-  font-size: 40px;
-}
-
-.main-new .swiper .swiper-prev {
-  left: 45%;
-  cursor: url("../img/cursor_hand_tiny.png"), auto;
-}
-
-.main-new .swiper .swiper-next {
-  right: 45%;
-  cursor: url("../img/cursor_pointer.png"), auto;
-}
-
 /* SLOGAN */
 .main-slogan {
   border-top: 1px solid #000;
@@ -1066,7 +1077,7 @@ h3 {
 
 /* brands.html */
 /* COMMON */
-body.brands .text-group em {
+body.brands .content-group em {
   display: block;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 19px;
@@ -1075,7 +1086,7 @@ body.brands .text-group em {
   color: #000;
 }
 
-body.brands .text-group .description {
+body.brands .content-group .description {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -1143,16 +1154,16 @@ body.brands .text-group .description {
   width: 48%;
 }
 
-.brand-about .text-group {
+.brand-about .content-group {
   width: 50%;
 }
 
-.brand-about .text-group .title {
+.brand-about .content-group .title {
   width: 322px;
   margin: 0 auto;
 }
 
-.brand-about .text-group em {
+.brand-about .content-group em {
   margin: 26px 0 17px;
 }
 
@@ -1162,12 +1173,12 @@ body.brands .text-group .description {
   vertical-align: middle;
 }
 
-.brand-story .text-group {
+.brand-story .content-group {
   width: 50%;
   text-align: left;
 }
 
-.brand-story .text-group .title {
+.brand-story .content-group .title {
   margin-bottom: 17px;
 }
 
@@ -1257,11 +1268,11 @@ body.brands .text-group .description {
   width: 48%;
 }
 
-.brand-value .text-group {
+.brand-value .content-group {
   text-align: center;
 }
 
-.brand-value .row:first-child .text-group {
+.brand-value .row:first-child .content-group {
   width: 50%;
 }
 
@@ -1269,7 +1280,7 @@ body.brands .text-group .description {
   margin-bottom: 17px;
 }
 
-.brand-value .row:last-child .text-group {
+.brand-value .row:last-child .content-group {
   width: 48%;
 }
 
@@ -1284,6 +1295,11 @@ body.brands .text-group .description {
   position: relative;
   left: 0;
   top: -130px;
+}
+
+/* CHOICE */
+.brand-choice h3 {
+  margin-bottom: 56px;
 }
 
 

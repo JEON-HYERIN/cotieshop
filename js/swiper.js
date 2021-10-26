@@ -1,4 +1,4 @@
-new Swiper('.main-new .swiper.pc ', {
+new Swiper('.product .swiper.pc ', {
   loop: true,
   autoplay: true,
   slidesPerView: 3,
@@ -8,7 +8,7 @@ new Swiper('.main-new .swiper.pc ', {
     nextEl: '.swiper-next'
   },
   pagination: {
-    el: '.main-new .swiper-pagination',
+    el: '.product .swiper-pagination',
     clickable: true,
     type: 'fraction'
   }
