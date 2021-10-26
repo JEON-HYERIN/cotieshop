@@ -1028,7 +1028,6 @@ body.brands p.description {
 
 .brand-visual .title {
   margin-bottom: 15px;
-  font-size: 32px;
 }
 
 .brand-visual .floating.floating1 {
@@ -1252,6 +1251,59 @@ body.brands p.description {
     font-size: 16px;
   }
 
+  /* FOOTER */
+  #footer .inner {
+    padding: 60px 24px 70px;
+  }
+
+  .footer__menu li a {
+    font-size: 38px;
+  }
+
+  .footer__links li a {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer__links li a i.fab {
+    line-height: 48px;
+    font-size: 20px;
+  }
+
+  #footer .info a {
+    font-size: 17px;
+  }
+
+  #footer .info > div {
+    font-size: 15px;
+  }
+
+  #footer .copyright {
+    font-size: 16px;
+  }
+
+  /* TO TOP */
+  #to-top {
+    font-size: 18px;
+  }
+
+  #to-top:hover .to-top-punch {
+    display: block;
+  }
+  
+  #to-top .to-top-punch .scratch1, 
+  #to-top .to-top-punch .scratch2 {
+    display: inline-block;
+    width: 5px;
+  }
+  
+  #to-top .to-top-punch .punch {
+    width: 25px;
+    margin: 0 auto;
+  }  
+
+
+  /* index.html */
   /* VISUAL */
   .main-visual .inner {
     padding-top: 30px;
@@ -1317,56 +1369,33 @@ body.brands p.description {
     font-size: 18px;
   }
 
-  /* FOOTER */
-  #footer .inner {
-    padding: 60px 24px 70px;
-  }
 
-  .footer__menu li a {
-    font-size: 38px;
-  }
-
-  .footer__links li a {
-    width: 48px;
-    height: 48px;
-  }
-
-  .footer__links li a i.fab {
-    line-height: 48px;
+  /* brands.html */
+  /* COMMON */
+  body.brands .content-group em {
     font-size: 20px;
   }
 
-  #footer .info a {
-    font-size: 17px;
+  /* VALUE */
+  .brand-value .row:last-child .title {
+    font-size: 20px;
   }
 
-  #footer .info > div {
-    font-size: 15px;
+  /* VIEW */
+  .brand-view .inner {
+    height: 370px;
   }
 
-  #footer .copyright {
+  .brand-view h3 {
+    font-size: 62px;
+  }
+
+  .brand-view a span {
+    padding: 15px 0;
     font-size: 16px;
   }
 
-  /* TO TOP */
-  #to-top {
-    font-size: 18px;
-  }
 
-  #to-top:hover .to-top-punch {
-    display: block;
-  }
-  
-  #to-top .to-top-punch .scratch1, 
-  #to-top .to-top-punch .scratch2 {
-    display: inline-block;
-    width: 5px;
-  }
-  
-  #to-top .to-top-punch .punch {
-    width: 25px;
-    margin: 0 auto;
-  }
 }
 
 
