@@ -1113,7 +1113,7 @@ body.brands p.description {
 /* VIEW */
 .brand-view {
   position: relative;
-  background: #000 url("../img/brands/view_img.jpg") no-repeat center/cover fixed;
+  background: #000 url("../img/brands/view_img.jpg") no-repeat center/cover;
 }
 
 .brand-view::before {
@@ -1127,7 +1127,7 @@ body.brands p.description {
 }
 
 .brand-view .inner {
-  height: 650px;
+  height: 250px;
 }
 
 .brand-view .text-group {
@@ -1142,8 +1142,8 @@ body.brands p.description {
 }
 
 .brand-view h3 {
-  margin-bottom: 11px;
-  font-size: 86px;
+  margin-bottom: 0;
+  font-size: 34px;
   color: #fff;
 }
 
@@ -1155,8 +1155,8 @@ body.brands p.description {
 .brand-view a span {
   position: relative;
   display: inline-block;
-  padding: 16px 0;
-  font-size: 16px;
+  padding: 12px 0;
+  font-size: 14px;
   color: #fff;
 }
 
