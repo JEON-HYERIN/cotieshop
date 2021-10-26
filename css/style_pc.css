@@ -1119,12 +1119,19 @@ body.brands .content-group .description {
   right: -205px;
   top: 38%;
   width: 347px;
+  transform: translateX(100px);
 }
 
 .brand-visual .floating.floating3 {
   right: 85px;
   bottom: 24%;
   width: 117px;
+  transform: translateX(-100px);
+}
+
+.brand-visual.on .floating {
+  transition: 1s;
+  transform: translateX(0);
 }
 
 /* ABOUT */
@@ -1310,7 +1317,6 @@ body.brands .content-group .description {
   top: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(204, 199, 187, 0.3); */
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -1380,8 +1386,12 @@ body.brands .content-group .description {
 
 /* 미디어쿼리 */
 @media screen and (max-width: 1200px) {
-  
-  /* index.html */
+
+  /* COMMON */
+  .product .swiper {
+    padding: 0 15px;
+  }
+
   /* HEADER */
   #header h1 {
     left: 15px;
@@ -1390,7 +1400,13 @@ body.brands .content-group .description {
   #header .top-menu {
     right: 15px;
   }
-
+  
+  /* FOOTER */
+  #footer .inner {
+    padding: 70px 15px;
+  }  
+  
+  /* index.html */
   /* VISUAL */
   .main-visual .floating.floating2 {
     right: 25px;
@@ -1406,15 +1422,27 @@ body.brands .content-group .description {
     top: -10px;
   }
 
-  /* NEW */
-  .main-new .swiper {
+
+  /* brands.html */
+  /* ABOUT */
+  .brand-about .inner {
+    padding: 73px 15px 0; 
+  }
+
+  /* STORY */
+  .brand-story .inner {
     padding: 0 15px;
   }
 
-  /* FOOTER */
-  #footer .inner {
-    padding: 70px 15px;
+  .brand-story .color {
+    left: 15px;
   }
+
+  /* VALUE */
+  .brand-value .inner {
+    padding: 0 15px;
+  }
+
 }
 
 @media screen and (max-width: 1023.9px) {

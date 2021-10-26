@@ -169,7 +169,7 @@
 
     <!-- MAIN -->
     <main id="main">
-      
+
       <!-- VISUAL -->
       <section class="brand-visual visual">
         <h2 class="hide">비주얼 영역</h2>
@@ -231,7 +231,7 @@
             <img src="./img/brands/story_img.jpg" alt="" />
           </div>
           <div class="color">
-            <img src="./img/brands/layer_circle_black.png" alt=""  />
+            <img src="./img/brands/layer_circle_black.png" alt="" />
             <img src="./img/brands/layer_circle_pink.png" alt="" />
           </div>
 
@@ -248,7 +248,7 @@
           <img src="./img/pattern-grass-02.jpg" alt="" class="pattern pattern3" />
           <div class="video__area">
             <video src="./video/milk-pepper.mp4" autoplay muted loop preload="metadata" playsinline
-            poster="./img/brands/milkpepper_poster.jpg"></video>
+              poster="./img/brands/milkpepper_poster.jpg"></video>
           </div>
 
         </div>
@@ -264,7 +264,7 @@
           <span>La marque préférée par vos chiens.</span>
           <span>La marque préférée par vos chiens.</span>
         </div>
-      </section>      
+      </section>
 
       <!-- VALUE -->
       <section class="brand-value">
@@ -275,26 +275,26 @@
             <div class="image">
               <img src="./img/brands/value_img1.gif" alt="" />
             </div>
-              <div class="content-group">
-                <em class="title">유쾌한 디자인과 편안한 착용감</em>
-                <p class="description">
-                  밀크 앤 페퍼는 매 시즌 패션과 인테리어 디자인에<br />
-                  영감을 받은 트렌디하고 유쾌한 디자인을 선보이고 있으며,<br />
-                  반려견에게 가장 편안한 착용감을 선사하기 위해<br />
-                  최적의 사이즈를 제공합니다.
-                </p>
-              </div>
+            <div class="content-group">
+              <em class="title">유쾌한 디자인과 편안한 착용감</em>
+              <p class="description">
+                밀크 앤 페퍼는 매 시즌 패션과 인테리어 디자인에<br />
+                영감을 받은 트렌디하고 유쾌한 디자인을 선보이고 있으며,<br />
+                반려견에게 가장 편안한 착용감을 선사하기 위해<br />
+                최적의 사이즈를 제공합니다.
+              </p>
+            </div>
           </div>
           <div class="row">
-              <div class="content-group">
-                <div class="title">
-                  Des produits chics et tendances pour
-                  nos compagnons fidèles.
-                </div>
+            <div class="content-group">
+              <div class="title">
+                Des produits chics et tendances pour
+                nos compagnons fidèles.
               </div>
-              <div class="image">
-                <img src="./img/brands/value_img2.jpg" alt="" />
-              </div>
+            </div>
+            <div class="image">
+              <img src="./img/brands/value_img2.jpg" alt="" />
+            </div>
           </div>
 
         </div>
@@ -507,7 +507,7 @@
       <section class="brand-view">
         <h2 class="hide">다른 브랜드 링크 페이지</h2>
         <div class="inner">
-          
+
           <div class="text-group">
             <h3>PET SO CHIC</h3>
             <a href="#">
@@ -584,7 +584,16 @@
 
   <script>
     'use strict';
-
+    
+    $(window).on('scroll', function () {
+      var visualHeight = $('.brand-visual').offset().top;
+      var scrollAmt = $(document).scrollTop();
+      if (scrollAmt >= (visualHeight * 2)) {
+        $('.brand-visual').addClass('on');
+      } else {
+        $('.brand-visual').removeClass('on');
+      }
+    });
   </script>
 </body>
 </html>
