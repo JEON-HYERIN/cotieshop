@@ -1066,7 +1066,7 @@ h3 {
 
 /* brands.html */
 /* COMMON */
-body.brands .content-group em {
+body.brands .text-group em {
   display: block;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 19px;
@@ -1075,7 +1075,7 @@ body.brands .content-group em {
   color: #000;
 }
 
-body.brands .content-group .description {
+body.brands .text-group .description {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -1143,16 +1143,16 @@ body.brands .content-group .description {
   width: 48%;
 }
 
-.brand-about .content-group {
+.brand-about .text-group {
   width: 50%;
 }
 
-.brand-about .content-group .title {
+.brand-about .text-group .title {
   width: 322px;
   margin: 0 auto;
 }
 
-.brand-about .content-group em {
+.brand-about .text-group em {
   margin: 26px 0 17px;
 }
 
@@ -1162,12 +1162,12 @@ body.brands .content-group .description {
   vertical-align: middle;
 }
 
-.brand-story .content-group {
+.brand-story .text-group {
   width: 50%;
   text-align: left;
 }
 
-.brand-story .content-group .title {
+.brand-story .text-group .title {
   margin-bottom: 17px;
 }
 
@@ -1244,9 +1244,47 @@ body.brands .content-group .description {
 
 /* SLOGAN */
 .brand-slogan {
-  margin-top: 135px;
+  padding: 135px 0;
 }
 
+/* VALUE */
+.brand-value .row > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.brand-value .image {
+  width: 48%;
+}
+
+.brand-value .text-group {
+  text-align: center;
+}
+
+.brand-value .row:first-child .text-group {
+  width: 50%;
+}
+
+.brand-value .row:first-child .title {
+  margin-bottom: 17px;
+}
+
+.brand-value .row:last-child .text-group {
+  width: 48%;
+}
+
+.brand-value .row:last-child .title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.6em;
+  color: #000;
+}
+
+.brand-value .row:last-child .image {
+  position: relative;
+  left: 0;
+  top: -130px;
+}
 
 
 
