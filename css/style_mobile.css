@@ -99,8 +99,6 @@ p.description {
 }
 
 .visual .image {
-  width: 87%;
-  margin: 0 auto;
   animation: rotate_image 1s;
 }
 
@@ -111,6 +109,101 @@ p.description {
   100% {
     transform: rotate(0deg);
   }
+}
+
+.slogan .text-group {
+  display: inline-block;
+  white-space: nowrap;
+  animation: move_text 30s linear infinite;
+}
+
+.slogan .text-group span {
+  display: inline-block;
+  margin-right: 32px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@keyframes move_text {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.product__menu {
+  text-align: center;
+}
+
+.product__menu li {
+  display: inline-block;
+  width: calc(50% - 10px);
+  margin-bottom: 58px;
+  padding: 0 4px;
+  vertical-align: top;
+  box-sizing: border-box;
+  cursor: url("../img/cursor_hand.png"), auto;
+}
+
+.product__menu li:nth-child(5),
+.product__menu li:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.product__menu li a {
+  display: block;
+  cursor: url("../img/cursor_hand.png"), auto;
+}
+
+.product__menu li .image {
+  position: relative;
+}
+
+.product__menu li .image img {
+  transition: opacity .5s;
+}
+
+.product__menu li .image:hover img.front {
+  opacity: 0;
+}
+
+.product__menu li .image:hover img.back {
+  opacity: 1;
+}
+
+.product__menu li .image img.front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.product__menu li .image img.back {
+  opacity: 0;
+}
+
+.product__menu li .text-group {
+  margin-top: 25px;
+  color: #000;
+}
+
+.product__menu li .text-group .title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.product__menu li .text-group .description {
+  max-width: 90%;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6em;
+  text-align: left;
 }
 
 /* HEADER */
@@ -616,9 +709,12 @@ p.description {
   margin-bottom: 0;
 }
 
+.main-visual .image {
+  margin: 0 24px;
+}
+
 .main-visual .description {
   margin: 20px auto;
-  padding: 0 24px;
 }
 
 .main-visual .floating {
@@ -650,8 +746,7 @@ p.description {
 }
 
 .main-brand .image {
-  width: 87%;
-  margin: 0 auto;
+  margin: 0 24px;
 }
 
 .main-brand .content-group {
@@ -781,78 +876,6 @@ p.description {
   padding: 50px 0;
 }
 
-.main-new__menu {
-  text-align: center;
-}
-
-.main-new__menu li {
-  display: inline-block;
-  width: calc(50% - 10px);
-  margin-bottom: 58px;
-  padding: 0 4px;
-  vertical-align: top;
-  box-sizing: border-box;
-  cursor: url("../img/cursor_hand.png"), auto;
-}
-
-.main-new__menu li:nth-child(5),
-.main-new__menu li:nth-child(6) {
-  margin-bottom: 0;
-}
-
-.main-new__menu li a {
-  display: block;
-  cursor: url("../img/cursor_hand.png"), auto;
-}
-
-.main-new__menu li .image {
-  position: relative;
-}
-
-.main-new__menu li .image img {
-  transition: opacity .5s;
-}
-
-.main-new__menu li .image:hover img.front {
-  opacity: 0;
-}
-
-.main-new__menu li .image:hover img.back {
-  opacity: 1;
-}
-
-.main-new__menu li .image img.front {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 1;
-}
-
-.main-new__menu li .image img.back {
-  opacity: 0;
-}
-
-.main-new__menu li .text-group {
-  margin-top: 25px;
-  color: #000;
-}
-
-.main-new__menu li .text-group .title {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 15px;
-  text-align: left;
-}
-
-.main-new__menu li .text-group .description {
-  max-width: 90%;
-  padding: 0;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.6em;
-  text-align: left;
-}
-
 /* SLOGAN */
 .main-slogan {
   margin: 20px 0;
@@ -861,27 +884,7 @@ p.description {
 }
 
 .main-slogan .text-group {
-  display: inline-block;
   padding: 30px 0;
-  white-space: nowrap;
-  animation: move_text 30s linear infinite;
-}
-
-.main-slogan .text-group span {
-  display: inline-block;
-  margin-right: 32px;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-@keyframes move_text {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 /* COTIELOG */
@@ -1020,6 +1023,7 @@ body.brands p.description {
 
 .brand-visual .inner {
   padding-top: 30px;
+  margin: 0 24px;
 }
 
 .brand-visual .title {
@@ -1075,55 +1079,35 @@ body.brands p.description {
 
 /* SLOGAN */
 .brand-slogan {
-  padding: 135px 0;
+  padding-bottom: 60px;
 }
 
 /* VALUE */
-.brand-value .row > div {
-  display: inline-block;
-  vertical-align: middle;
+.brand-value .inner {
+  margin: 0 24px;
 }
 
-.brand-value .image {
-  width: 48%;
+.brand-value .row + .row {
+  margin-top: 60px;
 }
 
-.brand-value .content-group {
-  text-align: center;
-}
-
-.brand-value .row:first-child .content-group {
-  width: 50%;
-}
-
-.brand-value .row:first-child .title {
-  margin-bottom: 17px;
-}
-
-.brand-value .row:last-child .content-group {
-  width: 48%;
+.brand-value .row:last-child {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .brand-value .row:last-child .title {
-  font-size: 21px;
+  margin-top: 22px;
+  text-align: center;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.6em;
   color: #000;
 }
 
-.brand-value .row:last-child .image {
-  position: relative;
-  left: 0;
-  top: -130px;
-}
-
 /* CHOICE */
 .brand-choice .inner {
-  padding-bottom: 178px;
-}
-
-.brand-choice h3 {
-  margin-bottom: 56px;
+  padding: 90px 0;
 }
 
 /* VIEW */
@@ -1222,6 +1206,18 @@ body.brands p.description {
     font-size: 16px;
   }
 
+  .slogan .text-group span {
+    font-size: 60px;
+  }
+
+  .product__menu li .text-group .title {
+    font-size: 18px;
+  }
+
+  .product__menu li .text-group .description {
+    font-size: 16px;
+  }
+
   /* HEADER */
   #header h1 a {
     width: 95px;
@@ -1306,15 +1302,6 @@ body.brands p.description {
     bottom: -110px;
   }
 
-  /* NEW */
-  .main-new__menu li .text-group .title {
-    font-size: 18px;
-  }
-
-  .main-new__menu li .text-group .description {
-    font-size: 16px;
-  }
-
   /* SLOGAN */
   .main-slogan {
     margin: 40px 0;
@@ -1324,10 +1311,6 @@ body.brands p.description {
     padding: 40px 0;
   }
   
-  .main-slogan .text-group span {
-    font-size: 60px;
-  }
-
   /* COTIELOG */
   .main-cotielog__menu li .title {
     padding-top: 20px;
