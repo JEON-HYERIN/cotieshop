@@ -114,6 +114,29 @@ h3 {
   }
 }
 
+.slogan .text-group {
+  display: inline-block;
+  white-space: nowrap;
+  animation: move_text 30s linear infinite;
+}
+
+.slogan .text-group span {
+  display: inline-block;
+  margin-right: 95px;
+  font-size: 95px;
+  font-weight: 700;
+}
+
+@keyframes move_text {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* HEADER */
 #header {
   position: fixed;
@@ -948,27 +971,9 @@ h3 {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
+
 .main-slogan .text-group {
-  display: inline-block;
   padding: 50px 0;
-  white-space: nowrap;
-  animation: move_text 30s linear infinite;
-}
-.main-slogan .text-group span {
-  display: inline-block;
-  margin-right: 95px;
-  font-size: 95px;
-  font-weight: 700;
-}
-
-@keyframes move_text {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
 }
 
 /* COTIELOG */
@@ -1237,6 +1242,12 @@ body.brands .content-group .description {
   background-image: url("../img/pattern-grass-04.jpg");
 }
 
+/* SLOGAN */
+.brand-slogan {
+  margin-top: 135px;
+}
+
+
 
 
 
@@ -1329,12 +1340,16 @@ body.brands .content-group .description {
     background-color: #000;
   }
 
-  #header .menu-btn span:first-child {
+  #header .menu-btn span:nth-child(1) {
     top: 8px;
   }
-
-  #header .menu-btn span:last-child {
+  
+  #header .menu-btn span:nth-child(2) {
     bottom: 8px;
+  }
+  
+  #header .menu-btn span.hide {
+    left: -9999px;
   }
 
   #header .close-btn {

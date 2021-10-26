@@ -145,7 +145,8 @@ p.description {
   top: 50%;
   transform: translateY(-50%);
   width: 30px;
-  height: 30px; 
+  height: 30px;
+  text-indent: -9999px; 
 }
 
 #header .menu-btn.invisible {
@@ -160,12 +161,16 @@ p.description {
   background-color: #000;
 }
 
-#header .menu-btn span:first-child {
+#header .menu-btn span:nth-child(1) {
   top: 8px;
 }
 
-#header .menu-btn span:last-child {
+#header .menu-btn span:nth-child(2) {
   bottom: 8px;
+}
+
+#header .menu-btn span.hide {
+  left: -9999px;
 }
 
 #header .close-btn {
@@ -859,12 +864,14 @@ p.description {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
+
 .main-slogan .text-group {
   display: inline-block;
   padding: 30px 0;
   white-space: nowrap;
   animation: move_text 30s linear infinite;
 }
+
 .main-slogan .text-group span {
   display: inline-block;
   margin-right: 32px;
