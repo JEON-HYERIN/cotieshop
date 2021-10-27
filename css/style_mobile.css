@@ -1185,8 +1185,6 @@ body.brands p.description {
 
 .store__menu li .text-group {
   margin-top: 22px;
-  font-size: 15px;
-  font-weight: 700;
   color: #000;
 }
 
@@ -1196,6 +1194,8 @@ body.brands p.description {
 }
 
 .store__menu li .description {
+  font-size: 15px;
+  font-weight: 700;
   line-height: 1.7em;
 }
 
@@ -1209,7 +1209,7 @@ body.brands p.description {
   font-weight: 500;
 }
 
-.store__menu li .tel {
+.store__menu li .description .tel {
   margin: 15px 0 28px;
 }
 
