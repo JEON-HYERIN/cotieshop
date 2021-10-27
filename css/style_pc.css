@@ -1387,30 +1387,21 @@ body.store .description {
   overflow: hidden;
 }
 
-.store .inner > div {
-
-}
-
 .store .left {
   position: fixed;
   float: left;
   width: 50%;
 }
 
-.store .left.stop {
+.store .left.off {
   position: absolute;
   bottom: 0;
-}
-
-.store .left .wrap {
-  
 }
 
 .store__title {
   margin-bottom: 17px;
   text-align: left;
 }
-
 
 .store__description {
   margin-bottom: 30px;
@@ -1419,10 +1410,6 @@ body.store .description {
 .store .left .image {
   position: relative;
   width: 290px;
-}
-
-.store .left .image img {
-  
 }
 
 .store .left .image img:first-child {
@@ -1448,15 +1435,10 @@ body.store .description {
   float: right;
   width: 48%;
 }
-.store__menu {}
-.store__menu li {}
 
 .store__menu li + li {
   margin-top: 130px;
 }
-
-.store__menu li .image {}
-.store__menu li .image img{}
 
 .store__menu .text-group {
   margin-top: 30px;
@@ -1473,11 +1455,6 @@ body.store .description {
 .store__menu .description {
   margin: 19px 0;
 }
-
-
-.store__menu .description .hours {}
-.store__menu .description .address {}
-.store__menu .description .tel {}
 
 .store__menu .btn {
   margin: 38px 0 0;
@@ -1542,6 +1519,12 @@ body.store .description {
 
   /* VALUE */
   .brand-value .inner {
+    padding: 0 15px;
+  }
+
+
+  /* store.html */
+  .store .inner {
     padding: 0 15px;
   }
 
