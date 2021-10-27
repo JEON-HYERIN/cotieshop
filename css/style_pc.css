@@ -274,11 +274,6 @@ h3 {
   display: inline-block;
 }
 
-#gnb > ul > li:hover::before {
-  opacity: 1;
-  transform: translateY(0);
-} 
-
 #gnb > ul > li::before {
   content: '';
   position: absolute;
@@ -294,6 +289,12 @@ h3 {
   transform: translateY(-50px);
   transition: .3s;
 }
+
+#gnb > ul > li.selected::before,
+#gnb > ul > li:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+} 
 
 #gnb > ul > li > a {
   padding: 10px 20px;
@@ -340,6 +341,7 @@ h3 {
   transition: .1s;
 }
 
+#gnb > ul > li .sub-menu li.selected a span::after,
 #gnb > ul > li .sub-menu li a:hover span::after,
 #gnb > ul > li .sub-menu li a:focus span::after {
   opacity: 1;
