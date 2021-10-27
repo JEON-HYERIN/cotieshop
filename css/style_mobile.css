@@ -1165,21 +1165,9 @@ body.brands p.description {
 
 
 /* store.html */
-.store {
-  
-}
-
 .store > .inner {
   padding-top: 30px;
   margin: 0 24px;
-}
-
-.store .left {
-
-}
-
-.store .left.off {
-
 }
 
 .store__title {
@@ -1189,10 +1177,6 @@ body.brands p.description {
 .store__description {
   margin-bottom: 28px;
   text-align: center;
-}
-
-.store .right {
-
 }
 
 .store__menu li + li {
