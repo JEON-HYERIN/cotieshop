@@ -348,7 +348,21 @@
   <script>
     'use strict';
     
+    scrollStore();
+    $(window).on('scroll', function () {
+      scrollStore();
+    });
 
+    function scrollStore () {
+      var offsetTop = $('.store .left').offset().top;
+      var storeHeight = $('#main .store').outerHeight(true);
+      var scrollTop = $(document).scrollTop();
+      if ((scrollTop + 500) > storeHeight ) {
+        $('.store .left').addClass('stop');
+      } else {
+        $('.store .left').removeClass('stop');
+      }
+    }
   </script>
 </body>
 </html>

@@ -1397,6 +1397,11 @@ body.store .description {
   width: 50%;
 }
 
+.store .left.stop {
+  position: absolute;
+  bottom: 0;
+}
+
 .store .left .wrap {
   
 }
