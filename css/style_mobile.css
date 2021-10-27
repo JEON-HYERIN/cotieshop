@@ -1164,6 +1164,76 @@ body.brands p.description {
 }
 
 
+/* store.html */
+.store {
+  
+}
+
+.store > .inner {
+  padding-top: 30px;
+  margin: 0 24px;
+}
+
+.store .left {
+
+}
+
+.store .left.off {
+
+}
+
+.store__title {
+  margin-bottom: 8px;
+}
+
+.store__description {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.store .right {
+
+}
+
+.store__menu li + li {
+  margin-top: 58px;
+}
+
+.store__menu li .text-group {
+  margin-top: 22px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+
+.store__menu li .title {
+  display: block;
+  font-size: 23px;
+}
+
+.store__menu li .description {
+  line-height: 1.7em;
+}
+
+.store__menu li .description .hours {
+  margin: 12px 0 5px;
+  font-size: 14px;
+}
+
+.store__menu li .description .address {
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.store__menu li .tel {
+  margin: 15px 0 28px;
+}
+
+.store__menu li .btn {
+  margin: 0;
+}
+
+
 /* 미디어쿼리 */
 @media screen and (min-width: 768px) {
 
