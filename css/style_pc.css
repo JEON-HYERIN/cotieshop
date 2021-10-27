@@ -955,6 +955,7 @@ h3 {
 .main-brand .milk-and-pepper .content-group {
   width: 50%;
 }
+
 .main-brand .milk-and-pepper .content-group .title {
   width: 320px;
 }
@@ -1382,13 +1383,17 @@ body.store .description {
   padding-top: 50px;
 }
 
-.store .inner {}
+.store .inner {
+  overflow: hidden;
+}
+
 .store .inner > div {
-  display: inline-block;
-  vertical-align: top;
+
 }
 
 .store .left {
+  position: fixed;
+  float: left;
   width: 50%;
 }
 
@@ -1435,6 +1440,7 @@ body.store .description {
 }
 
 .store .right {
+  float: right;
   width: 48%;
 }
 .store__menu {}
