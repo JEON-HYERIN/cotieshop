@@ -1119,19 +1119,12 @@ body.brands .content-group .description {
   right: -205px;
   top: 38%;
   width: 347px;
-  transform: translateX(100px);
 }
 
 .brand-visual .floating.floating3 {
   right: 85px;
   bottom: 24%;
   width: 117px;
-  transform: translateX(-100px);
-}
-
-.brand-visual.on .floating {
-  transition: 1s;
-  transform: translateX(0);
 }
 
 /* ABOUT */

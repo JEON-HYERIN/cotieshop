@@ -1030,31 +1030,6 @@ body.brands p.description {
   margin-bottom: 15px;
 }
 
-.brand-visual .floating.floating1 {
-  left: 0;
-  bottom: -50px;
-  width: 415px;
-}
-
-.brand-visual .floating.floating2 {
-  right: -205px;
-  top: 38%;
-  width: 347px;
-  transform: translateX(100px);
-}
-
-.brand-visual .floating.floating3 {
-  right: 85px;
-  bottom: 24%;
-  width: 117px;
-  transform: translateX(-100px);
-}
-
-.brand-visual.on .floating {
-  transition: 1s;
-  transform: translateX(0);
-}
-
 /* ABOUT */
 .brand-about .inner {
   margin: 0 24px 60px;
