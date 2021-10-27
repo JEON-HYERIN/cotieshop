@@ -1427,6 +1427,51 @@ body.brands p.description {
   }
 
 
+  /* store.html */
+  .store > .inner {
+    padding-top: 60px;
+  }
+
+  .store__title {
+    margin-bottom: 12px;
+  }
+
+  .store__description {
+    margin-bottom: 35px;
+  }
+
+  .store__description br.only-pc {
+    content: normal;
+  }
+
+  .store__menu li + li {
+    margin-top: 86px;
+  }
+
+  .store__menu li .text-group {
+    margin-top: 26px;
+  }
+
+  .store__menu li .title {
+    margin-bottom: 18px;
+    font-size: 28px;
+  }
+
+  .store__menu li .description,
+  .store__menu li .description .hours {
+    font-size: 16px;
+  }
+
+  .store__menu li .description .hours {
+    margin: 0;
+  }
+
+  .store__menu li .description .tel {
+    margin: 15px 0 36px;
+  }
+
+
+
 }
 
 
