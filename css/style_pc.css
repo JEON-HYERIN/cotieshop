@@ -1077,7 +1077,8 @@ body.brands .content-group em {
   color: #000;
 }
 
-body.brands .content-group .description {
+body.brands .content-group .description,
+body.store .description {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -1373,6 +1374,102 @@ body.brands .content-group .description {
     opacity: 1;
     width: 100%;
   }
+}
+
+
+/* store.html */
+.store {
+  padding-top: 50px;
+}
+
+.store .inner {}
+.store .inner > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.store .left {
+  width: 50%;
+}
+
+.store .left .wrap {
+  
+}
+
+.store__title {
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+
+.store__description {
+  margin-bottom: 30px;
+}
+
+.store .left .image {
+  position: relative;
+  width: 290px;
+}
+
+.store .left .image img {
+  
+}
+
+.store .left .image img:first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.store .left .image img:last-child {
+  opacity: 0;
+}
+
+.store .left .image:hover img:first-child {
+  opacity: 0;
+}
+
+.store .left .image:hover img:last-child {
+  opacity: 1;
+}
+
+.store .right {
+  width: 48%;
+}
+.store__menu {}
+.store__menu li {}
+
+.store__menu li + li {
+  margin-top: 130px;
+}
+
+.store__menu li .image {}
+.store__menu li .image img{}
+
+.store__menu .text-group {
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+
+.store__menu .title {
+  display: block;
+  font-size: 30px;
+}
+
+.store__menu .description {
+  margin: 19px 0;
+}
+
+
+.store__menu .description .hours {}
+.store__menu .description .address {}
+.store__menu .description .tel {}
+
+.store__menu .btn {
+  margin: 38px 0 0;
 }
 
 
