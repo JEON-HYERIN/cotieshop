@@ -1407,6 +1407,11 @@ body.brands p.description {
     font-size: 20px;
   }
 
+  /* VISUAL */
+  .brand-visual .inner {
+    padding-top: 60px;
+  }
+
   /* VALUE */
   .brand-value .row:last-child .title {
     font-size: 20px;
