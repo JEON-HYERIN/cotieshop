@@ -286,6 +286,9 @@
                   </a>
                 </li>
               </ul>
+              <a href="#" class="btn">
+                <i class="fas fa-plus"></i><span>more</span>
+              </a>
             </div>
           </div>
           
@@ -381,9 +384,9 @@
       menuList.addEventListener('click', function () {
         var dataMenu = event.target.parentElement.dataset.menu;
         var ulEls = document.querySelectorAll('.cotielog .right .content ul');
-
         ulEls.forEach(function (ulEl) {
-          if (dataMenu === ulEl.dataset.type || dataMenu === "*") {
+          var dataType = ulEl.dataset.type;
+          if (dataMenu === dataType || dataMenu === '*') {
             ulEl.classList.remove('invisible');
           } else {
             ulEl.classList.add('invisible');
@@ -395,6 +398,9 @@
       });
     });
     
+    $('.cotielog .content a.btn').on('click', function () {
+      $('.cotielog .content ul').removeClass('invisible');
+    });
 
     
   </script>

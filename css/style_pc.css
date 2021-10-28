@@ -1560,7 +1560,9 @@ body.store .description {
   width: 60%;
 }
 
-.cotielog .right .content {}
+.cotielog .right .content {
+  
+}
 
 .cotielog .content ul {
   display: flex;
@@ -1598,6 +1600,12 @@ body.store .description {
   font-size: 19px;
   font-weight: 700;
   color: #000;
+}
+
+.cotielog .content .btn {}
+
+.cotielog .content .btn span {
+  padding-left: 10px;
 }
 
 .cotielog__notice {}
