@@ -1411,7 +1411,8 @@ body.store .description {
 
 .store .left .image {
   position: relative;
-  width: 290px;
+  width: 50%;
+  min-width: 290px;
 }
 
 .store .left .image img:first-child {
