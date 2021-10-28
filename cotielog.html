@@ -173,23 +173,24 @@
       <section class="cotielog">
         <h2 class="hide">꼬띠샵 게시판</h2>
         <div class="inner">
+
           <div class="left">
-            <h3>Cotielog</h3>
+            <h3 class="cotielog__title">Cotielog</h3>
             <ul class="cotielog__menu">
-              <li><a href="#">ALL</a></li>
-              <li><a href="#">공지</a></li>
-              <li><a href="#">뉴스</a></li>
-              <li><a href="#">이벤트</a></li>
-              <li><a href="#">스토리</a></li>
+              <li class="active" data-menu="*"><a href="#">ALL</a></li>
+              <li data-menu="notice"><a href="#">공지</a></li>
+              <li data-menu="news"><a href="#">뉴스</a></li>
+              <li data-menu="event"><a href="#">이벤트</a></li>
+              <li data-menu="story"><a href="#">스토리</a></li>
             </ul>
-            <div class="image">
+            <div class="image pc">
               <img src="./img/cotielog/cotielog_character_base.jpg" alt="" />
               <img src="./img/cotielog/cotielog_character_hover.jpg" alt="" />
             </div>
           </div>
           <div class="right">
-            <div class="cotielog__content">
-              <ul class="cotielog__notice">
+            <div class="content">
+              <ul class="cotielog__notice" data-type="notice">
                 <li>
                   <a href="#">
                     <div class="image">
@@ -223,7 +224,7 @@
                   </a>
                 </li>
               </ul>
-              <ul class="cotielog__news">
+              <ul class="cotielog__news" data-type="news">
                 <li>
                   <a href="#">
                     <div class="image">
@@ -249,7 +250,7 @@
                   </a>
                 </li>
               </ul>
-              <ul class="cotielog__event">
+              <ul class="cotielog__event" data-type="event">
                 <li>
                   <a href="#">
                     <div class="image">
@@ -267,7 +268,7 @@
                   </a>
                 </li>
               </ul>
-              <ul class="cotielog__story">
+              <ul class="cotielog__story" data-type="story">
                 <li>
                   <a href="#">
                     <div class="image">
@@ -287,7 +288,6 @@
               </ul>
             </div>
           </div>
-          
           
         </div>
       </section>
@@ -358,22 +358,45 @@
 
   <script>
     'use strict';
-    
+
+    $('.cotielog .left').removeClass('off');
     scrollStore();
     $(window).on('scroll', function () {
       scrollStore();
     });
 
     function scrollStore () {
-      var offsetTop = $('.store .left').offset().top;
-      var storeHeight = $('#main .store').outerHeight(true);
+      var offsetTop = $('.cotielog .left').offset().top;
+      var cotielogHeight = $('#main .cotielog').outerHeight(true);
       var scrollTop = $(document).scrollTop();
-      if ((scrollTop + 500) > storeHeight ) {
-        $('.store .left').addClass('off');
+      if ((scrollTop + 500) > cotielogHeight ) {
+        $('.cotielog .left').addClass('off');
       } else {
-        $('.store .left').removeClass('off');
+        $('.cotielog .left').removeClass('off');
       }
     }
+
+    var menuLists = document.querySelectorAll('.cotielog__menu li');
+    menuLists.forEach(function (menuList) {
+      menuList.addEventListener('click', function () {
+        var dataMenu = event.target.parentElement.dataset.menu;
+        var ulEls = document.querySelectorAll('.cotielog .right .content ul');
+
+        ulEls.forEach(function (ulEl) {
+          if (dataMenu === ulEl.dataset.type || dataMenu === "*") {
+            ulEl.classList.remove('invisible');
+          } else {
+            ulEl.classList.add('invisible');
+          }
+        });
+        var selectedList = document.querySelector('.cotielog__menu li.active');
+        selectedList.classList.remove('active');
+        event.target.parentElement.classList.add('active');
+      });
+    });
+    
+
+    
   </script>
 </body>
 </html>

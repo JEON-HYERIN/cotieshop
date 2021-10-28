@@ -1468,6 +1468,164 @@ body.store .description {
 }
 
 
+/* cotielog.html */
+/* COTIELOG */
+.cotielog {
+  padding-top: 40px;
+}
+
+.cotielog > .inner {
+  overflow: hidden;
+}
+
+.cotielog .inner > div {}
+.cotielog .left {
+  position: fixed;
+  float: left;
+  width: 40%;
+}
+
+.cotielog .left.off {
+  position: absolute;
+  bottom: 0;
+}
+
+.cotielog__title {
+  margin-bottom: 19px;
+  text-align: left;
+}
+
+.cotielog__menu {
+  margin-bottom: 70px;
+}
+
+.cotielog__menu li {
+  position: relative;
+  display: inline-block;
+}
+
+.cotielog__menu li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: url("../img/cotielog/menu_line.svg") no-repeat center;
+  display: none;
+}
+
+.cotielog__menu li.active::after {
+  display: block;
+}
+
+.cotielog__menu li a {
+  display: block;
+  padding: 5px 11px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  cursor: url("../img/cursor_hand_tiny.png"), auto;
+}
+
+.cotielog .left .image {
+  position: relative;
+  left: -34%;
+  min-width: 553px;
+}
+
+.cotielog .left .image img {}
+.cotielog .left .image img:first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.cotielog .left .image img:last-child {
+  opacity: 0;
+}
+
+.cotielog .left .image:hover img:first-child {
+  opacity: 0;
+}
+
+.cotielog .left .image:hover img:last-child {
+  opacity: 1;
+}
+
+.cotielog .right {
+  float: right;
+  width: 60%;
+}
+
+.cotielog .right .content {}
+
+.cotielog .content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cotielog .content ul.invisible {
+  display: none;
+}
+
+.cotielog .content ul li {
+  flex-basis: 48%;
+  margin-bottom: 145px;
+}
+
+.cotielog .content ul li:nth-child(2) {
+  margin-top: 100px;
+}
+
+.cotielog .content ul li + li {
+
+}
+
+.cotielog .content ul li a {
+  display: block;
+  cursor: url("../img/cursor_hand.png"), auto;
+}
+
+.cotielog .content ul li a .image {}
+.cotielog .content ul li a .title {
+  display: block;
+  padding-top: 17px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #000;
+}
+
+.cotielog__notice {}
+.cotielog__notice li {}
+.cotielog__notice li a {}
+.cotielog__notice li a .image {}
+.cotielog__notice li a .title {}
+.cotielog__news {}
+.cotielog__news li {}
+.cotielog__news li:nth-child(2n) {}
+.cotielog__news li:nth-child(2n + 1) {}
+.content .cotielog__news li:first-child {
+  /* margin-bottom: 0; */
+}
+.cotielog__news li a {}
+.cotielog__news li a .image {}
+.cotielog__news li a .title {}
+.cotielog__event {}
+.cotielog__event li {}
+.cotielog__event li a {}
+.cotielog__event li a .image {}
+.cotielog__event li a .title {}
+.cotielog__story {}
+.cotielog__story li {}
+.cotielog__story li a {}
+.cotielog__story li a .image {}
+.cotielog__story li a .title {}
+
 
 
 /* 미디어쿼리 */
