@@ -1590,6 +1590,33 @@ body.brands p.description {
   }
 
 
+  /* cotielog.html */
+  .cotielog > .inner {
+    padding-top: 60px;
+  }
+
+  .cotielog__title {
+    margin-bottom: 20px;
+  }
+
+  .cotielog__menu {
+    margin-bottom: 35px;
+  }
+
+  .cotielog__menu li a {
+    font-size: 16px;
+  }
+
+  .cotielog__content ul li {
+    width: 55%;
+    margin-bottom: 80px;
+  }
+
+  .cotielog__content ul li a .title {
+    padding-top: 20px;
+    font-size: 18px;
+  }
+
 
 }
 
