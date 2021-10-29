@@ -173,18 +173,18 @@ h3 {
   opacity: 0;
 }
 
-.product .swiper-slide .text-group {
+.product .text-group {
   margin-top: 25px;
   color: #000;
 }
 
-.product .swiper-slide .text-group .title {
+.product .text-group .title {
   display: block;
   margin-bottom: 7px;
   font-size: 16px;
 }
 
-.product .swiper-slide .text-group .description {
+.product .text-group .description {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -1498,12 +1498,12 @@ body.store .description {
   margin-bottom: 70px;
 }
 
-.cotielog__menu li {
+.sub .category li {
   position: relative;
   display: inline-block;
 }
 
-.cotielog__menu li::after {
+.sub .category li::after {
   content: '';
   position: absolute;
   left: 0;
@@ -1514,11 +1514,11 @@ body.store .description {
   display: none;
 }
 
-.cotielog__menu li.active::after {
+.sub .category li.active::after {
   display: block;
 }
 
-.cotielog__menu li a {
+.sub .category li a {
   display: block;
   padding: 5px 11px;
   font-family: 'Noto Sans KR', sans-serif;
@@ -1608,6 +1608,81 @@ body.store .description {
   padding-left: 10px;
 }
 
+
+/* outdoor.html */
+.outdoor {
+  padding-top: 40px;
+}
+.outdoor > .inner {}
+.outdoor h3 {
+  margin-bottom: 20px;
+}
+
+.outdoor__menu {
+  text-align: center;
+  margin-bottom: 52px;
+}
+.outdoor__menu li {}
+.outdoor__menu li a {
+  display: block;
+}
+.outdoor__content {}
+.outdoor__content ul {}
+
+.outdoor__content ul li {
+  display: inline-block;
+  width: 33%;
+  padding: 0 16px;
+  margin-bottom: 86px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.outdoor__content ul li a {
+  display: block;
+  cursor: url("../img/cursor_hand.png"), auto;
+}
+.outdoor__content ul li a .image {}
+.outdoor__content ul li a img {}
+.outdoor__content ul li a img.front {
+  position: absolute;
+}
+.outdoor__content ul li a img.back {}
+
+.outdoor__content ul li a .image {
+  position: relative;
+}
+
+.outdoor__content ul li a img {
+  transition: opacity .5s;
+}
+
+.outdoor__content ul li a .image:hover img.front {
+  opacity: 0;
+}
+
+.outdoor__content ul li a .image:hover img.back {
+  opacity: 1;
+}
+
+.outdoor__content ul li a .image img.front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.outdoor__content ul li a .image img.back {
+  opacity: 0;
+}
+.outdoor__content .fashion {}
+.outdoor__content .fashion li {}
+.outdoor__content .fashion li a {}
+.outdoor__content .fashion li a .image {}
+.outdoor__content .fashion li a img.front {}
+.outdoor__content .fashion li a img.back {}
+.outdoor__content .fashion li a .title {}
+.outdoor__content .fashion li a .description {}
 
 
 

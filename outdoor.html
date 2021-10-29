@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="OUTDOOR | 꼬띠샵" />
+  <meta name="description" content="언제나 산책하길 좋아하는 우리 아이들을 위한 필수 아이템입니다. 꼬띠샵이 큐레이션하는 고급스러우면서도 패셔너블한 아웃도어 용품으로 아이들과 소중하고 행복한 시간을 만드세요." />
+
+  <title>OUTDOOR | 꼬띠샵</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="꼬띠샵" />
+  <meta property="og:title" content="OUTDOOR | 꼬띠샵" />
+  <meta property="og:description" content="언제나 산책하길 좋아하는 우리 아이들을 위한 필수 아이템입니다. 꼬띠샵이 큐레이션하는 고급스러우면서도 패셔너블한 아웃도어 용품으로 아이들과 소중하고 행복한 시간을 만드세요." />
+  <meta property="og:image" content="./img/og_image.jpg" />
+  <meta property="og:url" content="https://jeon-hyerin.github.io/cotieshop/" />
+
+    <!--Twitter Card-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="꼬띠샵" />
+  <meta property="twitter:title" content="OUTDOOR | 꼬띠샵" />
+  <meta property="twitter:description" content="언제나 산책하길 좋아하는 우리 아이들을 위한 필수 아이템입니다. 꼬띠샵이 큐레이션하는 고급스러우면서도 패셔너블한 아웃도어 용품으로 아이들과 소중하고 행복한 시간을 만드세요." />
+  <meta property="twitter:image" content="./img/og_image.jpg" />
+  <meta property="twitter:url" content="https://jeon-hyerin.github.io/cotieshop" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.png" />
+  <!-- Google Fonts - Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+<!-- Google Fonts - Libre Baskerville -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/254318af28.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!-- Lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>  
+  <!--GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style_pc.css" media="screen and (min-width: 850.1px)" />
+  <link rel="stylesheet" href="./css/style_mobile.css" media="screen and (max-width: 850.0px)" />
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script defer src="./js/swiper.js"></script>
+  <script defer src="./js/common.js"></script>
+
+</head>
+<body class="outdoor sub">
+  <div id="wrapper">
+    <a href="#main" id="skip-nav">본문 바로가기</a>
+
+    <!-- HEADER -->
+    <header id="header">
+      <div class="inner">
+        <h1><a href="./index.html"><img src="./img/header_logo.svg" alt="cotie SHOP" /></a></h1>
+        <a href="#" class="menu-btn mobile">
+          <span></span>
+          <span></span>
+          <span class="hide">네비게이션 열기</span>
+        </a>
+        <a href="#" class="close-btn mobile invisible">
+          <i class="fas fa-times"><span>네비게이션 닫기</span></i>
+        </a>
+        <!-- NAV -->
+        <nav id="gnb">
+          <h2 class="hide">메인 네비게이션</h2>
+          <ul>
+            <li>
+              <a href="./brands.html">Brands</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#"><span>펫 소 시크</span></a>
+                </li>
+                <li><a href="#"><span>맥스본</span></a></li>
+                <li><a href="./brands.html"><span>밀크 앤 페퍼</span></a></li>
+              </ul>
+            </li>
+            <li class="selected">
+              <a href="./outdoor.html">Outdoor</a>
+              <ul class="sub-menu">
+                <li><a href="#"><span>목줄</span></a></li>
+                <li><a href="#"><span>리드줄</span></a></li>
+                <li><a href="#"><span>하네스</span></a></li>
+                <li><a href="#"><span>패션</span></a></li>
+                <li><a href="#"><span>이동가방</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Indoor</a>
+              <ul class="sub-menu">
+                <li><a href="#"><span>리빙</span></a></li>
+                <li><a href="#"><span>장난감</span></a></li>
+                <li><a href="#"><span>고양이</span></a></li>
+              </ul>
+            </li>
+            <li><a href="./cotielog.html">Cotielog</a></li>
+            <li><a href="./store.html">Store</a></li>
+            <li class="mobile"><a href="#">About Us</a></li>
+            <li class="mobile"><a href="#">Buy Shop</a></li>
+          </ul>
+        </nav>
+        <ul class="top-menu">
+          <li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+              <span class="hide">검색창 열기</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Buy Shop</span>
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </header>
+
+    <!-- SEARCH MODAL -->
+    <div class="search-modal__wrap invisible">
+      <div id="search-modal">
+        <div class="inner">
+
+          <h2 class="hide">검색창</h2>
+
+          <div class="search-modal__header">
+            <a href="./index.html" class="logo pc">
+              <img src="./img/header_logo.svg" alt="cotie SHOP" />
+            </a>
+            <a href="#" class="close-btn">
+              <i class="fas fa-times"><span>닫기</span></i>
+            </a>
+          </div>
+          <div class="search-modal__field">
+            <form action="#">
+              <input type="text" placeholder="검색어를 입력해주세요">
+            </form>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="search-modal__keyword">
+            <ul>
+              <li><a href="#">#겨울</a></li>
+              <li><a href="#">#패딩</a></li>
+              <li><a href="#">#프랑스</a></li>
+              <li><a href="#">#후드</a></li>
+              <li><a href="#">#장난감</a></li>
+            </ul>
+          </div>
+          <img src="./img/layer_twerking.gif" alt="" class="floating" />
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main id="main">
+      <!-- OUTDOOR -->
+      <section class="outdoor">
+        <h2 class="hide">아웃도어 용품</h2>
+        <div class="inner">
+
+          <h3>Outdoor</h3>
+          <ul class="outdoor__menu category">
+            <li class="active"><a href="#">패션</a></li>
+            <li><a href="#">목줄</a></li>
+            <li><a href="#">리드줄</a></li>
+            <li><a href="#">하네스</a></li>
+            <li><a href="#">이동가방</a></li>
+          </ul>
+
+          <div class="outdoor__content">
+            <ul class="fashion product">
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 VELVET Reversible Puff Jacket<br class="only-m" />
+                      (벨벳 리버서블 퍼프 자켓)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img2.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img2_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 BELEM Polo Shirt (벨렘 폴로 셔츠)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img3.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img3_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 SPINNAKER Navy Harness (스피나커 네이비 하네스)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img4.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img4_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 SPINNAKER Red Harness (스피나커 레드 하네스)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img5.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img5_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 ALTAIR Glossy Black Harness (알테이어 글로시 블랙 하네스)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img6.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img6_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 ANCHOR Red Bandana (앙코르 레드 반다나)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img7.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img7_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 ANCHOR Navy Bandana (앙코르 네이비 반다나)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img8.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 CAPSULE Copper – Bag (캡슐 쿠퍼 이동가방)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img9.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 CAPSULE Gold – Bag (캡슐 골드 이동가방)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img10.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 CAPSULE Black – Bag (캡슐 블랙 이동가방)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img11.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 KRUGER Black Leopard Bag (크루거 블랙 레오퍼드 이동가방)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img12.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img12_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 TEDDY Puff Jacket (테디 퍼프 자켓)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img13.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img13_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 ROOKIE Hoody (루키 후디)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img14.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img14_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 SANGHA Raincoat (상아 레인코트)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img15.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img15_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 NORMAN Blue Windcoat (노르망 블루 바람막이)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img16.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img16_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 PIOGGIA Black Dotted Raincoat (피오자 블랙 도트 레인코트)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img17.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img17_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 PIOGGIA Fuschia Dotted Raincoat (피오자 푸시아 도트 레인코트)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/outdoor/fashion_img18.jpg" alt="" class="front" />
+                    <img src="./img/outdoor/fashion_img18_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 WINCH Red Raincoat (윈치 레드 레인코트)
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="collar"></ul>
+            <ul class="leash"></ul>
+            <ul class="harness"></ul>
+            <ul class="bag"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer__layer"></div>
+      <div class="inner">
+
+        <div class="row">
+          <ul class="footer__menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Buy Shop</a></li>
+          </ul>
+          <ul class="footer__links">
+            <li>
+              <a href="https://www.facebook.com/cotieshop.co.kr/" target="_blank">
+                <span class="pc">facebook</span>
+                <i class="fab fa-facebook-f mobile"><span>facebook</span></i>
+              </a>
+            </li>
+            <li><a href="https://www.instagram.com/cotie_shop/" target="_blank">
+                <span class="pc">instagram</span>
+                <i class="fab fa-instagram mobile"><span>instagram</span></i>
+              </a>
+            </li>
+            <li><a href="https://accounts.kakao.com/login?continue=http%3A%2F%2Fpf.kakao.com%2F_ivZMs%2Fchat"
+                target="_blank"><i class="fas fa-comment"></i></a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="info">
+            <a href="#">
+              <span>Cotieshop</span>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+            <div>
+              <span>
+                주식회사 델핀 서울특별시 용산구 우사단로2길 1, 3층 대표 : 신승호 사업자 등록번호 : 113-86-83830
+              </span>
+              <address>
+                04413 서울특별시 용산구 우사단로2길 1 (보광동) TEL : 02-2678-3096~7 FAX : 02-2678-3099
+              </address>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="copyright">
+            Copyright <span class="this-year"></span>. Cotieshop All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- TO TOP BUTTON -->
+    <a href="#" id="to-top">
+      <i class="fas fa-chevron-up"></i>
+      <span>top</span>
+      <div class="to-top-punch">
+        <img src="./img/to_top_scratch1.svg" alt="" class="scratch1" />
+        <img src="./img/to_top_scratch2.svg" alt="" class="scratch2" />
+        <img src="./img/punch1.svg" alt="" class="punch" />
+      </div>
+    </a>
+
+  </div>
+
+  <script>
+    'use strict';
+
+
+
+    
+  </script>
+</body>
+</html>
