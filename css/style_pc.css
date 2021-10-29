@@ -1675,14 +1675,59 @@ body.store .description {
 .outdoor__content ul li a .image img.back {
   opacity: 0;
 }
-.outdoor__content .fashion {}
-.outdoor__content .fashion li {}
-.outdoor__content .fashion li a {}
-.outdoor__content .fashion li a .image {}
-.outdoor__content .fashion li a img.front {}
-.outdoor__content .fashion li a img.back {}
-.outdoor__content .fashion li a .title {}
-.outdoor__content .fashion li a .description {}
+
+.outdoor .pagination {
+  text-align: center;
+}
+
+
+.outdoor .pagination a {
+  display: inline-block;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  transition: .3s;
+  cursor: url("../img/cursor_hand_tiny.png"), auto;
+}
+
+.outdoor .pagination a:hover {
+  border-color: #000;
+}
+
+.outdoor .pagination a.on {
+  color: #fff;
+  background-color: #000;
+}
+
+.outdoor .pagination a + a {
+  margin-left: 4px;
+}
+
+.outdoor .pagination a.end {
+  position: relative;
+  left: -8px;
+  margin-left: 0;
+}
+
+.outdoor .pagination a.next,
+.outdoor .pagination a.end {
+  font-size: 14px;
+  color: #666;
+}
+
+.outdoor .pagination a.next:hover,
+.outdoor .pagination a.end:hover {
+  border-color: transparent;
+  color: #000;
+}
+
+
+
+
 
 
 
