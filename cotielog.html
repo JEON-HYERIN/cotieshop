@@ -189,8 +189,8 @@
             </div>
           </div>
           <div class="right">
-            <div class="content">
-              <ul class="cotielog__notice" data-type="notice">
+            <div class="cotielog__content">
+              <ul class="notice" data-type="notice">
                 <li>
                   <a href="#">
                     <div class="image">
@@ -224,13 +224,13 @@
                   </a>
                 </li>
               </ul>
-              <ul class="cotielog__news" data-type="news">
+              <ul class="news" data-type="news">
                 <li>
                   <a href="#">
                     <div class="image">
                       <img src="./img/cotielog/news_img1.png" alt="" />
                     </div>
-                    <em class="title">2021 GDWEB 디자인 어워즈 WINNER PRIZE 수상🎉</em>
+                    <em class="title">2021 GDWEB 디자인 어워즈 WINNER PRIZE 수상</em>
                   </a>
                 </li>
                 <li>
@@ -250,7 +250,7 @@
                   </a>
                 </li>
               </ul>
-              <ul class="cotielog__event" data-type="event">
+              <ul class="event" data-type="event">
                 <li>
                   <a href="#">
                     <div class="image">
@@ -268,7 +268,7 @@
                   </a>
                 </li>
               </ul>
-              <ul class="cotielog__story" data-type="story">
+              <ul class="story" data-type="story">
                 <li>
                   <a href="#">
                     <div class="image">
@@ -383,7 +383,7 @@
     menuLists.forEach(function (menuList) {
       menuList.addEventListener('click', function () {
         var dataMenu = event.target.parentElement.dataset.menu;
-        var ulEls = document.querySelectorAll('.cotielog .right .content ul');
+        var ulEls = document.querySelectorAll('.cotielog__content ul');
         ulEls.forEach(function (ulEl) {
           var dataType = ulEl.dataset.type;
           if (dataMenu === dataType || dataMenu === '*') {
@@ -398,8 +398,8 @@
       });
     });
     
-    $('.cotielog .content a.btn').on('click', function () {
-      $('.cotielog .content ul').removeClass('invisible');
+    $('.cotielog__content a.btn').on('click', function () {
+      $('.cotielog__content ul').removeClass('invisible');
     });
 
     
