@@ -1627,7 +1627,13 @@ body.store .description {
   display: block;
 }
 .outdoor__content {}
-.outdoor__content ul {}
+.outdoor__content ul {
+  display: none;
+}
+
+.outdoor__content ul.visible {
+  display: block;
+}
 
 .outdoor__content ul li {
   display: inline-block;
