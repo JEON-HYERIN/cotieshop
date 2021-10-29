@@ -1531,7 +1531,6 @@ body.store .description {
 .cotielog .left .image {
   position: relative;
   left: -34%;
-  min-width: 553px;
 }
 
 .cotielog .left .image img:first-child {
@@ -1678,6 +1677,12 @@ body.store .description {
 
   /* store.html */
   .store > .inner {
+    padding: 0 15px;
+  }
+
+
+  /* cotielog.html */
+  .cotielog > .inner {
     padding: 0 15px;
   }
 

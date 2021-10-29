@@ -1218,6 +1218,120 @@ body.brands p.description {
 }
 
 
+/* cotielog.html */
+/* COTIELOG */
+.cotielog {
+
+}
+
+.cotielog > .inner {
+  padding-top: 30px;
+  margin: 0 24px;
+}
+
+.cotielog .left {
+
+}
+
+.cotielog .left.off {
+
+}
+
+.cotielog__title {
+  margin-bottom: 15px;
+}
+
+.cotielog__menu {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.cotielog__menu li {
+  position: relative;
+  display: inline-block;
+}
+
+.cotielog__menu li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: url("../img/cotielog/menu_line.svg") no-repeat center;
+  display: none;
+}
+
+.cotielog__menu li.active::after {
+  display: block;
+}
+
+.cotielog__menu li a {
+  display: block;
+  padding: 5px 11px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  cursor: url("../img/cursor_hand_tiny.png"), auto;
+}
+
+.cotielog .right {
+
+}
+
+.cotielog__content {
+  position: relative;
+}
+
+.cotielog__content ul {
+  overflow: hidden;
+}
+
+.cotielog__content ul.invisible {
+  display: none;
+}
+
+.cotielog__content ul li {
+  width: 65%;
+  margin-bottom: 58px;
+}
+
+.cotielog__content ul li:nth-child(2n) {
+  float: right;
+}
+
+.cotielog__content ul li:nth-child(2n+1) {
+  float: left;
+}
+
+.cotielog__content ul li a {
+  display: block;
+  cursor: url("../img/cursor_hand.png"), auto;
+}
+
+.cotielog__content ul li a .title {
+  display: block;
+  padding-top: 13px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.cotielog__content .news li:first-child .title::after {
+  content: '🎉';
+}
+
+.cotielog__content .btn {
+
+}
+
+.cotielog__content .btn span {
+  padding-left: 10px;
+}
+
+
 /* 미디어쿼리 */
 @media screen and (min-width: 768px) {
 
