@@ -157,6 +157,11 @@ p.description {
   margin-bottom: 0;
 }
 
+body.sub .product__menu li:nth-child(5),
+body.sub .product__menu li:nth-child(6) {
+  margin-bottom: 58px;
+}
+
 .product__menu li a {
   display: block;
   cursor: url("../img/cursor_hand.png"), auto;
@@ -1413,6 +1418,61 @@ body.brands p.description {
 .outdoor .pagination a.end:hover {
   border-color: transparent;
   color: #000;
+}
+
+
+/* indoor.html */
+.indoor h3 {
+  margin-bottom: 20px;
+}
+
+.indoor__menu {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.indoor__menu li a {
+  display: block;
+}
+
+.indoor__content ul {
+  display: none;
+}
+
+.indoor__content ul.visible {
+  display: block;
+}
+
+.indoor__content ul li a {
+  display: block;
+  cursor: url("../img/cursor_hand.png"), auto;
+}
+
+.indoor__content ul li a .image {
+  position: relative;
+}
+
+.indoor__content ul li a img {
+  transition: opacity .5s;
+}
+
+.indoor__content ul li a .image:hover img.front {
+  opacity: 0;
+}
+
+.indoor__content ul li a .image:hover img.back {
+  opacity: 1;
+}
+
+.indoor__content ul li a .image img.front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.indoor__content ul li a .image img.back {
+  opacity: 0;
 }
 
 
