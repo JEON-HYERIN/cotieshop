@@ -1297,9 +1297,8 @@ body.brands p.description {
 .cotielog__content ul li a .title {
   display: block;
   padding-top: 13px;
-  font-family: sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
-  font-weight: 700;
   color: #000;
 }
 
