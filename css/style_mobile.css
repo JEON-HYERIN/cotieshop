@@ -23,6 +23,10 @@ br.only-pc {
   position: relative;
 }
 
+body.sub section > .inner {
+  padding-top: 30px;
+}
+
 video {
   position: relative;
   display: block;
@@ -1166,7 +1170,6 @@ body.brands p.description {
 
 /* store.html */
 .store > .inner {
-  padding-top: 30px;
   margin: 0 24px;
 }
 
@@ -1221,7 +1224,6 @@ body.brands p.description {
 /* cotielog.html */
 /* COTIELOG */
 .cotielog > .inner {
-  padding-top: 30px;
   margin: 0 24px;
 }
 
@@ -1229,17 +1231,17 @@ body.brands p.description {
   margin-bottom: 15px;
 }
 
-.cotielog__menu {
+.sub .category {
   margin-bottom: 28px;
   text-align: center;
 }
 
-.cotielog__menu li {
+.sub .category li {
   position: relative;
   display: inline-block;
 }
 
-.cotielog__menu li::after {
+.sub .category li::after {
   content: '';
   position: absolute;
   left: 0;
@@ -1250,11 +1252,11 @@ body.brands p.description {
   display: none;
 }
 
-.cotielog__menu li.active::after {
+.sub .category li.active::after {
   display: block;
 }
 
-.cotielog__menu li a {
+.sub .category li a {
   display: block;
   padding: 5px 6px;
   font-family: sans-serif;
@@ -1311,6 +1313,109 @@ body.brands p.description {
 }
 
 
+/* outdoor.html */
+.outdoor h3 {
+  margin-bottom: 20px;
+}
+
+.outdoor__menu {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.outdoor__menu li a {
+  display: block;
+}
+
+.outdoor__content ul {
+  display: none;
+}
+
+.outdoor__content ul.visible {
+  display: block;
+}
+
+.outdoor__content ul li a {
+  display: block;
+  cursor: url("../img/cursor_hand.png"), auto;
+}
+
+.outdoor__content ul li a .image {
+  position: relative;
+}
+
+.outdoor__content ul li a img {
+  transition: opacity .5s;
+}
+
+.outdoor__content ul li a .image:hover img.front {
+  opacity: 0;
+}
+
+.outdoor__content ul li a .image:hover img.back {
+  opacity: 1;
+}
+
+.outdoor__content ul li a .image img.front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.outdoor__content ul li a .image img.back {
+  opacity: 0;
+}
+
+.outdoor .pagination {
+  text-align: center;
+}
+
+.outdoor .pagination a {
+  display: inline-block;
+  width: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  transition: .3s;
+  cursor: url("../img/cursor_hand_tiny.png"), auto;
+}
+
+.outdoor .pagination a:hover {
+  border-color: #000;
+}
+
+.outdoor .pagination a.on {
+  color: #fff;
+  background-color: #000;
+}
+
+.outdoor .pagination a + a {
+  margin-left: 4px;
+}
+
+.outdoor .pagination a.end {
+  position: relative;
+  left: -8px;
+  margin-left: 0;
+}
+
+.outdoor .pagination a.next,
+.outdoor .pagination a.end {
+  font-size: 14px;
+  color: #666;
+}
+
+.outdoor .pagination a.next:hover,
+.outdoor .pagination a.end:hover {
+  border-color: transparent;
+  color: #000;
+}
+
+
 /* 미디어쿼리 */
 @media screen and (min-width: 768px) {
 
@@ -1318,6 +1423,10 @@ body.brands p.description {
   h3 {
     margin-bottom: 45px;
     font-size: 56px;
+  }
+
+  body.sub section > .inner {
+    padding-top: 60px;
   }
 
   p.description {
@@ -1526,10 +1635,6 @@ body.brands p.description {
 
 
   /* store.html */
-  .store > .inner {
-    padding-top: 60px;
-  }
-
   .store__title {
     margin-bottom: 12px;
   }
@@ -1570,19 +1675,15 @@ body.brands p.description {
 
 
   /* cotielog.html */
-  .cotielog > .inner {
-    padding-top: 60px;
-  }
-
   .cotielog__title {
     margin-bottom: 20px;
   }
 
-  .cotielog__menu {
+  .sub .category {
     margin-bottom: 35px;
   }
 
-  .cotielog__menu li a {
+  .sub .category li a {
     padding: 5px 11px;
     font-size: 16px;
   }

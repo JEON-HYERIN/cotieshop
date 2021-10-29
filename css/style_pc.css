@@ -1613,7 +1613,7 @@ body.store .description {
 .outdoor {
   padding-top: 40px;
 }
-.outdoor > .inner {}
+
 .outdoor h3 {
   margin-bottom: 20px;
 }
@@ -1622,11 +1622,11 @@ body.store .description {
   text-align: center;
   margin-bottom: 52px;
 }
-.outdoor__menu li {}
+
 .outdoor__menu li a {
   display: block;
 }
-.outdoor__content {}
+
 .outdoor__content ul {
   display: none;
 }
@@ -1638,7 +1638,7 @@ body.store .description {
 .outdoor__content ul li {
   display: inline-block;
   width: 33%;
-  padding: 0 16px;
+  padding: 0 15px;
   margin-bottom: 86px;
   box-sizing: border-box;
   vertical-align: top;
@@ -1648,12 +1648,6 @@ body.store .description {
   display: block;
   cursor: url("../img/cursor_hand.png"), auto;
 }
-.outdoor__content ul li a .image {}
-.outdoor__content ul li a img {}
-.outdoor__content ul li a img.front {
-  position: absolute;
-}
-.outdoor__content ul li a img.back {}
 
 .outdoor__content ul li a .image {
   position: relative;
@@ -1686,9 +1680,8 @@ body.store .description {
   text-align: center;
 }
 
-
 .outdoor .pagination a {
-  display: inline-block;
+  display: inline-block !important;
   width: 40px;
   line-height: 40px;
   border-radius: 50%;
