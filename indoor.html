@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="INDOOR | 꼬띠샵" />
+  <meta name="description" content="편안한 공간 속 휴식을 취할때에도 작은 디테일의 차이가 큰 변화를 느끼게 해줍니다. 꼬띠샵이 큐레이션하는 제품들은 반려동물들이 원하는게 무엇인지 정확히 알고 해결해줄 수 있는 제품을 추천합니다." />
+
+  <title>INDOOR | 꼬띠샵</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="꼬띠샵" />
+  <meta property="og:title" content="INDOOR | 꼬띠샵" />
+  <meta property="og:description" content="편안한 공간 속 휴식을 취할때에도 작은 디테일의 차이가 큰 변화를 느끼게 해줍니다. 꼬띠샵이 큐레이션하는 제품들은 반려동물들이 원하는게 무엇인지 정확히 알고 해결해줄 수 있는 제품을 추천합니다." />
+  <meta property="og:image" content="./img/og_image.jpg" />
+  <meta property="og:url" content="https://jeon-hyerin.github.io/cotieshop/" />
+
+    <!--Twitter Card-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="꼬띠샵" />
+  <meta property="twitter:title" content="INDOOR | 꼬띠샵" />
+  <meta property="twitter:description" content="편안한 공간 속 휴식을 취할때에도 작은 디테일의 차이가 큰 변화를 느끼게 해줍니다. 꼬띠샵이 큐레이션하는 제품들은 반려동물들이 원하는게 무엇인지 정확히 알고 해결해줄 수 있는 제품을 추천합니다." />
+  <meta property="twitter:image" content="./img/og_image.jpg" />
+  <meta property="twitter:url" content="https://jeon-hyerin.github.io/cotieshop" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.png" />
+  <!-- Google Fonts - Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+<!-- Google Fonts - Libre Baskerville -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/254318af28.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!-- Lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>  
+  <!--GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style_pc.css" media="screen and (min-width: 850.1px)" />
+  <link rel="stylesheet" href="./css/style_mobile.css" media="screen and (max-width: 850.0px)" />
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script defer src="./js/swiper.js"></script>
+  <script defer src="./js/common.js"></script>
+
+</head>
+<body class="indoor sub">
+  <div id="wrapper">
+    <a href="#main" id="skip-nav">본문 바로가기</a>
+
+    <!-- HEADER -->
+    <header id="header">
+      <div class="inner">
+        <h1><a href="./index.html"><img src="./img/header_logo.svg" alt="cotie SHOP" /></a></h1>
+        <a href="#" class="menu-btn mobile">
+          <span></span>
+          <span></span>
+          <span class="hide">네비게이션 열기</span>
+        </a>
+        <a href="#" class="close-btn mobile invisible">
+          <i class="fas fa-times"><span>네비게이션 닫기</span></i>
+        </a>
+        <!-- NAV -->
+        <nav id="gnb">
+          <h2 class="hide">메인 네비게이션</h2>
+          <ul>
+            <li>
+              <a href="./brands.html">Brands</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="#"><span>펫 소 시크</span></a>
+                </li>
+                <li><a href="#"><span>맥스본</span></a></li>
+                <li><a href="./brands.html"><span>밀크 앤 페퍼</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./outdoor.html">Outdoor</a>
+              <ul class="sub-menu">
+                <li><a href="#"><span>목줄</span></a></li>
+                <li><a href="#"><span>리드줄</span></a></li>
+                <li><a href="#"><span>하네스</span></a></li>
+                <li><a href="#"><span>패션</span></a></li>
+                <li><a href="#"><span>이동가방</span></a></li>
+              </ul>
+            </li>
+            <li class="selected">
+              <a href="./indoor.html">Indoor</a>
+              <ul class="sub-menu">
+                <li><a href="#"><span>리빙</span></a></li>
+                <li><a href="#"><span>장난감</span></a></li>
+                <li><a href="#"><span>고양이</span></a></li>
+              </ul>
+            </li>
+            <li><a href="./cotielog.html">Cotielog</a></li>
+            <li><a href="./store.html">Store</a></li>
+            <li class="mobile"><a href="#">About Us</a></li>
+            <li class="mobile"><a href="#">Buy Shop</a></li>
+          </ul>
+        </nav>
+        <ul class="top-menu">
+          <li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+              <span class="hide">검색창 열기</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Buy Shop</span>
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </header>
+
+    <!-- SEARCH MODAL -->
+    <div class="search-modal__wrap invisible">
+      <div id="search-modal">
+        <div class="inner">
+
+          <h2 class="hide">검색창</h2>
+
+          <div class="search-modal__header">
+            <a href="./index.html" class="logo pc">
+              <img src="./img/header_logo.svg" alt="cotie SHOP" />
+            </a>
+            <a href="#" class="close-btn">
+              <i class="fas fa-times"><span>닫기</span></i>
+            </a>
+          </div>
+          <div class="search-modal__field">
+            <form action="#">
+              <input type="text" placeholder="검색어를 입력해주세요">
+            </form>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="search-modal__keyword">
+            <ul>
+              <li><a href="#">#겨울</a></li>
+              <li><a href="#">#패딩</a></li>
+              <li><a href="#">#프랑스</a></li>
+              <li><a href="#">#후드</a></li>
+              <li><a href="#">#장난감</a></li>
+            </ul>
+          </div>
+          <img src="./img/layer_twerking.gif" alt="" class="floating" />
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main id="main">
+      <!-- INDOOR -->
+      <section class="indoor">
+        <h2 class="hide">실내용품</h2>
+        <div class="inner">
+
+          <h3>Indoor</h3>
+          <ul class="indoor__menu category">
+            <li class="active" data-menu="toy"><a href="#">장난감</a></li>
+            <li data-menu="living"><a href="#">리빙</a></li>
+            <li data-menu="cat"><a href="#">고양이</a></li>
+          </ul>
+
+          <div class="indoor__content">
+            <ul class="product product__menu visible" data-type="toy">
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/toy_img.jpg" alt="" class="front" />
+                    <img src="./img/indoor/toy_img_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">PET SO CHIC</em>
+                    <p class="description">펫 소 시크 Dog toy(토이) – Jumbo(점보)</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/toy_img2.jpg" alt="" class="front" />
+                    <img src="./img/indoor/toy_img2_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">PET SO CHIC</em>
+                    <p class="description">펫 소 시크 Cat toy(토이) – Brown Mouse (쥐모양 장난감)</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/toy_img3.jpg" alt="" class="front" />
+                    <img src="./img/indoor/toy_img3_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">PET SO CHIC</em>
+                    <p class="description">펫 소 시크 Cat toy(토이) – Beige Mouse (쥐모양 장난감)</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/toy_img4.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">밀크 앤 페퍼 CRAB&WHALE Cat Toy (크랩&고래 고양이 장난감)</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/toy_img5.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">밀크 앤 페퍼 WHALE Dog Toy (고래 강아지 장난감)</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="product product__menu" data-type="living">
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/living_img.jpg" alt="" class="front" />
+                    <img src="./img/indoor/living_img_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MAXBONE</em>
+                    <p class="description">
+                      맥스본 Fox Poop Bag Holder (폭스 풉백 홀더)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/living_img2.jpg" alt="" class="front" />
+                    <img src="./img/indoor/living_img2_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MAXBONE</em>
+                    <p class="description">
+                      맥스본 Elma Poop Bag Holder (엘마 풉백 홀더) – Peach (피치)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/living_img3.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MAXBONE</em>
+                    <p class="description">
+                      맥스본 Elma Poop Bag Holder (엘마 풉백 홀더) – Sand (샌드)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/living_img4.jpg" alt="" class="front" />
+                    <img src="./img/indoor/living_img4_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MAXBONE</em>
+                    <p class="description">
+                      맥스본 Mb Eats Food Scoop &amp; Bag Clip (사료 스쿱 &amp; 클립)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/living_img5.jpg" alt="" class="front" />
+                    <img src="./img/indoor/living_img5_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">PET SO CHIC</em>
+                    <p class="description">
+                      펫 소 시크 Fiber bamboo bowl(뱀부 식기) Grumpy – L
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="product product__menu" data-type="cat">
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">PET SO CHIC</em>
+                    <p class="description">
+                      펫 소 시크 Cat toy(토이) – Brown Mouse (쥐모양 장난감)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img2.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img2_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">PET SO CHIC</em>
+                    <p class="description">
+                      펫 소 시크 Cat toy(토이) – Beige Mouse (쥐모양 장난감)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img3.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img3_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">PET SO CHIC</em>
+                    <p class="description">
+                      펫 소 시크 Cat collar(고양이 반다나) – Caturday night fever
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img4.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img4_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">PET SO CHIC</em>
+                    <p class="description">
+                      펫 소 시크 Cat collar(고양이 반다나) – Fat The Cat
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img5.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img5_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">PET SO CHIC</em>
+                    <p class="description">
+                      펫 소 시크 Cat collar(고양이 반다나) – The Masked Cat
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img6.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img6_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 STARDUST Lagoon Cat Collar<br class="only-m" />
+                      (스타더스트 라군 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img7.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img7_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 STARDUST Gold Cat Collar <br class="only-m" />
+                      (스타더스트 골드 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img8.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img8_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 STARDUST Pink Cat Collar <br class="only-m" />
+                      (스타더스트 핑크 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img9.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img9_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 STARDUST Red Cat Collar <br class="only-m" />
+                      (스타더스트 레드 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img10.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img10_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 STARDUST COPPER Cat Collar<br class="only-m" />
+                      (스타더스트 쿠퍼 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img11.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img11_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 STARDUST Titan Cat Collar<br class="only-m" />
+                      (스타더스트 티탄 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img12.jpg" alt="" class="front" />
+                    <img src="./img/indoor/cat_img12_back.jpg" alt="" class="back" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 STARDUST Black Cat Collar<br class="only-m" />
+                      (스타더스트 블랙 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img13.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 BOA Turquoise Cat Collar (보아 터콰이즈 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img14.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 PYTHON Gold Cat Collar (파이톤 골드 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img15.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 PYTHON Natural Cat Collar (파이톤 내츄럴 고양이 목줄)
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="image">
+                    <img src="./img/indoor/cat_img16.jpg" alt="" />
+                  </div>
+                  <div class="text-group">
+                    <em class="title">MILK &amp; PEPPER</em>
+                    <p class="description">
+                      밀크 앤 페퍼 CRAB&WHALE Cat Toy (크랩&고래 고양이 장난감)
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer__layer"></div>
+      <div class="inner">
+
+        <div class="row">
+          <ul class="footer__menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Buy Shop</a></li>
+          </ul>
+          <ul class="footer__links">
+            <li>
+              <a href="https://www.facebook.com/cotieshop.co.kr/" target="_blank">
+                <span class="pc">facebook</span>
+                <i class="fab fa-facebook-f mobile"><span>facebook</span></i>
+              </a>
+            </li>
+            <li><a href="https://www.instagram.com/cotie_shop/" target="_blank">
+                <span class="pc">instagram</span>
+                <i class="fab fa-instagram mobile"><span>instagram</span></i>
+              </a>
+            </li>
+            <li><a href="https://accounts.kakao.com/login?continue=http%3A%2F%2Fpf.kakao.com%2F_ivZMs%2Fchat"
+                target="_blank"><i class="fas fa-comment"></i></a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="info">
+            <a href="#">
+              <span>Cotieshop</span>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+            <div>
+              <span>
+                주식회사 델핀 서울특별시 용산구 우사단로2길 1, 3층 대표 : 신승호 사업자 등록번호 : 113-86-83830
+              </span>
+              <address>
+                04413 서울특별시 용산구 우사단로2길 1 (보광동) TEL : 02-2678-3096~7 FAX : 02-2678-3099
+              </address>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="copyright">
+            Copyright <span class="this-year"></span>. Cotieshop All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- TO TOP BUTTON -->
+    <a href="#" id="to-top">
+      <i class="fas fa-chevron-up"></i>
+      <span>top</span>
+      <div class="to-top-punch">
+        <img src="./img/to_top_scratch1.svg" alt="" class="scratch1" />
+        <img src="./img/to_top_scratch2.svg" alt="" class="scratch2" />
+        <img src="./img/punch1.svg" alt="" class="punch" />
+      </div>
+    </a>
+
+  </div>
+
+  <script>
+    'use strict';
+
+    var menuLists = document.querySelectorAll('.indoor__menu li');
+    menuLists.forEach(function (menuList) {
+      menuList.addEventListener('click', function () {
+        var dataMenu = event.target.parentElement.dataset.menu;
+        var ulEls = document.querySelectorAll('.indoor__content ul');
+        ulEls.forEach(function (ulEl) {
+          var dataType = ulEl.dataset.type;
+          if (dataMenu === dataType) {
+            ulEl.classList.add('visible');
+          } else {
+            ulEl.classList.remove('visible');
+          }
+        });
+        var selectedList = document.querySelector('.indoor__menu li.active');
+        selectedList.classList.remove('active');
+        event.target.parentElement.classList.add('active');
+      });
+    });
+    
+
+
+    
+  </script>
+</body>
+</html>
