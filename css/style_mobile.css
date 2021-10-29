@@ -1220,21 +1220,9 @@ body.brands p.description {
 
 /* cotielog.html */
 /* COTIELOG */
-.cotielog {
-
-}
-
 .cotielog > .inner {
   padding-top: 30px;
   margin: 0 24px;
-}
-
-.cotielog .left {
-
-}
-
-.cotielog .left.off {
-
 }
 
 .cotielog__title {
@@ -1274,10 +1262,6 @@ body.brands p.description {
   font-weight: 500;
   color: #000;
   cursor: url("../img/cursor_hand_tiny.png"), auto;
-}
-
-.cotielog .right {
-
 }
 
 .cotielog__content {
@@ -1321,10 +1305,6 @@ body.brands p.description {
 
 .cotielog__content .news li:first-child .title::after {
   content: '🎉';
-}
-
-.cotielog__content .btn {
-
 }
 
 .cotielog__content .btn span {
