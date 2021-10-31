@@ -1531,6 +1531,7 @@ body.store .description {
 .cotielog .left .image {
   position: relative;
   left: -34%;
+  width: 500px;
 }
 
 .cotielog .left .image img:first-child {
