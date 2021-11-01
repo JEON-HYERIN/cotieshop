@@ -300,11 +300,7 @@ h3 {
   padding: 10px 20px;
 }
 
-/* #gnb > ul > li:hover .sub-menu {
-  display: block;
-} */
-
-#gnb > ul > li.active .sub-menu {
+#gnb > ul > li.on .sub-menu {
   display: block;
 }
 

@@ -292,10 +292,15 @@ body.sub .product__menu li:nth-child(6) {
 
 #header .close-btn {
   position: absolute;
-  right: 34px;
-  top: 30px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
+  width: 35px;
+  height: 35px;
+  text-align: center;
   font-size: 35px;
+  line-height: 35px;
 }
 
 #header .close-btn.invisible {
@@ -312,6 +317,7 @@ body.sub .product__menu li:nth-child(6) {
   background-color: #F0EDE6;
   transition: left .5s;
   pointer-events: none;
+  overflow-y: auto;
 }
 
 #gnb.open {
@@ -338,7 +344,7 @@ body.sub .product__menu li:nth-child(6) {
   transition: left .3s;
 }
 
-#gnb > ul > li.active::before {
+#gnb > ul > li.selected::before {
   left: -33px;
 }
 
@@ -362,7 +368,7 @@ body.sub .product__menu li:nth-child(6) {
   font-size: 25px;
 }
 
-#gnb > ul > li.active .sub-menu {
+#gnb > ul > li.selected .sub-menu {
   display: block;
 }
 
@@ -371,11 +377,18 @@ body.sub .product__menu li:nth-child(6) {
   left: 50%;
   top: 0;
   width: 100%;
+  z-index: 1;
   display: none;
 }
 
 #gnb > ul > li .sub-menu li {
   position: relative;
+}
+
+#gnb > ul > li .sub-menu li.selected span {
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #000;
 }
 
 #gnb > ul > li .sub-menu li a {
