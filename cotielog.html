@@ -58,7 +58,7 @@
   <script defer src="./js/common.js"></script>
 
 </head>
-<body class="cotielog sub">
+<body class="sub cotielog">
   <div id="wrapper">
     <a href="#main" id="skip-nav">본문 바로가기</a>
 
@@ -78,38 +78,38 @@
         <nav id="gnb">
           <h2 class="hide">메인 네비게이션</h2>
           <ul>
-            <li>
+            <li data-link="brands">
               <a href="./brands.html">Brands</a>
               <ul class="sub-menu">
-                <li>
+                <li data-menu="pet-so-chic">
                   <a href="#"><span>펫 소 시크</span></a>
                 </li>
-                <li><a href="#"><span>맥스본</span></a></li>
-                <li><a href="./brands.html"><span>밀크 앤 페퍼</span></a></li>
+                <li data-menu="maxbone"><a href="#"><span>맥스본</span></a></li>
+                <li data-menu="milk-pepper"><a href="./brands.html"><span>밀크 앤 페퍼</span></a></li>
               </ul>
             </li>
-            <li>
+            <li data-link="outdoor">
               <a href="./outdoor.html">Outdoor</a>
               <ul class="sub-menu">
-                <li><a href="#"><span>패션</span></a></li>
-                <li><a href="#"><span>목줄</span></a></li>
-                <li><a href="#"><span>리드줄</span></a></li>
-                <li><a href="#"><span>하네스</span></a></li>
-                <li><a href="#"><span>이동가방</span></a></li>
+                <li data-menu="fashion"><a href="./outdoor.html"><span>패션</span></a></li>
+                <li data-menu="collar"><a href="./outdoor/collar.html"><span>목줄</span></a></li>
+                <li data-menu="leash"><a href="./outdoor/leash.html"><span>리드줄</span></a></li>
+                <li data-menu="harness"><a href="./outdoor/harness.html"><span>하네스</span></a></li>
+                <li data-menu="bag"><a href="./outdoor/bag.html"><span>이동가방</span></a></li>
               </ul>
             </li>
-            <li>
+            <li data-link="indoor">
               <a href="./indoor.html">Indoor</a>
               <ul class="sub-menu">
-                <li><a href="#"><span>장난감</span></a></li>
-                <li><a href="#"><span>리빙</span></a></li>
-                <li><a href="#"><span>고양이</span></a></li>
+                <li data-menu="toy"><a href="./indoor.html"><span>장난감</span></a></li>
+                <li data-menu="living"><a href="./indoor/living.html"><span>리빙</span></a></li>
+                <li data-menu="cat"><a href="./indoor/cat.html"><span>고양이</span></a></li>
               </ul>
             </li>
-            <li class="selected"><a href="./cotielog.html">Cotielog</a></li>
-            <li><a href="./store.html">Store</a></li>
-            <li class="mobile"><a href="#">About Us</a></li>
-            <li class="mobile"><a href="#">Buy Shop</a></li>
+            <li data-link="cotielog"><a href="./cotielog.html">Cotielog</a></li>
+            <li data-link="store"><a href="./store.html">Store</a></li>
+            <li data-link="about-us" class="mobile"><a href="#">About Us</a></li>
+            <li data-link="buy-shop" class="mobile"><a href="#">Buy Shop</a></li>
           </ul>
         </nav>
         <ul class="top-menu">

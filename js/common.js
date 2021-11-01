@@ -29,6 +29,31 @@ $('#header').on('mouseleave', function () {
   $('#gnb > ul > li').removeClass('on');
 });
 
+setCurrentNav();
+
+function setCurrentNav () {
+  var bodyClass = $('body').attr('class');
+  var splitClass = bodyClass.split(' ');
+  if (splitClass[0] === 'main') {
+    return false;
+  }
+
+  $('#gnb > ul > li').each(function (i) {
+    if ($(this).attr('data-link') === splitClass[1]) {
+      $(this).addClass('selected');
+    } 
+  });
+  
+  $('#gnb > ul > li.selected > .sub-menu > li').each(function (i) {
+  if (splitClass[2] === undefined || splitClass[2] === null) {
+    return false;
+  }
+    if ($(this).attr('data-menu') === splitClass[2]) {
+      $(this).addClass('selected');
+    }
+  });
+}
+
 // 모바일메뉴
 // var menuBtn = header.querySelector('.menu-btn');
 // var closeBtn = header.querySelector('.close-btn');
@@ -127,11 +152,15 @@ toTopBtn.addEventListener('click', function () {
   wrapper.scrollIntoView({behavior:"smooth"});
 });
 
-var imgEl = toTopBtn.querySelector('img.punch');
-var imgUrl = ['punch1.svg', 'punch2.svg', 'punch3.svg', 'punch4.svg'];
-var chosenImgUrl = imgUrl[Math.floor(Math.random() * imgUrl.length)];
+changeImg();
 
-imgEl.setAttribute('src', `./img/${chosenImgUrl}`);
+function changeImg () {
+  var imgEl = toTopBtn.querySelector('img.punch');
+  var imgUrl = ['punch1.svg', 'punch2.svg', 'punch3.svg', 'punch4.svg'];
+  var chosenImgUrl = imgUrl[Math.floor(Math.random() * imgUrl.length)];
+  
+  imgEl.setAttribute('src', `/img/${chosenImgUrl}`);
+}
 
 // SCROLL MAGIC
 const spyEls = document.querySelectorAll('.scroll-spy');
