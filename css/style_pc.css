@@ -628,16 +628,17 @@ h3 {
   transform: rotate(-180deg);
 }
 
-#footer .info.open > div {
-  display: block;
-}
-
 #footer .info > div {
-  padding-top: 13px;
+  height: 0;
+  overflow: hidden;
   font-size: 14px;
   font-weight: 500;
   color: #666;
-  display: none;
+  transition: height .3s;
+}
+
+#footer .info > div .wrap {
+  padding-top: 13px;
 }
 
 #footer .info > div address {

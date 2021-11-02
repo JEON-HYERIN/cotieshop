@@ -129,6 +129,13 @@ var footerInfo = document.querySelector('#footer .info');
 var footerToggleBtn = footerInfo.querySelector('a');
 footerToggleBtn.addEventListener('click', function () {
   footerInfo.classList.toggle('open');
+  if (footerInfo.classList.contains('open')) {
+    var height = 0;
+    height = $('#footer .info > div > .wrap').outerHeight(true);
+    $('#footer .info').find('> div').css({'height': height + 'px'});
+  } else {
+    $('#footer .info').find('> div').css({'height': '0px'});
+  }
 });
 
 var footer = document.querySelector('#footer');
@@ -173,3 +180,6 @@ spyEls.forEach(function (spyEl) {
   .setClassToggle(spyEl, 'show')
   .addTo(new ScrollMagic.Controller());
 });
+
+
+
