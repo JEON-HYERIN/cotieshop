@@ -166,7 +166,8 @@ function changeImg () {
   var imgUrl = ['punch1.svg', 'punch2.svg', 'punch3.svg', 'punch4.svg'];
   var chosenImgUrl = imgUrl[Math.floor(Math.random() * imgUrl.length)];
   
-  imgEl.setAttribute('src', `D:/DNA(D)/GitHub/cotieshop/cotieshop/img/${chosenImgUrl}`);
+  // imgEl.setAttribute('src', `D:/DNA(D)/GitHub/cotieshop/cotieshop/img/${chosenImgUrl}`);
+  imgEl.setAttribute('src', `/img/${chosenImgUrl}`);
 }
 
 // SCROLL MAGIC
