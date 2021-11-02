@@ -167,7 +167,7 @@ function changeImg () {
   var chosenImgUrl = imgUrl[Math.floor(Math.random() * imgUrl.length)];
   
   // imgEl.setAttribute('src', `D:/DNA(D)/GitHub/cotieshop/cotieshop/img/${chosenImgUrl}`);
-  imgEl.setAttribute('src', `/img/${chosenImgUrl}`);
+  imgEl.setAttribute('src', `https://jeon-hyerin.github.io/cotieshop/img/${chosenImgUrl}`);
 }
 
 // SCROLL MAGIC
