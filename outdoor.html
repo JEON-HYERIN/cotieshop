@@ -1204,7 +1204,7 @@
 
     var menuLists = document.querySelectorAll('.outdoor__menu li');
     menuLists.forEach(function (menuList) {
-      menuList.addEventListener('click', function () {
+      menuList.addEventListener('click', function (event) {
         var dataMenu = event.target.parentElement.dataset.menu;
         var ulEls = document.querySelectorAll('.outdoor__content ul');
         ulEls.forEach(function (ulEl) {
@@ -1222,16 +1222,7 @@
     });
     
 
-    $('#gnb > ul > li.selected .sub-menu li a').on('click', function () {
-      var index = $('#gnb > ul > li.selected .sub-menu li').index($(this).parent());
-      console.log(index)
-      $('#gnb > ul > li.selected .sub-menu li').removeClass('selected');
-      $('#gnb > ul > li.selected .sub-menu li:eq(' + index + ')').addClass('selected');
-      $('.sub .category li').removeClass('active');
-      $('.sub .category li:eq(' + index + ')').addClass('active');
-      $('.outdoor__content ul').removeClass('visible');
-      $('.outdoor__content ul:eq(' + index + ')').addClass('visible');
-    });
+
     
     
   </script>

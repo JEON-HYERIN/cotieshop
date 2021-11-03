@@ -55,35 +55,6 @@ function setCurrentNav () {
 }
 
 // 모바일메뉴
-// var menuBtn = header.querySelector('.menu-btn');
-// var closeBtn = header.querySelector('.close-btn');
-// var gnb = header.querySelector('#gnb');
-// var gnbLists = header.querySelectorAll('#gnb > ul > li');
-// var gnbAnchers = header.querySelectorAll('#gnb > ul > li > a');
-// menuBtn.addEventListener('click', function () {
-//   menuBtn.classList.add('invisible');
-//   closeBtn.classList.remove('invisible');
-//   gnb.classList.add('open');
-// });
-
-// closeBtn.addEventListener('click', function () {
-//   menuBtn.classList.remove('invisible');
-//   closeBtn.classList.add('invisible');
-//   gnb.classList.remove('open');
-//   gnbLists.forEach(function (gnbList) {
-//     gnbList.classList.remove('active');
-//   });
-// });
-
-// gnbAnchers.forEach(function (gnbAncher) {
-//   gnbAncher.addEventListener('click', function (event) {
-//     gnbLists.forEach(function (gnbList) {
-//       gnbList.classList.remove('active');
-//     });
-//     event.target.parentElement.classList.toggle('active');
-//   });
-// });
-
 $('#header .menu-btn').on('click', function () {
   $(this).addClass('invisible');
   $('#header .close-btn').removeClass('invisible');
@@ -107,7 +78,6 @@ $('#gnb > ul > li > a').on('click', function (event) {
     $('#gnb > ul > li:eq(' + index + ')').addClass('selected');
   }
 });
-
 
 
 // 검색창 toggle

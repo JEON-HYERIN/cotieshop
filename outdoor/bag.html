@@ -1204,7 +1204,7 @@
 
     var menuLists = document.querySelectorAll('.outdoor__menu li');
     menuLists.forEach(function (menuList) {
-      menuList.addEventListener('click', function () {
+      menuList.addEventListener('click', function (event) {
         var dataMenu = event.target.parentElement.dataset.menu;
         var ulEls = document.querySelectorAll('.outdoor__content ul');
         ulEls.forEach(function (ulEl) {
