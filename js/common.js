@@ -8,6 +8,26 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
 
+const body = document.querySelector('body');
+var scrollPosition = 0;
+// 모달창 오픈
+function enable() {
+  scrollPosition = window.pageYOffset;
+  body.style.overflow = 'hidden';
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollPosition}px`;
+  body.style.width = '100%';
+}
+// 모달창 닫기
+function disable() {
+  body.style.removeProperty('overflow');
+  body.style.removeProperty('position');
+  body.style.removeProperty('top');
+  body.style.removeProperty('width');
+  window.scrollTo(0, scrollPosition);
+}
+
+// header영역
 var header = document.querySelector('#header');
 
 window.addEventListener('scroll', function () {
@@ -56,32 +76,13 @@ function setCurrentNav () {
   });
 }
 
-const body = document.querySelector('body');
-var scrollPosition = 0;
-// 모달창 오픈
-function enable() {
-  scrollPosition = window.pageYOffset;
-  body.style.overflow = 'hidden';
-  body.style.position = 'fixed';
-  body.style.top = `-${scrollPosition}px`;
-  body.style.width = '100%';
-}
-// 모달창 닫기
-function disable() {
-  body.style.removeProperty('overflow');
-  body.style.removeProperty('position');
-  body.style.removeProperty('top');
-  body.style.removeProperty('width');
-  window.scrollTo(0, scrollPosition);
-}
-
 $(window).on('resize', function () {
   if ($(window).width() >= 1024) {
     if ($('#gnb').hasClass('open') === true) {
-      // disable();
+      disable();
     } 
   } else if ($('#gnb').hasClass('open') === true){
-    // $('#header .menu-btn').trigger('click');
+    $('#header .menu-btn').trigger('click');
   }
 });
 
@@ -96,21 +97,21 @@ $('.search-modal__header .close-btn').on('click', function () {
   disable();
 });
 
-// 모바일메뉴
+// 모바일 메뉴
 $('#header .menu-btn').on('click', function () {
-    $(this).addClass('invisible');
-    $('#header .close-btn').removeClass('invisible');
-    $('#gnb').addClass('open');
-    $('#gnb > ul > li.active > a').trigger('click');
-    // enable();
+  $(this).addClass('invisible');
+  $('#header .close-btn').removeClass('invisible');
+  $('#gnb').addClass('open');
+  $('#gnb > ul > li.active > a').trigger('click');
+  enable();
 });
 
 $('#header .close-btn').on('click', function () {
-    $(this).addClass('invisible');
-    $('#header .menu-btn').removeClass('invisible');
-    $('#gnb').removeClass('open');
-    $('#gnb > ul > li.selected > a').trigger('click');
-    // disable();
+  $(this).addClass('invisible');
+  $('#header .menu-btn').removeClass('invisible');
+  $('#gnb').removeClass('open');
+  $('#gnb > ul > li.selected > a').trigger('click');
+  disable();
 });
 
 $('#gnb > ul > li > a').on('click focusin', function (event) {
