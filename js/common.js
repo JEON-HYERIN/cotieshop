@@ -76,16 +76,6 @@ function setCurrentNav () {
   });
 }
 
-$(window).on('resize', function () {
-  if ($(window).width() >= 1024) {
-    if ($('#gnb').hasClass('open') === true) {
-      disable();
-    } 
-  } else if ($('#gnb').hasClass('open') === true){
-    $('#header .menu-btn').trigger('click');
-  }
-});
-
 // 검색창 toggle
 $('#header .top-menu li:eq(0) a').on('click', function () {
   $('.search-modal__wrap').removeClass('invisible');
@@ -122,6 +112,16 @@ $('#gnb > ul > li > a').on('click focusin', function (event) {
     var index = $('#gnb > ul > li').index($(this).parent());
     $('#gnb > ul > li').removeClass('selected');
     $('#gnb > ul > li:eq(' + index + ')').addClass('selected');
+  }
+});
+
+$(window).on('resize', function () {
+  if ($(window).width() >= 1024) {
+    if ($('#gnb').hasClass('open') === true) {
+      disable();
+    } 
+  } else if ($('#gnb').hasClass('open') === true){
+    $('#header .menu-btn').trigger('click');
   }
 });
 
