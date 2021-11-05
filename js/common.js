@@ -20,9 +20,11 @@ window.addEventListener('scroll', function () {
 
 // gnb영역
 $('#gnb > ul > li > a').on('mouseenter focusin', function () {
-  var index = $('#gnb > ul > li').index($(this).parent());
-  $('#gnb > ul > li').removeClass('on');
-  $('#gnb > ul > li:eq(' + index + ')').addClass('on');
+  if ($(window).width() >= 1024) {
+    var index = $('#gnb > ul > li').index($(this).parent());
+    $('#gnb > ul > li').removeClass('on');
+    $('#gnb > ul > li:eq(' + index + ')').addClass('on');
+  }
 });
 
 $('#header').on('mouseleave', function () {
@@ -74,7 +76,6 @@ function disable() {
 }
 
 $(window).on('resize', function () {
-  console.log($('#header .menu-btn').hasClass('invisible') === true)
   if ($(window).width() >= 1024) {
     if ($('#gnb').hasClass('open') === true) {
       disable();
@@ -112,7 +113,7 @@ $('#header .close-btn').on('click', function () {
     disable();
 });
 
-$('#gnb > ul > li > a').on('click', function (event) {
+$('#gnb > ul > li > a').on('click focusin', function (event) {
   if ($(window).width() < 1024) {
     if ($(this).parent().find('ul').length > 0) {
       event.preventDefault();

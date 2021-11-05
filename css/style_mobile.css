@@ -327,10 +327,11 @@ body.sub .product__menu li:nth-child(6) {
 }
 
 #gnb > ul {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
+  height: 100%;
 }
 
 #gnb > ul > li::before {
@@ -365,7 +366,6 @@ body.sub .product__menu li:nth-child(6) {
 }
 
 #gnb > ul > li > a {
-  width: 40%;
   padding: 15px 0;
   font-size: 25px;
 }
@@ -378,7 +378,6 @@ body.sub .product__menu li:nth-child(6) {
   position: absolute;
   left: 50%;
   top: 0;
-  width: 100%;
   z-index: 1;
   display: none;
 }

@@ -1966,10 +1966,11 @@ body.store .description {
   }
 
   #gnb > ul {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
+    height: 100%;
   }
 
   #gnb > ul > li::before {
@@ -2006,7 +2007,6 @@ body.store .description {
   }
 
   #gnb > ul > li > a {
-    width: 40%;
     padding: 15px 0;
     font-size: 25px;
   }
@@ -2016,6 +2016,7 @@ body.store .description {
   }
 
   #gnb > ul > li .sub-menu {
+    width: auto;
     padding: 0;
     top: 0;
     transform: translateX(0);
