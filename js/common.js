@@ -10,7 +10,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 const body = document.querySelector('body');
 var scrollPosition = 0;
-// 모달창 오픈
+// 모달창 열기
 function enable() {
   scrollPosition = window.pageYOffset;
   body.style.overflow = 'hidden';
