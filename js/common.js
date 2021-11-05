@@ -54,18 +54,62 @@ function setCurrentNav () {
   });
 }
 
+const body = document.querySelector('body');
+var scrollPosition = 0;
+// 모달창 오픈
+function enable() {
+  scrollPosition = window.pageYOffset;
+  body.style.overflow = 'hidden';
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollPosition}px`;
+  body.style.width = '100%';
+}
+// 모달창 닫기
+function disable() {
+  body.style.removeProperty('overflow');
+  body.style.removeProperty('position');
+  body.style.removeProperty('top');
+  body.style.removeProperty('width');
+  window.scrollTo(0, scrollPosition);
+}
+
+$(window).on('resize', function () {
+  console.log($('#header .menu-btn').hasClass('invisible') === true)
+  if ($(window).width() >= 1024) {
+    if ($('#gnb').hasClass('open') === true) {
+      disable();
+    } 
+  } else if ($('#gnb').hasClass('open') === true){
+    $('#header .menu-btn').trigger('click');
+  }
+});
+
+// 검색창 toggle
+$('#header .top-menu li:eq(0) a').on('click', function () {
+  $('.search-modal__wrap').removeClass('invisible');
+  enable();
+});
+
+$('.search-modal__header .close-btn').on('click', function () {
+  $('.search-modal__wrap').addClass('invisible');
+  disable();
+});
+
 // 모바일메뉴
 $('#header .menu-btn').on('click', function () {
-  $(this).addClass('invisible');
-  $('#header .close-btn').removeClass('invisible');
-  $('#gnb').toggleClass('open');
-  $('#gnb > ul > li.active > a').trigger('click');
+    $(this).addClass('invisible');
+    $('#header .close-btn').removeClass('invisible');
+    $('#gnb').addClass('open');
+    $('#gnb > ul > li.active > a').trigger('click');
+    enable();
 });
+
 $('#header .close-btn').on('click', function () {
-  $(this).addClass('invisible');
-  $('#header .menu-btn').removeClass('invisible');
-  $('#gnb').toggleClass('open');
-  $('#gnb > ul > li.selected > a').trigger('click');
+    $(this).addClass('invisible');
+    $('#header .menu-btn').removeClass('invisible');
+    $('#gnb').removeClass('open');
+    $('#gnb > ul > li.selected > a').trigger('click');
+    disable();
 });
 
 $('#gnb > ul > li > a').on('click', function (event) {
@@ -78,17 +122,6 @@ $('#gnb > ul > li > a').on('click', function (event) {
     $('#gnb > ul > li:eq(' + index + ')').addClass('selected');
   }
 });
-
-
-// 검색창 toggle
-$('#header .top-menu li:eq(0) a').on('click', function () {
-  $('.search-modal__wrap').removeClass('invisible');
-});
-
-$('.search-modal__header .close-btn').on('click', function () {
-  $('.search-modal__wrap').addClass('invisible');
-});
-
 
 // 올해년도 구하기
 var thisYear = document.querySelector('.this-year');

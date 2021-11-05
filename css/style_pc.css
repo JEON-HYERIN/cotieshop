@@ -309,6 +309,7 @@ h3 {
   left: 50%;
   top: 100%;
   transform: translateX(-50%);
+  z-index: 1;
   width: 100%;
   padding: 10px;
   background-color: #000;
@@ -1982,11 +1983,10 @@ body.store .description {
     transition: left .3s;
     border-radius: 0;
     right: auto;
-    opacity: 1;
     transform: translateY(0);
   }
 
-  #gnb > ul > li.active::before {
+  #gnb > ul > li.selected::before {
     left: -33px;
   }
 
@@ -2011,11 +2011,7 @@ body.store .description {
     font-size: 25px;
   }
 
-  #gnb > ul > li:hover .sub-menu {
-    display: none;
-  }
-
-  #gnb > ul > li.active .sub-menu {
+  #gnb > ul > li.selected .sub-menu {
     display: block;
   }
 
@@ -2036,6 +2032,12 @@ body.store .description {
     font-size: 16px;
     font-weight: 500;
     color: #000;
+  }
+
+  #gnb > ul > li .sub-menu li.selected span {
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #000;
   }
 
   #gnb > ul > li .sub-menu li a span::after {
