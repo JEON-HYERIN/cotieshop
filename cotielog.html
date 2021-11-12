@@ -283,7 +283,7 @@
               </a>
             </div>
           </div>
-          
+
         </div>
       </section>
     </main>
@@ -362,11 +362,11 @@
       scrollStore();
     });
 
-    function scrollStore () {
+    function scrollStore() {
       var offsetTop = $('.cotielog .left').offset().top;
       var cotielogHeight = $('#main .cotielog').outerHeight(true);
       var scrollTop = $(document).scrollTop();
-      if ((scrollTop + 500) > cotielogHeight ) {
+      if ((scrollTop + 500) > cotielogHeight) {
         $('.cotielog .left').addClass('off');
       } else {
         $('.cotielog .left').removeClass('off');
@@ -391,12 +391,10 @@
         event.target.parentElement.classList.add('active');
       });
     });
-    
+
     $('.cotielog__content a.btn').on('click', function () {
       $('.cotielog__content ul').removeClass('invisible');
     });
-
-    
   </script>
 </body>
 </html>
