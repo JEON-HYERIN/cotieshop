@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="COTIELOG | 꼬띠샵" />
+  <meta name="description" content="꼬띠는 오늘 무얼 하고 있을까요? 꼬띠샵의 새로운 소식들을 만나보세요!" />
+  <title>COTIELOG | 꼬띠샵</title>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="꼬띠샵" />
+  <meta property="og:title" content="COTIELOG | 꼬띠샵" />
+  <meta property="og:description" content="꼬띠는 오늘 무얼 하고 있을까요? 꼬띠샵의 새로운 소식들을 만나보세요!" />
+  <meta property="og:image" content="../img/og_image.jpg" />
+  <meta property="og:url" content="https://jeon-hyerin.github.io/cotieshop/" />
+    <!--Twitter Card-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="꼬띠샵" />
+  <meta property="twitter:title" content="COTIELOG | 꼬띠샵" />
+  <meta property="twitter:description" content="꼬띠는 오늘 무얼 하고 있을까요? 꼬띠샵의 새로운 소식들을 만나보세요!" />
+  <meta property="twitter:image" content="../img/og_image.jpg" />
+  <meta property="twitter:url" content="https://jeon-hyerin.github.io/cotieshop" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.png" />
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/254318af28.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!-- Lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>  
+  <!--GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style_pc.css" media="screen and (min-width: 850.1px)" />
+  <link rel="stylesheet" href="../css/style_mobile.css" media="screen and (max-width: 850.0px)" />
+  <!-- JS -->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script defer src="../js/swiper.js"></script>
+  <script defer src="../js/include.js"></script>
+  <script defer src="../js/common.js"></script>
+</head>
+<body class="sub cotielog">
+
+  <div id="wrapper">
+    <a href="#main" id="skip-nav">본문 바로가기</a>
+    <!-- HEADER INCLUDE -->
+    <div class="header-include"></div>
+    <!-- SEARCH MODAL INCLUDE -->
+    <div class="search-modal-include"></div>
+    <!-- MAIN -->
+    <main id="main">
+      <!-- COTIELOG -->
+      <section class="cotielog">
+        <h2 class="hide">꼬띠샵 게시판</h2>
+        <div class="inner">
+          <div class="left">
+            <h3 class="cotielog__title">Cotielog</h3>
+            <ul class="cotielog__menu category">
+              <li class="active" data-menu="*"><a href="#">ALL</a></li>
+              <li data-menu="notice"><a href="#">공지</a></li>
+              <li data-menu="news"><a href="#">뉴스</a></li>
+              <li data-menu="event"><a href="#">이벤트</a></li>
+              <li data-menu="story"><a href="#">스토리</a></li>
+            </ul>
+            <div class="image pc">
+              <img src="../img/cotielog/cotielog_character_base.jpg" alt="" />
+              <img src="../img/cotielog/cotielog_character_hover.jpg" alt="" />
+            </div>
+          </div>
+          <div class="right">
+            <div class="cotielog__content">
+              <ul class="notice" data-type="notice">
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/notice_img1.png" alt="" />
+                    </div>
+                    <em class="title">2021.11 케이펫페어 일산 참가</em>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/notice_img2.png" alt="" />
+                    </div>
+                    <em class="title">2021 10월 대체공휴일 배송 안내</em>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/notice_img3.png" alt="" />
+                    </div>
+                    <em class="title">2021 추석 연휴 배송 안내</em>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/notice_img4.jpg" alt="" />
+                    </div>
+                    <em class="title">꼬띠샵은 친환경 포장재를 사용합니다.</em>
+                  </a>
+                </li>
+              </ul>
+              <ul class="news" data-type="news">
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/news_img1.png" alt="" />
+                    </div>
+                    <em class="title">2021 GDWEB 디자인 어워즈 WINNER PRIZE 수상</em>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/news_img2.jpg" alt="" />
+                    </div>
+                    <em class="title">[보도자료] 꼬띠샵, 홈페이지 리뉴얼 기념 ‘공유 이벤트’진행</em>
+                  </a>
+                </li>
+              </ul>
+              <ul class="event" data-type="event">
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/event_img1.jpg" alt="" />
+                    </div>
+                    <em class="title">9월 한 달 동안 전 품목 10% 할인</em>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/event_img2.png" alt="" />
+                    </div>
+                    <em class="title">홈페이지 리뉴얼 이벤트</em>
+                  </a>
+                </li>
+              </ul>
+              <ul class="story" data-type="story">
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/story_img1.png" alt="" />
+                    </div>
+                    <em class="title">2021.08 우수 리뷰 고객 캐리커쳐</em>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image">
+                      <img src="../img/cotielog/story_img2.png" alt="" />
+                    </div>
+                    <em class="title">2021.09 우수 리뷰 고객 캐리커쳐</em>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="btn">
+                <i class="fas fa-plus"></i><span>more</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER INCLUDE -->
+    <div class="footer-include"></div>
+  </div>
+
+  <script>
+    'use strict';
+
+    $('.cotielog .left').removeClass('off');
+    scrollStore();
+    $(window).on('scroll', function () {
+      scrollStore();
+    });
+
+    function scrollStore() {
+      var offsetTop = $('.cotielog .left').offset().top;
+      var cotielogHeight = $('#main .cotielog').outerHeight(true);
+      var scrollTop = $(document).scrollTop();
+      if ((scrollTop + 500) > cotielogHeight) {
+        $('.cotielog .left').addClass('off');
+      } else {
+        $('.cotielog .left').removeClass('off');
+      }
+    }
+
+    var menuLists = document.querySelectorAll('.cotielog__menu li');
+    menuLists.forEach(function (menuList) {
+      menuList.addEventListener('click', function () {
+        var dataMenu = event.target.parentElement.dataset.menu;
+        var ulEls = document.querySelectorAll('.cotielog__content ul');
+        ulEls.forEach(function (ulEl) {
+          var dataType = ulEl.dataset.type;
+          if (dataMenu === dataType || dataMenu === '*') {
+            ulEl.classList.remove('invisible');
+          } else {
+            ulEl.classList.add('invisible');
+          }
+        });
+        var selectedList = document.querySelector('.cotielog__menu li.active');
+        selectedList.classList.remove('active');
+        event.target.parentElement.classList.add('active');
+      });
+    });
+
+    $('.cotielog__content a.btn').on('click', function () {
+      $('.cotielog__content ul').removeClass('invisible');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="STORE | 꼬띠샵" />
+  <meta name="description" content="꼬띠샵의 제품들을 직접 만져보고 입혀볼 수 있는 오프라인 매장입니다. 방문 전 예약 전화 부탁드려요!" />
+  <title>STORE | 꼬띠샵</title>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="꼬띠샵" />
+  <meta property="og:title" content="STORE | 꼬띠샵" />
+  <meta property="og:description" content="꼬띠샵의 제품들을 직접 만져보고 입혀볼 수 있는 오프라인 매장입니다. 방문 전 예약 전화 부탁드려요!" />
+  <meta property="og:image" content="../img/og_image.jpg" />
+  <meta property="og:url" content="https://jeon-hyerin.github.io/cotieshop/" />
+    <!--Twitter Card-->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="꼬띠샵" />
+  <meta property="twitter:title" content="STORE | 꼬띠샵" />
+  <meta property="twitter:description" content="꼬띠샵의 제품들을 직접 만져보고 입혀볼 수 있는 오프라인 매장입니다. 방문 전 예약 전화 부탁드려요!" />
+  <meta property="twitter:image" content="../img/og_image.jpg" />
+  <meta property="twitter:url" content="https://jeon-hyerin.github.io/cotieshop" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.png" />
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/254318af28.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!-- Lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>  
+  <!--GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style_pc.css" media="screen and (min-width: 850.1px)" />
+  <link rel="stylesheet" href="../css/style_mobile.css" media="screen and (max-width: 850.0px)" />
+  <!-- JS -->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script defer src="../js/swiper.js"></script>
+  <script defer src="../js/include.js"></script>
+  <script defer src="../js/common.js"></script>
+</head>
+<body class="sub store">
+
+  <div id="wrapper">
+    <a href="#main" id="skip-nav">본문 바로가기</a>
+    <!-- HEADER INCLUDE -->
+    <div class="header-include"></div>
+    <!-- SEARCH MODAL INCLUDE -->
+    <div class="search-modal-include"></div>
+    <!-- MAIN -->
+    <main id="main">
+      <!-- STORE -->
+      <section class="store">
+        <h2 class="hide">오프라인 매장 안내</h2>
+        <div class="inner">
+          <div class="left">
+            <h3 class="store__title">Store</h3>
+            <p class="store__description description">
+              꼬띠샵의 오프라인 매장에서는 제품들을 직접 착용해 볼 수 있어<br class="only-pc" />
+              사이즈 체크가 필요한 반려동물과 함께 방문 가능합니다.
+            </p>
+            <div class="image pc">
+              <img src="../img/store/store_character_base.jpg" alt="" />
+              <img src="../img/store/store_character_hover.jpg" alt="" />
+            </div>
+          </div>
+          <div class="right">
+            <ul class="store__menu">
+              <li>
+                <div class="image">
+                  <img src="../img/store/store_img1.jpg" alt="" />
+                </div>
+                <div class="text-group">
+                  <em class="title">Cotieshop Showroom</em>
+                  <div class="description">
+                    <p class="hours">
+                      Mon-Fri 09:30 -18:00 / Lunch Time 12:30 - 13:30 / Sat, Sun, Holiday is Off
+                    </p>
+                    <p class="address">
+                      서울특별시 용산구 우사단로 2길 1, 3층
+                    </p>
+                    <p class="tel">
+                      (02) 2678-3096~7 (방문 시 미리 전화 예약 주시기 바랍니다)
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="btn">
+                  <span>Map View</span>
+                </a>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="../img/store/store_img2.jpg" alt="" />
+                </div>
+                <div class="text-group">
+                  <em class="title">갤러리아 압구정점 - 펫 부티크</em>
+                  <div class="description">
+                    <p class="hours">
+                      Mon-Thu 10:30 - 20:00 / Fri-Sun 10:30 - 20:30 / Holiday is Off
+                    </p>
+                    <p class="address">
+                      서울 강남구 압구정로 343 Galleria Luxury Hall West 1F
+                    </p>
+                    <p class="tel">
+                      (02) 3449-4265
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="btn">
+                  <span>Map View</span>
+                </a>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="../img/store/store_img3.jpg" alt="" />
+                </div>
+                <div class="text-group">
+                  <em class="title">코코스퀘어 의왕점</em>
+                  <div class="description">
+                    <p class="hours">
+                      Mon-Sun 10:30 – 21:00
+                    </p>
+                    <p class="address">
+                      경기 의왕시 바라산로 1 (학의동 1039) , 롯데 프리미엄 아울렛 타임빌라스 글라스빌 2F
+                    </p>
+                    <p class="tel">
+                      031-329-4012
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="btn">
+                  <span>Map View</span>
+                </a>
+              </li>
+              <li>
+                <div class="image">
+                  <img src="../img/store/store_img4.jpg" alt="" />
+                </div>
+                <div class="text-group">
+                  <em class="title">롯데백화점 강남점 - ZIPSA</em>
+                  <div class="description">
+                    <p class="hours">
+                      Mon-Thu 10:30 - 20:00 / Fri-Sun 10:30 - 20:30 / Holiday is Off
+                    </p>
+                    <p class="address">
+                      서울특별시 강남구 도곡로 401 (대치동 936-21) 롯데백화점 본관 1층
+                    </p>
+                    <p class="tel">
+                      02-531-2397
+                    </p>
+                  </div>
+                </div>
+                <a href="#" class="btn">
+                  <span>Map View</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER INCLUDE -->
+    <div class="footer-include"></div>
+  </div>
+
+  <script>
+    'use strict';
+
+    scrollStore();
+    $(window).on('scroll', function () {
+      scrollStore();
+    });
+
+    function scrollStore() {
+      var offsetTop = $('.store .left').offset().top;
+      var storeHeight = $('#main .store').outerHeight(true);
+      var scrollTop = $(document).scrollTop();
+      if ((scrollTop + 500) > storeHeight) {
+        $('.store .left').addClass('off');
+      } else {
+        $('.store .left').removeClass('off');
+      }
+    }
+  </script>
+
+</body>
+</html>
